@@ -1,0 +1,21 @@
+name: Scheduled Sync
+
+on:
+  schedule:
+    - cron: "*/30 * * * *"
+  workflow_dispatch:
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    if: ${{ vars.SUPABASE_SYNC_URL != '' }}
+    steps:
+      - name: Trigger Supabase sync
+        run: |
+          curl -sS -X POST "$SUPABASE_SYNC_URL" \
+            -H "Authorization: Bearer $SUPABASE_SYNC_TOKEN" \
+            -H "Content-Type: application/json" \
+            -d '{"source":"all"}'
+        env:
+          SUPABASE_SYNC_URL: ${{ vars.SUPABASE_SYNC_URL }}
+          SUPABASE_SYNC_TOKEN: ${{ secrets.SUPABASE_SYNC_TOKEN }}
