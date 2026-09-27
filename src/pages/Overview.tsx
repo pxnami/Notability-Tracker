@@ -1,85 +1,197 @@
-import { Activity, Bug, CheckCircle2, GitPullRequestArrow, ShieldCheck, Sparkles } from "lucide-react";
-import { Card } from "../components/ui/Card";
-import { Badge } from "../components/ui/Badge";
+import {
+  ArrowRight,
+  Bug,
+  Check,
+  GitBranch,
+  RefreshCw,
+  Sparkles,
+} from "lucide-react";
+import { Link } from "react-router-dom";
 import { useLiveData } from "../data/live";
+import { Badge } from "../components/ui/Badge";
+import { formatDate, SourceLink } from "../components/TrackerUI";
 
 export function Overview() {
-  const { features, issues, releaseNotes, sources, records } = useLiveData();
-  const activity = records.slice(0, 5).map(record => ({ ...record, official: sources.find(source => source.id === record.source_id)?.official ?? false, timestamp: record.fetched_at, category: record.source_id }));
+  const {
+    issues,
+    features,
+    releaseNotes,
+    sources,
+    records,
+    generatedAt,
+    refresh,
+    refreshing,
+  } = useLiveData();
+  const open = issues.filter(
+    (issue) => !["Fixed", "Closed"].includes(issue.officialStatus),
+  );
   const stats = [
-    { label: "Open bugs", value: issues.filter((issue) => !["Fixed", "Closed"].includes(issue.officialStatus)).length, icon: Bug },
-    { label: "Officially confirmed", value: issues.filter((issue) => issue.officialStatus === "Officially Acknowledged").length, icon: ShieldCheck },
-    { label: "In-progress fixes", value: issues.filter((issue) => issue.officialStatus === "In Progress").length, icon: GitPullRequestArrow },
-    { label: "Resolved bugs", value: issues.filter((issue) => issue.officialStatus === "Fixed").length, icon: CheckCircle2 },
-    { label: "Feature requests", value: features.length, icon: Sparkles },
-    { label: "Imported articles", value: records.length, icon: Activity }
+    {
+      label: "Open issues",
+      value: open.length,
+      icon: Bug,
+      color: "peach",
+      to: "/bugs",
+      sub: "From official support",
+    },
+    {
+      label: "Fixed issues",
+      value: issues.filter((issue) => issue.officialStatus === "Fixed").length,
+      icon: Check,
+      color: "green",
+      to: "/bugs?status=Fixed",
+      sub: "Documented resolutions",
+    },
+    {
+      label: "Feature ideas",
+      value: features.length,
+      icon: Sparkles,
+      color: "blue",
+      to: "/features",
+      sub: "On the public feature board",
+    },
+    {
+      label: "Being built",
+      value: features.filter((feature) =>
+        ["Building", "In Progress"].includes(feature.roadmapStatus),
+      ).length,
+      icon: GitBranch,
+      color: "yellow",
+      to: "/roadmap",
+      sub: "As listed by Notability",
+    },
   ];
-
   return (
-    <div className="space-y-6">
-      <div>
-        <p className="text-sm font-medium text-notability-700 dark:text-notability-100">Unofficial community intelligence</p>
-        <h1 className="mt-2 text-3xl font-semibold tracking-normal">Notability signals, separated by evidence</h1>
-        <p className="mt-2 max-w-3xl text-sm leading-6 text-slate-600 dark:text-slate-300">
-          Independent tracking of Notability updates and community reports.
-        </p>
-      </div>
-      <div className="grid gap-4 sm:grid-cols-2 xl:grid-cols-3">
+    <>
+      <header className="overview-heading">
+        <p className="eyebrow">THE UNOFFICIAL NOTABILITY TRACKER</p>
+        <h1>
+          Notability Tracker<span className="blue-dot">.</span>
+        </h1>
+        <div className="intro-line">
+          <p className="lede">The bugs. The fixes. The next big thing.</p>
+          <button
+            className="check-time"
+            onClick={refresh}
+            disabled={refreshing}
+            title="Refresh data"
+          >
+            <RefreshCw size={14} className={refreshing ? "spin" : ""} />
+            Checked {formatDate(generatedAt ?? sources[0]?.lastSync)}
+          </button>
+        </div>
+      </header>
+      <div className="stats-grid">
         {stats.map((stat) => (
-          <Card key={stat.label}>
-            <div className="flex items-center justify-between">
-              <div>
-                <p className="text-sm text-slate-500 dark:text-slate-400">{stat.label}</p>
-                <p className="mt-2 text-3xl font-semibold">{stat.value}</p>
-              </div>
-              <div className="grid h-11 w-11 place-items-center rounded-lg bg-notability-50 text-notability-700 dark:bg-notability-500/15 dark:text-notability-100">
-                <stat.icon size={22} />
-              </div>
+          <Link className={`stat ${stat.color}`} to={stat.to} key={stat.label}>
+            <div className="stat-top">
+              <stat.icon size={20} />
+              <ArrowRight size={18} />
             </div>
-          </Card>
+            <strong>{stat.value}</strong>
+            <h2>{stat.label}</h2>
+            <p>{stat.sub}</p>
+          </Link>
         ))}
       </div>
-      <div className="grid gap-6 xl:grid-cols-[1.3fr_0.7fr]">
-        <Card>
-          <div className="mb-4 flex items-center justify-between">
-            <h2 className="text-lg font-semibold">Recently Imported</h2>
-            <a href="#/activity" className="text-sm underline">All articles</a>
+      <div className="overview-columns">
+        <section>
+          <div className="section-heading">
+            <h2>On our radar</h2>
+            <Link to="/bugs">
+              All issues <ArrowRight size={16} />
+            </Link>
           </div>
-          <div className="space-y-4">
-            {!activity.length && <p>No articles imported yet.</p>}
-            {activity.map((item) => (
-              <a key={item.id} href={item.url} className="block rounded-lg border border-slate-100 p-4 transition hover:border-notability-200 dark:border-slate-800 dark:hover:border-notability-700">
-                <div className="flex flex-wrap items-center gap-2">
-                  <Badge variant={item.official ? "blue" : "gray"}>{item.official ? "Official source" : "Community"}</Badge>
-                  <Badge>{item.category}</Badge>
-                </div>
-                <p className="mt-3 font-medium">{item.title}</p>
-                <p className="mt-1 text-sm text-slate-500 dark:text-slate-400">Imported {new Date(item.timestamp).toLocaleString()}</p>
-              </a>
-            ))}
-          </div>
-        </Card>
-        <Card>
-          <h2 className="mb-4 text-lg font-semibold">Source Health</h2>
-          <div className="space-y-3">
-            {!sources.length && <p>No sources connected yet.</p>}
-            {sources.map((source) => (
-              <div key={source.id} className="flex items-center justify-between gap-3 rounded-lg bg-slate-50 p-3 dark:bg-slate-900">
+          {open.length ? (
+            open.slice(0, 4).map((issue) => (
+              <Link
+                className="issue-preview"
+                to={`/bugs?item=${issue.id}`}
+                key={issue.id}
+              >
+                <Badge variant="amber">{issue.officialStatus}</Badge>
+                <h3>{issue.title}</h3>
                 <div>
-                  <p className="font-medium">{source.name}</p>
-                  <p className="text-xs text-slate-500 dark:text-slate-400">{source.note}</p>
+                  <span>Official support</span>
+                  <ArrowRight size={18} />
                 </div>
-                <Badge variant={source.health === "healthy" ? "green" : source.health === "failed" ? "red" : "amber"}>{source.health.replace("_", " ")}</Badge>
+              </Link>
+            ))
+          ) : (
+            <p className="muted">No open issues in the current sources.</p>
+          )}
+        </section>
+        <aside className="overview-aside">
+          <div className="section-heading">
+            <h2>Fresh off the press</h2>
+          </div>
+          {releaseNotes[0] ? (
+            <div className="latest-release">
+              <p className="eyebrow">LATEST DOCUMENTED iOS VERSION</p>
+              <h3>{releaseNotes[0].version}</h3>
+              <ul>
+                {[...releaseNotes[0].highlights, ...releaseNotes[0].fixes]
+                  .slice(0, 3)
+                  .map((line) => (
+                    <li key={line}>{line}</li>
+                  ))}
+              </ul>
+              <Link className="button" to="/releases">
+                Read release notes <ArrowRight size={17} />
+              </Link>
+            </div>
+          ) : (
+            <p>No releases imported yet.</p>
+          )}
+          <div className="section-heading source-heading">
+            <h2>Connected, with context.</h2>
+            <Link to="/sources">
+              <ArrowRight size={18} />
+              <span className="sr-only">All sources</span>
+            </Link>
+          </div>
+          <div className="source-list">
+            {sources.map((source) => (
+              <div key={source.id}>
+                <span>
+                  <i className={`status-dot ${source.health}`} />
+                  {source.name}
+                </span>
+                <Badge
+                  variant={source.health === "healthy" ? "green" : "amber"}
+                >
+                  {source.health === "healthy"
+                    ? "Connected"
+                    : source.health === "needs_auth"
+                      ? "Not connected"
+                      : source.health}
+                </Badge>
               </div>
             ))}
           </div>
-        </Card>
+        </aside>
       </div>
-      <Card className="border-notability-100 bg-notability-50/60 dark:border-notability-500/20 dark:bg-notability-500/10">
-        <p className="text-sm font-medium text-notability-700 dark:text-notability-100">Latest Release Notes</p>
-        <p className="mt-2 font-semibold">{releaseNotes[0]?.version ?? "No structured release notes imported yet."}</p>
-        <p className="mt-1 text-sm text-slate-600 dark:text-slate-300">{releaseNotes[0]?.highlights[0]}</p>
-      </Card>
-    </div>
+      <section className="latest-articles">
+        <div className="section-heading">
+          <h2>The reading list</h2>
+          <Link to="/activity">
+            All {records.length} updates <ArrowRight size={16} />
+          </Link>
+        </div>
+        <div className="reading-grid">
+          {records.slice(0, 3).map((record) => (
+            <article key={record.id}>
+              <p className="eyebrow">
+                {record.source_id} /{" "}
+                {formatDate(record.updated_at ?? record.published_at)}
+              </p>
+              <h3>{record.title}</h3>
+              <SourceLink href={record.url} />
+            </article>
+          ))}
+        </div>
+        {!records.length && <p>No articles imported yet.</p>}
+      </section>
+    </>
   );
 }

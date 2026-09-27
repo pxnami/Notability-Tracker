@@ -1,8 +1,6 @@
 name: Scheduled Sync
 
 on:
-  schedule:
-    - cron: "*/30 * * * *"
   workflow_dispatch:
 
 jobs:
@@ -13,6 +11,7 @@ jobs:
       - name: Trigger Supabase sync
         run: |
           curl --fail-with-body -sS --max-time 180 -X POST "$SUPABASE_SYNC_URL" \
+            -H "apikey: $SUPABASE_SYNC_TOKEN" \
             -H "Authorization: Bearer $SUPABASE_SYNC_TOKEN" \
             -H "Content-Type: application/json" \
             -d '{"source":"all"}'

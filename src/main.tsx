@@ -8,7 +8,12 @@ import { Bugs } from "./pages/Bugs";
 import { Features } from "./pages/Features";
 import { Roadmap } from "./pages/Roadmap";
 import { Releases } from "./pages/Releases";
-import { ActivityFeed, Community, Settings, Sources } from "./pages/SimplePages";
+import {
+  ActivityFeed,
+  Community,
+  Settings,
+  Sources,
+} from "./pages/SimplePages";
 import "./index.css";
 
 const queryClient = new QueryClient();
@@ -28,9 +33,18 @@ ReactDOM.createRoot(document.getElementById("root")!).render(
             <Route path="/activity" element={<ActivityFeed />} />
             <Route path="/sources" element={<Sources />} />
             <Route path="/settings" element={<Settings />} />
+            <Route
+              path="*"
+              element={
+                <div className="empty-state">
+                  <h1>Page not found.</h1>
+                  <a href="#/">Back to overview</a>
+                </div>
+              }
+            />
           </Route>
         </Routes>
       </HashRouter>
     </QueryClientProvider>
-  </React.StrictMode>
+  </React.StrictMode>,
 );

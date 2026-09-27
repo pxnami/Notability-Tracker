@@ -1,35 +1,79 @@
-import { Card } from "../components/ui/Card";
+import { useState } from "react";
 import { useLiveData } from "../data/live";
-
+import { Badge } from "../components/ui/Badge";
+import {
+  Empty,
+  formatDate,
+  PageHeading,
+  SearchBox,
+  SourceLink,
+} from "../components/TrackerUI";
 export function Releases() {
   const { releaseNotes } = useLiveData();
+  const [search, setSearch] = useState("");
+  const filtered = releaseNotes.filter((release) =>
+    `${release.version} ${release.highlights.join(" ")} ${release.fixes.join(" ")}`
+      .toLowerCase()
+      .includes(search.toLowerCase()),
+  );
   return (
-    <div className="space-y-5">
-      <h1 className="text-2xl font-semibold">Release Notes</h1>
-      {!releaseNotes.length && <p>No structured release notes imported yet.</p>}
-      {releaseNotes.map((release) => (
-        <Card key={release.id}>
-          <div className="flex flex-wrap items-center justify-between gap-3">
-            <h2 className="text-lg font-semibold">{release.version}</h2>
-            <p className="text-sm text-slate-500 dark:text-slate-400">{release.releaseDate}</p>
-          </div>
-          <div className="mt-4 grid gap-4 md:grid-cols-2">
-            <div>
-              <p className="text-sm font-medium">Highlights</p>
-              <ul className="mt-2 space-y-2 text-sm text-slate-600 dark:text-slate-300">
-                {release.highlights.map((item) => <li key={item}>{item}</li>)}
-              </ul>
+    <>
+      <PageHeading
+        eyebrow="THE CHANGELOG"
+        title="A little better, every release."
+        description="Features, improvements and explicit fixes from Notability's iOS release notes."
+      />
+      <div className="toolbar">
+        <SearchBox
+          value={search}
+          onChange={setSearch}
+          label="Search versions and changes"
+        />
+        <span className="result-count">{filtered.length} versions</span>
+      </div>
+      <div className="release-list">
+        {filtered.map((release) => (
+          <article key={release.id} className="release">
+            <div className="release-version">
+              <Badge variant="blue">iOS</Badge>
+              <h2>{release.version}</h2>
+              <p>
+                {release.releaseDate
+                  ? formatDate(release.releaseDate)
+                  : "Release date not provided"}
+              </p>
+              <SourceLink href={release.sourceUrl} />
             </div>
-            <div>
-              <p className="text-sm font-medium">Fixes</p>
-              <ul className="mt-2 space-y-2 text-sm text-slate-600 dark:text-slate-300">
-                {release.fixes.length ? release.fixes.map((item) => <li key={item}>{item}</li>) : <li>No verified fixes linked yet.</li>}
-              </ul>
+            <div className="release-body">
+              {release.highlights.length > 0 && (
+                <>
+                  <h3>What's new & improved</h3>
+                  <ul>
+                    {release.highlights.map((item, i) => (
+                      <li key={i}>{item}</li>
+                    ))}
+                  </ul>
+                </>
+              )}
+              {release.fixes.length > 0 && (
+                <>
+                  <h3 className="fix-heading">Fixes</h3>
+                  <ul>
+                    {release.fixes.map((item, i) => (
+                      <li key={i}>{item}</li>
+                    ))}
+                  </ul>
+                </>
+              )}
+              <p className="muted small">
+                Source document updated {formatDate(release.sourceUpdatedAt)} ·
+                Checked {formatDate(release.checkedAt)}
+              </p>
             </div>
-          </div>
-          <a href={release.sourceUrl} className="mt-4 inline-flex text-sm font-medium text-notability-700 dark:text-notability-100">Original source</a>
-        </Card>
-      ))}
-    </div>
+          </article>
+        ))}
+      </div>
+      {!filtered.length && <Empty title="No matching releases." />}
+    </>
   );
 }

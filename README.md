@@ -1,35 +1,36 @@
 # Notability Tracker
 
-Independent, unofficial Notability community intelligence dashboard.
+An independent, source-backed tracker for Notability bugs, documented fixes, feature requests, roadmap stages, and development updates.
 
-The frontend is a Vite + React + TypeScript application built for GitHub Pages. Secret-bearing synchronization, AI classification, database writes, and connector work belong in Supabase Edge Functions.
+[Live website](https://pxnami.github.io/Notability-Tracker/)
 
-## Current Status
+## Features
 
-- Static dashboard, routes, responsive navigation, light/dark mode, language toggle, source health, bug tracker, feature requests, roadmap, release notes, community feed, and settings pages are implemented.
-- PostgreSQL schema, RLS read policies, search indexes, sync job tables, subscriptions, notifications, and audit logs are included under `supabase/migrations`.
-- Supabase Edge Function scaffold separates official, community, and AI-derived data and refuses to fabricate unavailable integrations.
-- Seeded UI records are clearly marked as awaiting live synchronization.
+- Searchable bugs and fixes with original evidence and source links.
+- Official feature-board stages, roadmap, and published development updates.
+- Structured iOS release notes without inferred release dates.
+- Source health, collection timestamps, and observed status-change history.
+- Local bookmarks, JSON exports, light/dark themes, and responsive navigation.
+- Public-source refresh every six hours through GitHub Actions; optional Supabase read integration.
 
-## Local Development
+## Development
 
-```bash
-npm install
+```sh
+npm ci
+node scripts/collect.mjs
 npm run dev
 ```
 
-## Checks
+The committed public snapshot works without credentials. Optional frontend configuration uses `VITE_SUPABASE_URL` and `VITE_SUPABASE_ANON_KEY`; never expose a service-role or secret key.
 
-```bash
-npm run typecheck
-npm run test
+```sh
+npm run lint
+npm test
 npm run build
 ```
 
-## GitHub Pages
+React, TypeScript, Vite, React Query, and Supabase. Hash routing supports GitHub Pages deep links. See [deployment](DEPLOYMENT.md) and [source methodology](INTEGRATIONS.md).
 
-The deployment workflow is in `.github/workflows/deploy.yml`. It builds the static frontend and deploys `dist` using GitHub's official Pages workflow. Hash routing is used so GitHub Pages supports direct route navigation.
+## Attribution
 
-## Unofficial Notice
-
-This project is independent and is not affiliated with Notability or Ginger Labs.
+Independent project, not affiliated with Notability or Ginger Labs. Notability's icon and name identify the tracked product. Archivo Black is distributed through Fontsource under its bundled license. The interface takes visual inspiration from Notability's public website while clearly identifying itself as unofficial.

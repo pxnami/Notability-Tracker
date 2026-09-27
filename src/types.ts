@@ -47,7 +47,7 @@ export interface TrackedIssue {
   classification: Classification;
   officialStatus: IssueStatus;
   communityStatus: IssueStatus;
-  severity: "Low" | "Medium" | "High" | "Critical";
+  severity: "Low" | "Medium" | "High" | "Critical" | "Unknown";
   platform: "iPadOS" | "iOS" | "macOS" | "Web" | "Unknown";
   version?: string;
   firstReported: string;
@@ -56,13 +56,15 @@ export interface TrackedIssue {
   sourceIds: SourceKind[];
   officialEvidence?: string;
   aiGenerated: boolean;
+  url?: string;
+  checkedAt?: string;
 }
 
 export interface FeatureRequest {
   id: string;
   title: string;
   description: string;
-  roadmapStatus: "Requested" | "Actively Considering" | "Planned" | "In Progress" | "Released";
+  roadmapStatus: string;
   source: SourceKind;
   votes?: number;
   communityInterest: number;
@@ -77,6 +79,8 @@ export interface ReleaseNote {
   highlights: string[];
   fixes: string[];
   sourceUrl: string;
+  checkedAt?: string;
+  sourceUpdatedAt?: string;
 }
 
 export interface ActivityItem {

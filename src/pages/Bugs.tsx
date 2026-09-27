@@ -1,58 +1,150 @@
-import { useMemo, useState } from "react";
-import { Badge } from "../components/ui/Badge";
-import { Card } from "../components/ui/Card";
+import { useSearchParams } from "react-router-dom";
 import { useLiveData } from "../data/live";
-import { searchIssues } from "../lib/normalize";
+import { Badge } from "../components/ui/Badge";
+import {
+  Empty,
+  ExportButton,
+  formatDate,
+  PageHeading,
+  SaveButton,
+  SearchBox,
+  SourceLink,
+} from "../components/TrackerUI";
+import { useSaved } from "../lib/preferences";
 
 export function Bugs() {
-  const { issues } = useLiveData();
-  const [query, setQuery] = useState("");
-  const filtered = useMemo(() => searchIssues(issues, query), [issues, query]);
-
+  const { issues, history = [] } = useLiveData();
+  const [params, setParams] = useSearchParams();
+  const { saved } = useSaved();
+  const query = params.get("q") ?? "";
+  const status = params.get("status") ?? "All";
+  function set(key: string, value: string) {
+    const next = new URLSearchParams(params);
+    if (value) next.set(key, value);
+    else next.delete(key);
+    setParams(next, { replace: true });
+  }
+  const filtered = issues.filter(
+    (issue) =>
+      (status === "All" ||
+        (status === "Open"
+          ? !["Fixed", "Closed"].includes(issue.officialStatus)
+          : issue.officialStatus === status)) &&
+      (!params.has("saved") || saved.includes(issue.id)) &&
+      `${issue.title} ${issue.summary}`
+        .toLowerCase()
+        .includes(query.toLowerCase()),
+  );
   return (
-    <div className="space-y-5">
-      <div className="flex flex-col justify-between gap-3 md:flex-row md:items-end">
-        <div>
-          <h1 className="text-2xl font-semibold">Bug Tracker</h1>
-          <p className="mt-1 text-sm text-slate-500 dark:text-slate-400">Official status, community status, and AI classification stay separate.</p>
-        </div>
-        <input className="h-10 rounded-lg border border-slate-200 bg-white px-3 text-sm dark:border-slate-800 dark:bg-slate-950" placeholder="Filter bugs" value={query} onChange={(event) => setQuery(event.target.value)} />
+    <>
+      <PageHeading
+        eyebrow="ISSUE TRACKER"
+        title="Less mystery. More clarity."
+        description="Known problems and documented fixes, with the original evidence close at hand."
+        action={<ExportButton data={filtered} name="notability-issues" />}
+      />
+      <div className="toolbar">
+        <SearchBox
+          value={query}
+          onChange={(value) => set("q", value)}
+          label="Search bugs and fixes"
+        />
+        <label className="select-label">
+          Status
+          <select
+            value={status}
+            onChange={(event) => set("status", event.target.value)}
+          >
+            {[
+              "All",
+              "Open",
+              ...new Set(issues.map((issue) => issue.officialStatus)),
+            ].map((value) => (
+              <option key={value}>{value}</option>
+            ))}
+          </select>
+        </label>
+        <label className="check-label">
+          <input
+            type="checkbox"
+            checked={params.has("saved")}
+            onChange={(event) => set("saved", event.target.checked ? "1" : "")}
+          />
+          Saved only
+        </label>
+        <span className="result-count">{filtered.length} issues</span>
       </div>
-      <Card className="overflow-hidden p-0">
-        <div className="overflow-x-auto">
-          <table className="w-full min-w-[860px] text-left text-sm">
-            <thead className="bg-slate-50 text-xs uppercase text-slate-500 dark:bg-slate-900 dark:text-slate-400">
-              <tr>
-                <th className="px-4 py-3">Issue</th>
-                <th className="px-4 py-3">Official</th>
-                <th className="px-4 py-3">Community</th>
-                <th className="px-4 py-3">Severity</th>
-                <th className="px-4 py-3">Platform</th>
-                <th className="px-4 py-3">Sources</th>
-                <th className="px-4 py-3">Updated</th>
-              </tr>
-            </thead>
-            <tbody>
-              {!filtered.length && <tr><td colSpan={7} className="p-6">{issues.length ? "No matching bugs." : "No bug reports imported yet."}</td></tr>}
-              {filtered.map((issue) => (
-                <tr key={issue.id} className="border-t border-slate-100 dark:border-slate-800">
-                  <td className="px-4 py-4">
-                    <p className="font-medium">{issue.title}</p>
-                    <p className="mt-1 max-w-xl text-slate-500 dark:text-slate-400">{issue.summary}</p>
-                    {issue.aiGenerated && <p className="mt-2 text-xs text-amber-600 dark:text-amber-300">AI-generated summary, pending human review</p>}
-                  </td>
-                  <td className="px-4 py-4"><Badge variant="blue">{issue.officialStatus}</Badge></td>
-                  <td className="px-4 py-4"><Badge>{issue.communityStatus}</Badge></td>
-                  <td className="px-4 py-4">{issue.severity}</td>
-                  <td className="px-4 py-4">{issue.platform}</td>
-                  <td className="px-4 py-4">{issue.sourceCount}</td>
-                  <td className="px-4 py-4">{issue.lastUpdated}</td>
-                </tr>
-              ))}
-            </tbody>
-          </table>
-        </div>
-      </Card>
-    </div>
+      {!filtered.length && <Empty title="No matching issues." />}
+      <div className="issue-list">
+        {filtered.map((issue) => (
+          <article className="issue-row" key={issue.id}>
+            <div className="issue-number">
+              {issue.officialStatus === "Fixed" ? "FIX" : "BUG"}
+            </div>
+            <div className="issue-content">
+              <div className="row-meta">
+                <Badge
+                  variant={issue.officialStatus === "Fixed" ? "green" : "amber"}
+                >
+                  {issue.officialStatus}
+                </Badge>
+                {issue.version && <span>Version {issue.version}</span>}
+                <span>
+                  Checked {formatDate(issue.checkedAt ?? issue.lastUpdated)}
+                </span>
+              </div>
+              <h2>{issue.title}</h2>
+              <details open={params.get("item") === issue.id}>
+                <summary>Evidence & details</summary>
+                <p className="evidence-text">
+                  {issue.summary || "No additional description supplied."}
+                </p>
+                {issue.aiGenerated && (
+                  <p className="notice">
+                    AI-generated summary; verify against the original source.
+                  </p>
+                )}
+                <dl className="detail-grid">
+                  <div>
+                    <dt>Official status</dt>
+                    <dd>{issue.officialStatus}</dd>
+                  </div>
+                  <div>
+                    <dt>Platform</dt>
+                    <dd>{issue.platform}</dd>
+                  </div>
+                  <div>
+                    <dt>Source updated</dt>
+                    <dd>{formatDate(issue.lastUpdated)}</dd>
+                  </div>
+                  <div>
+                    <dt>Severity</dt>
+                    <dd>
+                      {issue.severity === "Unknown"
+                        ? "Not specified"
+                        : issue.severity}
+                    </dd>
+                  </div>
+                </dl>
+                {history
+                  .filter((change) => change.targetId === issue.id)
+                  .map((change) => (
+                    <p key={change.id}>
+                      {formatDate(change.observedAt)}: {change.previous} →{" "}
+                      {change.current}
+                    </p>
+                  ))}
+                {issue.url && (
+                  <SourceLink href={issue.url}>
+                    Verify on Notability Support
+                  </SourceLink>
+                )}
+              </details>
+            </div>
+            <SaveButton id={issue.id} />
+          </article>
+        ))}
+      </div>
+    </>
   );
 }

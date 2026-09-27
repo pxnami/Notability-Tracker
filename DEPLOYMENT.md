@@ -1,81 +1,24 @@
 # Deployment
 
-## Frontend
+## GitHub Pages
 
-1. Create or reuse a GitHub repository named `notability-tracker`.
-2. Push this project to the repository's `main` branch.
-3. In GitHub repository settings, set Pages source to GitHub Actions.
-4. Run the `Deploy GitHub Pages` workflow.
+Set the repository's Pages source to GitHub Actions. `.github/workflows/deploy.yml` runs on main pushes, manual dispatch, and every six hours (17 minutes past the hour, UTC). Scheduled runs may be delayed by GitHub.
 
-The Vite base path uses the exact repository name inside GitHub Actions.
+The workflow installs dependencies, lints, tests, collects public sources, commits only the updated snapshot/history, builds, and deploys `dist`. It needs repository contents write, Pages write, and identity-token permissions. The Vite base path uses the exact GitHub repository name. Hash routing needs no server redirects.
 
-## Backend
+Failed sources retain their last successful records and display a failure state. If every source fails, collection exits unsuccessfully and the existing deployment remains available. Snapshots are committed so observed changes survive later builds.
 
-GitHub Pages cannot host a persistent backend. Deploy Supabase for:
+## Optional Supabase Integration
 
-- PostgreSQL
-- Auth
-- Edge Functions
-- Scheduled synchronization
-- AI processing
-- server-side secret storage
+Only `VITE_SUPABASE_URL` and the public `VITE_SUPABASE_ANON_KEY` belong in frontend configuration. The UI combines public snapshots with readable database records and continues with either when one fails. Database writes require server-side authorization and row-level security.
 
-Apply migrations:
+The existing support importer remains available:
 
-```bash
+```sh
 supabase db push
-```
-
-Deploy the sync function:
-
-```bash
 supabase functions deploy sync
 ```
 
-The support importer uses the built-in `SUPABASE_URL`, `SUPABASE_SECRET_KEYS`
-and legacy `SUPABASE_SERVICE_ROLE_KEY` environment variables. Do not put secrets in the
-frontend. Apply `0003_sync_service_permissions.sql` before running the importer.
+Apply the included migrations, including service permissions, before importing. The function checks configured secret `apikey` headers or legacy service-role bearer tokens. For non-JWT secret keys, disable gateway JWT verification only when this function's own authorization checks are deployed. Test with POST `{"source":"support"}`. An unchanged second run returns `changed: 0`.
 
-For dashboard deployment, replace the function editor's `index.ts` with
-`supabase/functions/sync/index.ts`, then deploy as `sync`. After deploying this
-version, disable gateway JWT verification to support non-JWT secret API keys.
-The function itself checks the `apikey` header against its configured secret
-keys before any database access; legacy service-role bearer tokens also work.
-Test with POST body `{"source":"support"}` and the dashboard's Add secret key
-header option. Never use the public publishable key to invoke
-this privileged function. Do not share or paste the service-role key in chat.
-
-The importer currently supports public English support articles only. It stores
-original HTML in `source_records`; consumers must not render it as unsanitized
-HTML. It does not classify articles into bugs or populate the frontend views.
-Other connectors are not implemented and `source: "all"` reports them as skipped.
-An unchanged second run should return `changed: 0`. Failed requests return a
-non-2xx status and are recorded in sync logs when database access is available.
-
-Future connectors may require these secrets (not needed for support import):
-
-```bash
-supabase secrets set OPENAI_API_KEY=...
-supabase secrets set REDDIT_CLIENT_ID=...
-supabase secrets set REDDIT_CLIENT_SECRET=...
-supabase secrets set GITHUB_TOKEN=...
-supabase secrets set DISCORD_BOT_TOKEN=...
-supabase secrets set DISCORD_GUILD_ID=...
-supabase secrets set PRODUCTBOARD_API_KEY=...
-```
-
-Only `VITE_SUPABASE_URL` and `VITE_SUPABASE_ANON_KEY` may be exposed to the frontend.
-
-## Scheduled Sync
-
-Use Supabase scheduled functions or GitHub Actions calling the Edge Function URL with a server-side token. Recommended intervals:
-
-- Reddit: 30 minutes
-- GitHub: 30 minutes
-- Productboard: 2 hours
-- Support: 6 hours
-- Release notes: 6 hours
-- Status page: 15 minutes
-- Blog: 6 hours
-
-Discord should be event-based through an authorized bot where possible.
+`.github/workflows/sync.yml` is an optional manual importer, not the default refresh mechanism. Configure its variables and server-side secret before use. Never put privileged keys in GitHub Pages, commits, screenshots, or chat. The public collector requires no privileged credentials.

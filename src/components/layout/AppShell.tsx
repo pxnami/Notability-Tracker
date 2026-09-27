@@ -1,83 +1,151 @@
-import { Bell, Bug, ClipboardList, Gauge, Languages, LayoutDashboard, Menu, Moon, Newspaper, Rss, Search, Settings, Sparkles, Sun, Users } from "lucide-react";
-import { NavLink, Outlet, useNavigate } from "react-router-dom";
-import { useMemo, useState } from "react";
-import { clsx } from "clsx";
+import { Github, Menu, Moon, Search, Sun, X } from "lucide-react";
+import { NavLink, Outlet, useLocation, useNavigate } from "react-router-dom";
+import { useEffect, useState } from "react";
 import { LiveDataProvider } from "../../data/live";
+import { useTheme } from "../../lib/preferences";
 
 const nav = [
-  { to: "/", label: "Overview", icon: LayoutDashboard },
-  { to: "/bugs", label: "Bug Tracker", icon: Bug },
-  { to: "/features", label: "Feature Requests", icon: Sparkles },
-  { to: "/roadmap", label: "Roadmap", icon: ClipboardList },
-  { to: "/releases", label: "Release Notes", icon: Newspaper },
-  { to: "/community", label: "Community", icon: Users },
-  { to: "/activity", label: "Activity Feed", icon: Rss },
-  { to: "/sources", label: "Sources", icon: Gauge },
-  { to: "/settings", label: "Settings", icon: Settings }
+  ["/", "Overview"],
+  ["/bugs", "Bugs & fixes"],
+  ["/features", "Features"],
+  ["/roadmap", "Roadmap"],
+  ["/releases", "Releases"],
+  ["/activity", "Updates"],
+  ["/sources", "Sources"],
+  ["/settings", "Settings"],
 ];
-
 export function AppShell() {
-  const navigate = useNavigate();
   const [open, setOpen] = useState(false);
-  const [dark, setDark] = useState(false);
-  const [language, setLanguage] = useState("EN");
-  const rootClass = useMemo(() => (dark ? "dark" : ""), [dark]);
-
+  const [search, setSearch] = useState("");
+  const [theme, setTheme] = useTheme();
+  const location = useLocation();
+  const navigate = useNavigate();
+  useEffect(() => {
+    document.documentElement.dataset.theme = theme;
+  }, [theme]);
+  useEffect(() => {
+    setOpen(false);
+    window.scrollTo(0, 0);
+  }, [location.pathname]);
+  useEffect(() => {
+    const close = (event: KeyboardEvent) => {
+      if (event.key === "Escape") setOpen(false);
+    };
+    window.addEventListener("keydown", close);
+    return () => window.removeEventListener("keydown", close);
+  }, []);
   return (
-    <div className={rootClass}>
-      <div className="min-h-screen bg-slate-50 text-slate-950 dark:bg-slate-950 dark:text-slate-50">
-        <aside className={clsx("fixed inset-y-0 left-0 z-40 w-72 border-r border-slate-200 bg-white/95 p-4 backdrop-blur dark:border-slate-800 dark:bg-slate-950/95 lg:translate-x-0", open ? "translate-x-0" : "-translate-x-full lg:translate-x-0")}>
-          <div className="mb-8 flex items-center gap-3 px-2">
-            <div className="grid h-11 w-11 place-items-center rounded-lg bg-notability-500 text-white shadow-soft">
-              <ClipboardList size={22} />
-            </div>
-            <div>
-              <p className="text-lg font-semibold">Notability Tracker</p>
-              <p className="text-xs text-slate-500 dark:text-slate-400">Independent intelligence</p>
-            </div>
-          </div>
-          <nav className="space-y-1">
-            {nav.map((item) => (
-              <NavLink
-                key={item.to}
-                to={item.to}
-                onClick={() => setOpen(false)}
-                className={({ isActive }) =>
-                  clsx("flex items-center gap-3 rounded-lg px-3 py-2.5 text-sm font-medium transition", isActive ? "bg-notability-50 text-notability-700 dark:bg-notability-500/15 dark:text-white" : "text-slate-600 hover:bg-slate-100 dark:text-slate-300 dark:hover:bg-slate-900")
-                }
-              >
-                <item.icon size={18} />
-                {item.label}
-              </NavLink>
-            ))}
-          </nav>
-        </aside>
-        <div className="lg:pl-72">
-          <header className="sticky top-0 z-30 border-b border-slate-200 bg-white/80 px-4 py-3 backdrop-blur dark:border-slate-800 dark:bg-slate-950/80">
-            <div className="flex items-center gap-3">
-              <button className="rounded-lg p-2 hover:bg-slate-100 dark:hover:bg-slate-900 lg:hidden" onClick={() => setOpen((value) => !value)} aria-label="Open navigation">
-                <Menu size={20} />
-              </button>
-              <div className="relative flex-1">
-                <Search className="absolute left-3 top-1/2 -translate-y-1/2 text-slate-400" size={18} />
-                <input aria-label="Search imported articles" className="h-11 w-full rounded-lg border border-slate-200 bg-slate-50 pl-10 pr-3 text-sm outline-none transition focus:border-notability-500 dark:border-slate-800 dark:bg-slate-900" placeholder="Search articles" onKeyDown={event => { if (event.key === "Enter") navigate(`/activity?q=${encodeURIComponent(event.currentTarget.value)}`); }} />
-              </div>
-              <button className="hidden rounded-lg border border-slate-200 p-2.5 dark:border-slate-800 sm:inline-flex" aria-label="Notifications">
-                <Bell size={18} />
-              </button>
-              <button className="hidden items-center gap-2 rounded-lg border border-slate-200 px-3 py-2 text-sm dark:border-slate-800 sm:inline-flex" onClick={() => setLanguage(language === "EN" ? "DE" : "EN")}>
-                <Languages size={16} /> {language}
-              </button>
-              <button className="rounded-lg border border-slate-200 p-2.5 dark:border-slate-800" onClick={() => setDark((value) => !value)} aria-label="Toggle theme">
-                {dark ? <Sun size={18} /> : <Moon size={18} />}
-              </button>
-            </div>
-          </header>
-          <main className="px-4 py-6 sm:px-6 lg:px-8">
-            <LiveDataProvider><Outlet /></LiveDataProvider>
-          </main>
-        </div>
+    <div className="app-shell">
+      <a
+        className="skip-link"
+        href="#main"
+        onClick={(event) => {
+          event.preventDefault();
+          document.getElementById("main")?.focus();
+          document.getElementById("main")?.scrollIntoView();
+        }}
+      >
+        Skip to content
+      </a>
+      <div className="announcement">
+        An independent view of what's next.{" "}
+        <a href="https://notability.com" target="_blank" rel="noreferrer">
+          Not affiliated with Notability ↗
+        </a>
       </div>
+      <header className="site-header">
+        <div className="header-inner">
+          <NavLink
+            to="/"
+            className="brand"
+            aria-label="Notability Tracker home"
+          >
+            <img
+              src={`${import.meta.env.BASE_URL}notability.png`}
+              width="36"
+              height="36"
+              alt=""
+            />
+            <span>
+              notability<span className="brand-tracker">tracker</span>
+            </span>
+          </NavLink>
+          <form
+            className="global-search"
+            onSubmit={(event) => {
+              event.preventDefault();
+              navigate(`/activity?q=${encodeURIComponent(search)}`);
+            }}
+          >
+            <Search size={18} />
+            <input
+              type="search"
+              aria-label="Search everything"
+              placeholder="Search the tracker"
+              value={search}
+              onChange={(event) => setSearch(event.target.value)}
+            />
+          </form>
+          <div className="header-actions">
+            <a
+              className="icon-button"
+              href="https://github.com/pxnami/Notability-Tracker"
+              title="GitHub repository"
+              aria-label="GitHub repository"
+            >
+              <Github size={20} />
+            </a>
+            <button
+              className="icon-button"
+              title="Toggle theme"
+              aria-label="Toggle theme"
+              onClick={() => setTheme(theme === "dark" ? "light" : "dark")}
+            >
+              {theme === "dark" ? <Sun size={20} /> : <Moon size={20} />}
+            </button>
+            <button
+              className="icon-button menu-button"
+              aria-label={open ? "Close navigation" : "Open navigation"}
+              aria-expanded={open}
+              aria-controls="main-nav"
+              onClick={() => setOpen(!open)}
+            >
+              {open ? <X /> : <Menu />}
+            </button>
+          </div>
+        </div>
+        <nav
+          id="main-nav"
+          aria-label="Main navigation"
+          className={`main-nav ${open ? "is-open" : ""}`}
+        >
+          {nav.map(([to, label]) => (
+            <NavLink key={to} to={to} end={to === "/"}>
+              {label}
+            </NavLink>
+          ))}
+        </nav>
+      </header>
+      <main id="main" tabIndex={-1} className="main-content">
+        <LiveDataProvider>
+          <Outlet />
+        </LiveDataProvider>
+      </main>
+      <footer className="site-footer">
+        <div>
+          <strong>notability tracker.</strong>
+          <p>Community-built. Source-backed.</p>
+        </div>
+        <p>
+          Independent project by <a href="https://github.com/pxnami">pxnami</a>.
+          <br />
+          Notability is a trademark of Ginger Labs.
+        </p>
+        <div>
+          <NavLink to="/sources">Our sources</NavLink>
+          <NavLink to="/settings">Preferences</NavLink>
+        </div>
+      </footer>
     </div>
   );
 }

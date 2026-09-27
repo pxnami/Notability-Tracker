@@ -1,37 +1,23 @@
-# Integrations
+# Sources and Methodology
 
-## Productboard
+## Connected Public Sources
 
-Primary official source:
+- [Support](https://support.gingerlabs.com/): paginated public English Zendesk articles, retaining original URLs and published/updated timestamps.
+- [Recently Reported Issues](https://support.gingerlabs.com/hc/en-us/articles/360035063091): headings under Ongoing Issues and Fixed Issues become tracker records. Fixed status is assigned only to the fixed section. Investigation status requires explicit wording. Unknown severity/platform stay unknown.
+- [Latest iOS App Updates](https://support.gingerlabs.com/hc/en-us/articles/9414165465882): version headings and release bullets are extracted. Article modification time is not a release date. Only explicitly marked fixes are categorized as fixes.
+- [Official feature board](https://portal.productboard.com/gingerlabs/1-notability/tabs/14-actively-considering): public embedded board data supplies original stages, cards, descriptions, and posted updates. Hidden vote counts are not displayed. Popularity never implies planned work.
+- [Ginger Labs on GitHub](https://github.com/Ginger-Labs): public repositories are filtered for explicit Notability relevance. Repository activity is not proof of an app fix or access to private development.
 
-https://portal.productboard.com/gingerlabs/1-notability/tabs/14-actively-considering
+The collector is `scripts/collect.mjs`; parsing and evidence rules live in `scripts/parsers.mjs` with regression tests. External descriptions are rendered as text, not arbitrary HTML. Every record links back to its source.
 
-Use public pages only unless authorized Productboard API access is provided. Preserve original statuses and URLs. Do not infer planned work from popularity.
+## Freshness and History
 
-## Reddit
+Collection time, source update time, and release dates are distinct. Source health includes failures and last-success timestamps. Failures preserve last-known records; they do not create successful refresh timestamps. Sources older than 24 hours are marked stale in the interface.
 
-Source:
+Status history records changes observed between committed snapshots only. It does not reconstruct historical transitions or claim the observation timestamp is the exact time a developer changed the status.
 
-https://www.reddit.com/r/notabilityapp/
+## Not Connected
 
-Use Reddit API credentials. Store OAuth secrets in Supabase. Preserve post/comment links and distinguish community confirmations from official statements.
+Reddit requires authorized API access and is marked accordingly. Discord, private GitHub development, AI classification, notifications, and subscriptions are not presented as working integrations. Existing database scaffolding does not imply those services are live.
 
-## GitHub
-
-Source:
-
-https://github.com/ginger-labs
-
-Discover public repositories, but filter for actual Notability relevance. Do not claim private development visibility.
-
-## Discord
-
-Use an authorized bot, configured guild ID, and approved channel IDs. Never use self-bots or personal user tokens.
-
-## Support, Release Notes, Status, Blog
-
-Discover authoritative public pages and feeds before marking records official. Every official status update requires a source URL, evidence, timestamp, previous status, and new status.
-
-## AI Classification
-
-AI output is stored in separate summary/classification fields. It may merge likely duplicates and extract evidence, but it must not create official statuses, release dates, fixes, or developer statements.
+Supabase remains an optional additional read source. The server-side support importer stores raw source articles, while the public collector extracts the structured views. No service-role key is needed by the browser or public collection workflow.

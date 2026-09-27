@@ -1,36 +1,56 @@
-import { Card } from "../components/ui/Card";
-import { Badge } from "../components/ui/Badge";
 import { useLiveData } from "../data/live";
-
-const columns = ["Requested", "Actively Considering", "Planned", "In Progress", "Released"] as const;
-
+import { Badge } from "../components/ui/Badge";
+import { Empty, PageHeading, SourceLink } from "../components/TrackerUI";
+const preferred = [
+  "Actively Considering",
+  "Prototyping / Experimenting",
+  "Building",
+  "Launched",
+];
 export function Roadmap() {
   const { features } = useLiveData();
+  const columns = [
+    ...new Set([
+      ...preferred,
+      ...features.map((feature) => feature.roadmapStatus),
+    ]),
+  ];
   return (
-    <div className="space-y-5">
-      <div>
-        <h1 className="text-2xl font-semibold">Roadmap</h1>
-        <p className="mt-1 text-sm text-slate-500 dark:text-slate-400">No AI prediction is promoted to official roadmap status.</p>
-      </div>
-      <div className="grid gap-4 xl:grid-cols-5">
-        {!features.length && <p className="xl:col-span-5">No roadmap entries imported yet.</p>}
-        {columns.map((column) => (
-          <Card key={column} className="min-h-64">
-            <div className="mb-4 flex items-center justify-between">
-              <h2 className="text-sm font-semibold">{column}</h2>
-              <Badge>{features.filter((feature) => feature.roadmapStatus === column).length}</Badge>
-            </div>
-            <div className="space-y-3">
-              {features.filter((feature) => feature.roadmapStatus === column).map((feature) => (
-                <a key={feature.id} href={feature.url} className="block rounded-lg border border-slate-100 bg-slate-50 p-3 text-sm transition hover:border-notability-200 dark:border-slate-800 dark:bg-slate-900">
-                  <p className="font-medium">{feature.title}</p>
-                  <p className="mt-2 text-xs text-slate-500 dark:text-slate-400">{feature.source}</p>
-                </a>
-              ))}
-            </div>
-          </Card>
-        ))}
-      </div>
-    </div>
+    <>
+      <PageHeading
+        eyebrow="FROM IDEA TO REALITY"
+        title="What's next for Notability?"
+        description="Published stages from the official feature board. No predicted dates or inferred commitments."
+      />
+      {!features.length ? (
+        <Empty title="No roadmap entries yet." />
+      ) : (
+        <div className="roadmap-board">
+          {columns.map((status, index) => {
+            const items = features.filter(
+              (feature) => feature.roadmapStatus === status,
+            );
+            return (
+              <section key={status} className="roadmap-column">
+                <header className={`roadmap-title tone-${index % 4}`}>
+                  <span className="eyebrow">0{index + 1}</span>
+                  <h2>{status}</h2>
+                  <span>{items.length} ideas</span>
+                </header>
+                <div>
+                  {items.map((feature) => (
+                    <article className="roadmap-item" key={feature.id}>
+                      <h3>{feature.title}</h3>
+                      <SourceLink href={feature.url}>View idea</SourceLink>
+                    </article>
+                  ))}
+                  {!items.length && <Badge>No entries</Badge>}
+                </div>
+              </section>
+            );
+          })}
+        </div>
+      )}
+    </>
   );
 }
