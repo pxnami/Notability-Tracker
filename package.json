@@ -1,9 +1,20 @@
 {
   "name": "notability-tracker",
   "version": "1.0.0",
+  "description": "Source-backed tracker for public Notability issues, fixes, feature requests, roadmap stages, and release notes.",
   "private": true,
+  "license": "UNLICENSED",
+  "homepage": "https://pxnami.github.io/Notability-Tracker/",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pxnami/Notability-Tracker.git"
+  },
+  "engines": {
+    "node": ">=22"
+  },
   "type": "module",
   "scripts": {
+    "collect": "node scripts/collect.mjs",
     "dev": "vite --host 127.0.0.1",
     "build": "tsc -b && vite build",
     "preview": "vite preview --host 127.0.0.1",
@@ -19,8 +30,7 @@
     "lucide-react": "^0.468.0",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
-    "react-router-dom": "^7.18.4",
-    "tailwind-merge": "^2.5.4"
+    "react-router-dom": "^7.18.4"
   },
   "devDependencies": {
     "@testing-library/jest-dom": "^6.6.3",

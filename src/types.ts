@@ -67,7 +67,6 @@ export interface FeatureRequest {
   roadmapStatus: string;
   source: SourceKind;
   votes?: number;
-  communityInterest: number;
   updatedAt: string;
   url: string;
 }
@@ -81,14 +80,4 @@ export interface ReleaseNote {
   sourceUrl: string;
   checkedAt?: string;
   sourceUpdatedAt?: string;
-}
-
-export interface ActivityItem {
-  id: string;
-  title: string;
-  source: SourceKind;
-  category: Classification;
-  timestamp: string;
-  url: string;
-  official: boolean;
 }

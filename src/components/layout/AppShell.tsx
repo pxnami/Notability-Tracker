@@ -4,7 +4,7 @@ import { useEffect, useState } from "react";
 import { LiveDataProvider } from "../../data/live";
 import { useTheme } from "../../lib/preferences";
 
-const nav = [
+const NAV_ITEMS = [
   ["/", "Overview"],
   ["/bugs", "Bugs & fixes"],
   ["/features", "Features"],
@@ -119,7 +119,7 @@ export function AppShell() {
           aria-label="Main navigation"
           className={`main-nav ${open ? "is-open" : ""}`}
         >
-          {nav.map(([to, label]) => (
+          {NAV_ITEMS.map(([to, label]) => (
             <NavLink key={to} to={to} end={to === "/"}>
               {label}
             </NavLink>

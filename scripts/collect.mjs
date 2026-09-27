@@ -18,7 +18,7 @@ const feed = {
   records: [],
   history: previous.history ?? [],
 };
-async function get(url, json = true) {
+async function fetchSource(url, json = true) {
   const response = await fetch(url, {
     headers: {
       Accept: json ? "application/json" : "text/html",
@@ -30,7 +30,7 @@ async function get(url, json = true) {
   if (!response.ok) throw new Error(`HTTP ${response.status}`);
   return json ? response.json() : response.text();
 }
-async function collect(id, name, url, action) {
+async function collectSource(id, name, url, action) {
   try {
     await action();
     feed.sources.push({
@@ -66,7 +66,7 @@ async function collect(id, name, url, action) {
     if (id === "productboard") feed.features = previous.features ?? [];
   }
 }
-await collect(
+await collectSource(
   "support",
   "Notability Support",
   "https://support.gingerlabs.com/hc/en-us",
@@ -84,7 +84,7 @@ await collect(
       )
         throw new Error("Invalid pagination");
       visited.add(next);
-      const page = await get(next);
+      const page = await fetchSource(next);
       if (!Array.isArray(page.articles))
         throw new Error("Article response changed");
       articles.push(...page.articles.filter((article) => !article.draft));
@@ -112,13 +112,13 @@ await collect(
     );
   },
 );
-await collect(
+await collectSource(
   "productboard",
   "Notability Feature Board",
   "https://portal.productboard.com/gingerlabs/1-notability/tabs/14-actively-considering",
   async () => {
     const board = parseBoard(
-      await get(
+      await fetchSource(
         "https://portal.productboard.com/gingerlabs/1-notability/tabs/14-actively-considering",
         false,
       ),
@@ -128,12 +128,12 @@ await collect(
     feed.records.push(...board.updates);
   },
 );
-await collect(
+await collectSource(
   "github",
   "Ginger Labs on GitHub",
   "https://github.com/Ginger-Labs",
   async () => {
-    const repos = await get(
+    const repos = await fetchSource(
       "https://api.github.com/orgs/Ginger-Labs/repos?per_page=100",
     );
     if (!Array.isArray(repos)) throw new Error("Repository response changed");

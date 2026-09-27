@@ -10,7 +10,7 @@ import type {
   SourceKind,
 } from "../types";
 
-export interface SourceRecord {
+interface SourceRecord {
   id: string;
   title: string;
   source_id: SourceKind;
@@ -65,7 +65,7 @@ interface LinkRow {
   issue_id: string;
   source_record_id: string;
 }
-export interface StatusChange {
+interface StatusChange {
   id: string;
   targetId: string;
   title: string;
@@ -74,7 +74,7 @@ export interface StatusChange {
   observedAt: string;
   url: string;
 }
-export interface LiveData {
+interface LiveData {
   sources: SourceSummary[];
   issues: TrackedIssue[];
   features: FeatureRequest[];
@@ -86,7 +86,7 @@ export interface LiveData {
   refreshing?: boolean;
   refresh?: () => void;
 }
-const Context = createContext<LiveData | null>(null);
+const LiveDataContext = createContext<LiveData | null>(null);
 
 export function safeUrl(value: string) {
   try {
@@ -97,7 +97,7 @@ export function safeUrl(value: string) {
   }
 }
 
-async function rows<T>(table: string, columns: string): Promise<T[]> {
+async function fetchTableRows<T>(table: string, columns: string): Promise<T[]> {
   if (!supabase) throw new Error("Database connection is not configured.");
   const result: T[] = [];
   for (let offset = 0; ; offset += 500) {
@@ -115,27 +115,27 @@ async function rows<T>(table: string, columns: string): Promise<T[]> {
 async function loadDatabase(): Promise<LiveData> {
   const [sources, issues, features, releases, records, links] =
     await Promise.all([
-      rows<SourceRow>(
+      fetchTableRows<SourceRow>(
         "sources",
         "id,name,url,official,health,last_successful_sync",
       ),
-      rows<IssueRow>(
+      fetchTableRows<IssueRow>(
         "issues",
         "id,title,ai_summary,ai_classification,official_status,community_status,severity,platform,app_version,first_reported_at,last_verified_at",
       ),
-      rows<FeatureRow>(
+      fetchTableRows<FeatureRow>(
         "feature_requests",
         "id,title,description,source_id,roadmap_status,vote_count,source_url,last_verified_at",
       ),
-      rows<ReleaseRow>(
+      fetchTableRows<ReleaseRow>(
         "release_notes",
         "id,version,release_date,new_features,improvements,fixed_bugs,source_url",
       ),
-      rows<SourceRecord>(
+      fetchTableRows<SourceRecord>(
         "source_records",
         "id,title,source_id,url,published_at,fetched_at",
       ),
-      rows<LinkRow>("issue_sources", "issue_id,source_record_id"),
+      fetchTableRows<LinkRow>("issue_sources", "issue_id,source_record_id"),
     ]);
   const recordSources = new Map(
     records.map((record) => [record.id, record.source_id]),
@@ -187,7 +187,6 @@ async function loadDatabase(): Promise<LiveData> {
       roadmapStatus: row.roadmap_status,
       source: row.source_id,
       votes: row.vote_count ?? undefined,
-      communityInterest: 0,
       updatedAt: row.last_verified_at ?? "",
       url: safeUrl(row.source_url),
     })),
@@ -328,7 +327,7 @@ export function LiveDataProvider({ children }: { children: ReactNode }) {
       </div>
     );
   return (
-    <Context.Provider
+    <LiveDataContext.Provider
       value={{
         ...query.data,
         refreshing: query.isFetching,
@@ -341,12 +340,12 @@ export function LiveDataProvider({ children }: { children: ReactNode }) {
         </p>
       ))}
       {children}
-    </Context.Provider>
+    </LiveDataContext.Provider>
   );
 }
 
 export function useLiveData() {
-  const data = useContext(Context);
+  const data = useContext(LiveDataContext);
   if (!data) throw new Error("LiveDataProvider is required");
   return data;
 }

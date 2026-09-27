@@ -18,7 +18,7 @@ export function Bugs() {
   const { saved } = useSaved();
   const query = params.get("q") ?? "";
   const status = params.get("status") ?? "All";
-  function set(key: string, value: string) {
+  function updateFilter(key: string, value: string) {
     const next = new URLSearchParams(params);
     if (value) next.set(key, value);
     else next.delete(key);
@@ -46,14 +46,14 @@ export function Bugs() {
       <div className="toolbar">
         <SearchBox
           value={query}
-          onChange={(value) => set("q", value)}
+          onChange={(value) => updateFilter("q", value)}
           label="Search bugs and fixes"
         />
         <label className="select-label">
           Status
           <select
             value={status}
-            onChange={(event) => set("status", event.target.value)}
+            onChange={(event) => updateFilter("status", event.target.value)}
           >
             {[
               "All",
@@ -68,7 +68,9 @@ export function Bugs() {
           <input
             type="checkbox"
             checked={params.has("saved")}
-            onChange={(event) => set("saved", event.target.checked ? "1" : "")}
+            onChange={(event) =>
+              updateFilter("saved", event.target.checked ? "1" : "")
+            }
           />
           Saved only
         </label>

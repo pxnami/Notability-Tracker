@@ -32,9 +32,10 @@ function Feed({ communityOnly = false }: { communityOnly?: boolean }) {
   const [params, setParams] = useSearchParams();
   const query = params.get("q") ?? "";
   const source = params.get("source") ?? "all";
-  function set(key: string, value: string) {
+  function updateFilter(key: string, value: string) {
     const next = new URLSearchParams(params);
-    next.set(key, value);
+    if (value) next.set(key, value);
+    else next.delete(key);
     if (key !== "page") next.delete("page");
     setParams(next, { replace: true });
   }
@@ -120,13 +121,13 @@ function Feed({ communityOnly = false }: { communityOnly?: boolean }) {
         <SearchBox
           label="Search everything"
           value={query}
-          onChange={(value) => set("q", value)}
+          onChange={(value) => updateFilter("q", value)}
         />
         <label className="select-label">
           Source
           <select
             value={source}
-            onChange={(event) => set("source", event.target.value)}
+            onChange={(event) => updateFilter("source", event.target.value)}
           >
             {[
               "all",
@@ -149,7 +150,9 @@ function Feed({ communityOnly = false }: { communityOnly?: boolean }) {
           <input
             type="checkbox"
             checked={Boolean(params.get("saved"))}
-            onChange={(event) => set("saved", event.target.checked ? "1" : "")}
+            onChange={(event) =>
+              updateFilter("saved", event.target.checked ? "1" : "")
+            }
           />
           Saved only
         </label>
@@ -206,7 +209,7 @@ function Feed({ communityOnly = false }: { communityOnly?: boolean }) {
       <Pagination
         page={page}
         total={pages}
-        onChange={(value) => set("page", String(value))}
+        onChange={(value) => updateFilter("page", String(value))}
       />
     </>
   );

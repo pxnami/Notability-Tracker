@@ -45,7 +45,6 @@ export function parseBoard(html, checkedAt) {
       ...(data.portals?.[0]?.displayVotesCounts
         ? { votes: card.portalVotesCount }
         : {}),
-      communityInterest: 0,
       updatedAt: card.updatedAt,
       checkedAt,
       url: `https://portal.productboard.com/gingerlabs/1-notability/c/${card.slug}`,

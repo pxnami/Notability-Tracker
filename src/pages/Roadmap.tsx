@@ -1,7 +1,7 @@
 import { useLiveData } from "../data/live";
 import { Badge } from "../components/ui/Badge";
 import { Empty, PageHeading, SourceLink } from "../components/TrackerUI";
-const preferred = [
+const ROADMAP_STAGE_ORDER = [
   "Actively Considering",
   "Prototyping / Experimenting",
   "Building",
@@ -11,7 +11,7 @@ export function Roadmap() {
   const { features } = useLiveData();
   const columns = [
     ...new Set([
-      ...preferred,
+      ...ROADMAP_STAGE_ORDER,
       ...features.map((feature) => feature.roadmapStatus),
     ]),
   ];

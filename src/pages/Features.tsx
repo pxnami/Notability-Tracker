@@ -19,9 +19,10 @@ export function Features() {
   const search = params.get("q") ?? "";
   const status = params.get("status") ?? "All";
   const sort = params.get("sort") ?? "updated";
-  function set(key: string, value: string) {
+  function updateFilter(key: string, value: string) {
     const next = new URLSearchParams(params);
-    next.set(key, value);
+    if (value) next.set(key, value);
+    else next.delete(key);
     if (key !== "page") next.delete("page");
     setParams(next, { replace: true });
   }
@@ -55,14 +56,14 @@ export function Features() {
       <div className="toolbar">
         <SearchBox
           value={search}
-          onChange={(value) => set("q", value)}
+          onChange={(value) => updateFilter("q", value)}
           label="Search feature ideas"
         />
         <label className="select-label">
           Status
           <select
             value={status}
-            onChange={(event) => set("status", event.target.value)}
+            onChange={(event) => updateFilter("status", event.target.value)}
           >
             {[
               "All",
@@ -76,7 +77,7 @@ export function Features() {
           Sort
           <select
             value={sort}
-            onChange={(event) => set("sort", event.target.value)}
+            onChange={(event) => updateFilter("sort", event.target.value)}
           >
             <option value="updated">Recently updated</option>
             <option value="title">Alphabetical</option>
@@ -86,7 +87,9 @@ export function Features() {
           <input
             type="checkbox"
             checked={Boolean(params.get("saved"))}
-            onChange={(event) => set("saved", event.target.checked ? "1" : "")}
+            onChange={(event) =>
+              updateFilter("saved", event.target.checked ? "1" : "")
+            }
           />
           Saved only
         </label>
@@ -129,7 +132,7 @@ export function Features() {
       <Pagination
         page={page}
         total={pages}
-        onChange={(value) => set("page", String(value))}
+        onChange={(value) => updateFilter("page", String(value))}
       />
     </>
   );

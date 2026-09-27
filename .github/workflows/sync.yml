@@ -2,19 +2,33 @@ name: Scheduled Sync
 
 on:
   workflow_dispatch:
+    inputs:
+      source:
+        description: Source to import
+        required: true
+        default: support
+        type: choice
+        options:
+          - support
+          - all
+
+permissions: {}
 
 jobs:
   sync:
     runs-on: ubuntu-latest
-    if: ${{ vars.SUPABASE_SYNC_URL != '' }}
+    timeout-minutes: 5
     steps:
       - name: Trigger Supabase sync
         run: |
+          : "${SUPABASE_SYNC_URL:?Set the SUPABASE_SYNC_URL repository variable}"
+          : "${SUPABASE_SYNC_TOKEN:?Set the SUPABASE_SYNC_TOKEN repository secret}"
           curl --fail-with-body -sS --max-time 180 -X POST "$SUPABASE_SYNC_URL" \
             -H "apikey: $SUPABASE_SYNC_TOKEN" \
             -H "Authorization: Bearer $SUPABASE_SYNC_TOKEN" \
             -H "Content-Type: application/json" \
-            -d '{"source":"all"}'
+            -d "{\"source\":\"$SYNC_SOURCE\"}"
         env:
           SUPABASE_SYNC_URL: ${{ vars.SUPABASE_SYNC_URL }}
           SUPABASE_SYNC_TOKEN: ${{ secrets.SUPABASE_SYNC_TOKEN }}
+          SYNC_SOURCE: ${{ inputs.source }}
