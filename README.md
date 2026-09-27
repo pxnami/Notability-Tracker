@@ -1,10 +1,14 @@
-# Notability Tracker
+<div align="center">
+  <img src="public/notability.png" width="72" height="72" alt="Notability Tracker icon">
+  <h1>Notability Tracker</h1>
+  <p>Public issues, fixes, feature requests, roadmap stages, and release notes in one source-backed view.</p>
+  <p>
+    <a href="https://pxnami.github.io/Notability-Tracker/"><img src="https://img.shields.io/badge/Open%20tracker-20201e?style=for-the-badge" alt="Open Notability Tracker"></a>
+    <a href="https://github.com/pxnami/Notability-Tracker/issues"><img src="https://img.shields.io/badge/Report%20an%20issue-4d8eff?style=for-the-badge" alt="Report an issue"></a>
+  </p>
+</div>
 
-Notability Tracker is an independent web application that collects and presents publicly available information about Notability issues, documented fixes, feature requests, roadmap stages, and iOS release notes. Every tracked item links to its original source.
-
-The project is not affiliated with Notability or Ginger Labs.
-
-[View the deployed application](https://pxnami.github.io/Notability-Tracker/)
+Notability Tracker is an independent web application that collects and presents publicly available information about Notability. Every tracked item links to its original source. The project is not affiliated with Notability or Ginger Labs.
 
 ## Features
 
@@ -118,4 +122,4 @@ See [CONTRIBUTING.md](CONTRIBUTING.md) for the development workflow and data-int
 
 No software license is currently provided. The repository is publicly readable, but no permission to copy, modify, or redistribute its contents is granted by default.
 
-Notability is a trademark of Ginger Labs. Its name and icon are used only to identify the product being tracked. Archivo Black is distributed through Fontsource under its included upstream license.
+Notability is a trademark of Ginger Labs. Its name and icon are used only to identify the product being tracked. Interface symbols are from the [Icons8 Apple SF Symbols](https://icons8.com/icons/family-sf-symbols) family. Archivo Black is distributed through Fontsource under its included upstream license.

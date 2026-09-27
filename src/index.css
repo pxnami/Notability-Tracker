@@ -238,6 +238,15 @@ select {
   color: var(--link);
   background: var(--blue-light);
 }
+.sf-icon {
+  display: inline-block;
+  width: var(--sf-icon-size);
+  height: var(--sf-icon-size);
+  flex: 0 0 var(--sf-icon-size);
+  background: currentColor;
+  -webkit-mask: var(--sf-icon) center / contain no-repeat;
+  mask: var(--sf-icon) center / contain no-repeat;
+}
 .menu-button {
   display: none;
 }

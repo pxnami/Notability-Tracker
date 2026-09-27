@@ -1,13 +1,6 @@
-import {
-  ArrowDownToLine,
-  ArrowLeft,
-  ArrowRight,
-  Bookmark,
-  ExternalLink,
-  Search,
-} from "lucide-react";
 import type { ReactNode } from "react";
 import { useSaved } from "../lib/preferences";
+import { SfIcon } from "./ui/SfIcon";
 
 export function PageHeading({
   eyebrow,
@@ -40,7 +33,7 @@ export function Empty({
 }) {
   return (
     <div className="empty-state">
-      <Search size={28} aria-hidden="true" />
+      <SfIcon name="search-more" size={28} />
       <h2>{title}</h2>
       <p>{children ?? "Try another search or clear your filters."}</p>
     </div>
@@ -57,7 +50,7 @@ export function SearchBox({
 }) {
   return (
     <label className="search-box">
-      <Search size={18} aria-hidden="true" />
+      <SfIcon name="search-more" size={18} />
       <input
         aria-label={label}
         placeholder={label}
@@ -79,7 +72,7 @@ export function SaveButton({ id }: { id: string }) {
       aria-pressed={active}
       onClick={() => toggle(id)}
     >
-      <Bookmark size={18} fill={active ? "currentColor" : "none"} />
+      <SfIcon name="bookmark-ribbon" size={18} />
     </button>
   );
 }
@@ -93,7 +86,7 @@ export function SourceLink({
   return (
     <a className="source-link" href={href} target="_blank" rel="noreferrer">
       {children}
-      <ExternalLink size={14} aria-hidden="true" />
+      <SfIcon name="link" size={14} />
     </a>
   );
 }
@@ -115,7 +108,7 @@ export function Pagination({
         disabled={page === 0}
         onClick={() => onChange(page - 1)}
       >
-        <ArrowLeft size={19} />
+        <SfIcon name="long-arrow-left" size={19} />
       </button>
       <span>
         Page {page + 1} of {total}
@@ -126,7 +119,7 @@ export function Pagination({
         disabled={page + 1 === total}
         onClick={() => onChange(page + 1)}
       >
-        <ArrowRight size={19} />
+        <SfIcon name="long-arrow-right" size={19} />
       </button>
     </nav>
   );
@@ -158,7 +151,7 @@ export function ExportButton({ data, name }: { data: unknown; name: string }) {
         setTimeout(() => URL.revokeObjectURL(url), 1000);
       }}
     >
-      <ArrowDownToLine size={18} />
+      <SfIcon name="download" size={18} />
     </button>
   );
 }

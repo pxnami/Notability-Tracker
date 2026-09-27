@@ -1,6 +1,6 @@
 import { Link, useSearchParams } from "react-router-dom";
-import { RefreshCw } from "lucide-react";
 import { Badge } from "../components/ui/Badge";
+import { SfIcon } from "../components/ui/SfIcon";
 import { useLiveData } from "../data/live";
 import {
   Empty,
@@ -233,7 +233,11 @@ export function Sources() {
         description="What is connected, when it was checked, and what each source can actually tell us."
         action={
           <button className="button" onClick={refresh} disabled={refreshing}>
-            <RefreshCw size={17} className={refreshing ? "spin" : ""} />
+            <SfIcon
+              name="connection-sync"
+              size={17}
+              className={refreshing ? "spin" : ""}
+            />
             Refresh
           </button>
         }
@@ -388,7 +392,11 @@ export function Settings() {
           </p>
         </div>
         <button className="button" onClick={refresh} disabled={refreshing}>
-          <RefreshCw size={17} className={refreshing ? "spin" : ""} />
+          <SfIcon
+            name="connection-sync"
+            size={17}
+            className={refreshing ? "spin" : ""}
+          />
           Refresh data
         </button>
       </section>

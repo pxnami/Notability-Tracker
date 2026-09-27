@@ -1,15 +1,8 @@
-import {
-  ArrowRight,
-  Bug,
-  Check,
-  GitBranch,
-  RefreshCw,
-  Sparkles,
-} from "lucide-react";
 import { Link } from "react-router-dom";
 import { useLiveData } from "../data/live";
 import { Badge } from "../components/ui/Badge";
 import { formatDate, SourceLink } from "../components/TrackerUI";
+import { SfIcon, type SfIconName } from "../components/ui/SfIcon";
 
 export function Overview() {
   const {
@@ -25,11 +18,18 @@ export function Overview() {
   const open = issues.filter(
     (issue) => !["Fixed", "Closed"].includes(issue.officialStatus),
   );
-  const stats = [
+  const stats: Array<{
+    label: string;
+    value: number;
+    icon: SfIconName;
+    color: string;
+    to: string;
+    sub: string;
+  }> = [
     {
       label: "Open issues",
       value: open.length,
-      icon: Bug,
+      icon: "bug",
       color: "peach",
       to: "/bugs",
       sub: "From official support",
@@ -37,7 +37,7 @@ export function Overview() {
     {
       label: "Fixed issues",
       value: issues.filter((issue) => issue.officialStatus === "Fixed").length,
-      icon: Check,
+      icon: "checked",
       color: "green",
       to: "/bugs?status=Fixed",
       sub: "Documented resolutions",
@@ -45,7 +45,7 @@ export function Overview() {
     {
       label: "Feature ideas",
       value: features.length,
-      icon: Sparkles,
+      icon: "sparkles",
       color: "blue",
       to: "/features",
       sub: "On the public feature board",
@@ -55,7 +55,7 @@ export function Overview() {
       value: features.filter((feature) =>
         ["Building", "In Progress"].includes(feature.roadmapStatus),
       ).length,
-      icon: GitBranch,
+      icon: "code-fork",
       color: "yellow",
       to: "/roadmap",
       sub: "As listed by Notability",
@@ -76,7 +76,11 @@ export function Overview() {
             disabled={refreshing}
             title="Refresh data"
           >
-            <RefreshCw size={14} className={refreshing ? "spin" : ""} />
+            <SfIcon
+              name="connection-sync"
+              size={14}
+              className={refreshing ? "spin" : ""}
+            />
             Checked {formatDate(generatedAt ?? sources[0]?.lastSync)}
           </button>
         </div>
@@ -85,8 +89,8 @@ export function Overview() {
         {stats.map((stat) => (
           <Link className={`stat ${stat.color}`} to={stat.to} key={stat.label}>
             <div className="stat-top">
-              <stat.icon size={20} />
-              <ArrowRight size={18} />
+              <SfIcon name={stat.icon} size={20} />
+              <SfIcon name="long-arrow-right" size={18} />
             </div>
             <strong>{stat.value}</strong>
             <h2>{stat.label}</h2>
@@ -99,7 +103,7 @@ export function Overview() {
           <div className="section-heading">
             <h2>On our radar</h2>
             <Link to="/bugs">
-              All issues <ArrowRight size={16} />
+              All issues <SfIcon name="long-arrow-right" size={16} />
             </Link>
           </div>
           {open.length ? (
@@ -113,7 +117,7 @@ export function Overview() {
                 <h3>{issue.title}</h3>
                 <div>
                   <span>Official support</span>
-                  <ArrowRight size={18} />
+                  <SfIcon name="long-arrow-right" size={18} />
                 </div>
               </Link>
             ))
@@ -137,7 +141,8 @@ export function Overview() {
                   ))}
               </ul>
               <Link className="button" to="/releases">
-                Read release notes <ArrowRight size={17} />
+                Read release notes
+                <SfIcon name="long-arrow-right" size={17} />
               </Link>
             </div>
           ) : (
@@ -146,7 +151,7 @@ export function Overview() {
           <div className="section-heading source-heading">
             <h2>Connected, with context.</h2>
             <Link to="/sources">
-              <ArrowRight size={18} />
+              <SfIcon name="long-arrow-right" size={18} />
               <span className="sr-only">All sources</span>
             </Link>
           </div>
@@ -175,7 +180,8 @@ export function Overview() {
         <div className="section-heading">
           <h2>The reading list</h2>
           <Link to="/activity">
-            All {records.length} updates <ArrowRight size={16} />
+            All {records.length} updates
+            <SfIcon name="long-arrow-right" size={16} />
           </Link>
         </div>
         <div className="reading-grid">

@@ -1,8 +1,8 @@
-import { Github, Menu, Moon, Search, Sun, X } from "lucide-react";
 import { NavLink, Outlet, useLocation, useNavigate } from "react-router-dom";
 import { useEffect, useState } from "react";
 import { LiveDataProvider } from "../../data/live";
 import { useTheme } from "../../lib/preferences";
+import { SfIcon } from "../ui/SfIcon";
 
 const NAV_ITEMS = [
   ["/", "Overview"],
@@ -67,7 +67,7 @@ export function AppShell() {
               alt=""
             />
             <span>
-              notability<span className="brand-tracker">tracker</span>
+              Notability<span className="brand-tracker">Tracker</span>
             </span>
           </NavLink>
           <form
@@ -77,7 +77,7 @@ export function AppShell() {
               navigate(`/activity?q=${encodeURIComponent(search)}`);
             }}
           >
-            <Search size={18} />
+            <SfIcon name="search-more" size={18} />
             <input
               type="search"
               aria-label="Search everything"
@@ -93,7 +93,7 @@ export function AppShell() {
               title="GitHub repository"
               aria-label="GitHub repository"
             >
-              <Github size={20} />
+              <SfIcon name="github" size={20} />
             </a>
             <button
               className="icon-button"
@@ -101,7 +101,10 @@ export function AppShell() {
               aria-label="Toggle theme"
               onClick={() => setTheme(theme === "dark" ? "light" : "dark")}
             >
-              {theme === "dark" ? <Sun size={20} /> : <Moon size={20} />}
+              <SfIcon
+                name={theme === "dark" ? "sun" : "moon-symbol"}
+                size={20}
+              />
             </button>
             <button
               className="icon-button menu-button"
@@ -110,7 +113,7 @@ export function AppShell() {
               aria-controls="main-nav"
               onClick={() => setOpen(!open)}
             >
-              {open ? <X /> : <Menu />}
+              <SfIcon name={open ? "close-window" : "menu-2"} size={20} />
             </button>
           </div>
         </div>
@@ -133,13 +136,23 @@ export function AppShell() {
       </main>
       <footer className="site-footer">
         <div>
-          <strong>notability tracker.</strong>
+          <strong>Notability Tracker.</strong>
           <p>Community-built. Source-backed.</p>
         </div>
         <p>
           Independent project by <a href="https://github.com/pxnami">pxnami</a>.
           <br />
           Notability is a trademark of Ginger Labs.
+          <br />
+          SF Symbols by{" "}
+          <a
+            href="https://icons8.com/icons/family-sf-symbols"
+            target="_blank"
+            rel="noreferrer"
+          >
+            Icons8
+          </a>
+          .
         </p>
         <div>
           <NavLink to="/sources">Our sources</NavLink>
