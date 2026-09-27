@@ -1,10 +1,11 @@
 import { Card } from "../components/ui/Card";
 import { Badge } from "../components/ui/Badge";
-import { features } from "../data/sample";
+import { useLiveData } from "../data/live";
 
 const columns = ["Requested", "Actively Considering", "Planned", "In Progress", "Released"] as const;
 
 export function Roadmap() {
+  const { features } = useLiveData();
   return (
     <div className="space-y-5">
       <div>
@@ -12,6 +13,7 @@ export function Roadmap() {
         <p className="mt-1 text-sm text-slate-500 dark:text-slate-400">No AI prediction is promoted to official roadmap status.</p>
       </div>
       <div className="grid gap-4 xl:grid-cols-5">
+        {!features.length && <p className="xl:col-span-5">No roadmap entries imported yet.</p>}
         {columns.map((column) => (
           <Card key={column} className="min-h-64">
             <div className="mb-4 flex items-center justify-between">

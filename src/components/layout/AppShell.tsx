@@ -1,7 +1,8 @@
 import { Bell, Bug, ClipboardList, Gauge, Languages, LayoutDashboard, Menu, Moon, Newspaper, Rss, Search, Settings, Sparkles, Sun, Users } from "lucide-react";
-import { NavLink, Outlet } from "react-router-dom";
+import { NavLink, Outlet, useNavigate } from "react-router-dom";
 import { useMemo, useState } from "react";
 import { clsx } from "clsx";
+import { LiveDataProvider } from "../../data/live";
 
 const nav = [
   { to: "/", label: "Overview", icon: LayoutDashboard },
@@ -16,6 +17,7 @@ const nav = [
 ];
 
 export function AppShell() {
+  const navigate = useNavigate();
   const [open, setOpen] = useState(false);
   const [dark, setDark] = useState(false);
   const [language, setLanguage] = useState("EN");
@@ -58,7 +60,7 @@ export function AppShell() {
               </button>
               <div className="relative flex-1">
                 <Search className="absolute left-3 top-1/2 -translate-y-1/2 text-slate-400" size={18} />
-                <input className="h-11 w-full rounded-lg border border-slate-200 bg-slate-50 pl-10 pr-3 text-sm outline-none transition focus:border-notability-500 dark:border-slate-800 dark:bg-slate-900" placeholder="Search bugs, features, releases, and sources" />
+                <input aria-label="Search imported articles" className="h-11 w-full rounded-lg border border-slate-200 bg-slate-50 pl-10 pr-3 text-sm outline-none transition focus:border-notability-500 dark:border-slate-800 dark:bg-slate-900" placeholder="Search articles" onKeyDown={event => { if (event.key === "Enter") navigate(`/activity?q=${encodeURIComponent(event.currentTarget.value)}`); }} />
               </div>
               <button className="hidden rounded-lg border border-slate-200 p-2.5 dark:border-slate-800 sm:inline-flex" aria-label="Notifications">
                 <Bell size={18} />
@@ -72,7 +74,7 @@ export function AppShell() {
             </div>
           </header>
           <main className="px-4 py-6 sm:px-6 lg:px-8">
-            <Outlet />
+            <LiveDataProvider><Outlet /></LiveDataProvider>
           </main>
         </div>
       </div>

@@ -12,7 +12,7 @@ jobs:
     steps:
       - name: Trigger Supabase sync
         run: |
-          curl -sS -X POST "$SUPABASE_SYNC_URL" \
+          curl --fail-with-body -sS --max-time 180 -X POST "$SUPABASE_SYNC_URL" \
             -H "Authorization: Bearer $SUPABASE_SYNC_TOKEN" \
             -H "Content-Type: application/json" \
             -d '{"source":"all"}'

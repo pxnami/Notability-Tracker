@@ -7,7 +7,7 @@
 3. In GitHub repository settings, set Pages source to GitHub Actions.
 4. Run the `Deploy GitHub Pages` workflow.
 
-The Vite base path automatically becomes `/notability-tracker/` inside GitHub Actions.
+The Vite base path uses the exact repository name inside GitHub Actions.
 
 ## Backend
 
@@ -32,10 +32,29 @@ Deploy the sync function:
 supabase functions deploy sync
 ```
 
-Set secrets:
+The support importer uses the built-in `SUPABASE_URL`, `SUPABASE_SECRET_KEYS`
+and legacy `SUPABASE_SERVICE_ROLE_KEY` environment variables. Do not put secrets in the
+frontend. Apply `0003_sync_service_permissions.sql` before running the importer.
+
+For dashboard deployment, replace the function editor's `index.ts` with
+`supabase/functions/sync/index.ts`, then deploy as `sync`. After deploying this
+version, disable gateway JWT verification to support non-JWT secret API keys.
+The function itself checks the `apikey` header against its configured secret
+keys before any database access; legacy service-role bearer tokens also work.
+Test with POST body `{"source":"support"}` and the dashboard's Add secret key
+header option. Never use the public publishable key to invoke
+this privileged function. Do not share or paste the service-role key in chat.
+
+The importer currently supports public English support articles only. It stores
+original HTML in `source_records`; consumers must not render it as unsanitized
+HTML. It does not classify articles into bugs or populate the frontend views.
+Other connectors are not implemented and `source: "all"` reports them as skipped.
+An unchanged second run should return `changed: 0`. Failed requests return a
+non-2xx status and are recorded in sync logs when database access is available.
+
+Future connectors may require these secrets (not needed for support import):
 
 ```bash
-supabase secrets set SUPABASE_SERVICE_ROLE_KEY=...
 supabase secrets set OPENAI_API_KEY=...
 supabase secrets set REDDIT_CLIENT_ID=...
 supabase secrets set REDDIT_CLIENT_SECRET=...

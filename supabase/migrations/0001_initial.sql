@@ -142,6 +142,11 @@ alter table feature_requests enable row level security;
 alter table issue_sources enable row level security;
 alter table status_history enable row level security;
 alter table release_notes enable row level security;
+alter table sync_jobs enable row level security;
+alter table sync_logs enable row level security;
+alter table subscriptions enable row level security;
+alter table notifications enable row level security;
+alter table admin_audit_logs enable row level security;
 
 create policy "public read sources" on sources for select using (true);
 create policy "public read records" on source_records for select using (true);

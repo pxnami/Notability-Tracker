@@ -1,10 +1,12 @@
 import { Card } from "../components/ui/Card";
-import { releaseNotes } from "../data/sample";
+import { useLiveData } from "../data/live";
 
 export function Releases() {
+  const { releaseNotes } = useLiveData();
   return (
     <div className="space-y-5">
       <h1 className="text-2xl font-semibold">Release Notes</h1>
+      {!releaseNotes.length && <p>No structured release notes imported yet.</p>}
       {releaseNotes.map((release) => (
         <Card key={release.id}>
           <div className="flex flex-wrap items-center justify-between gap-3">

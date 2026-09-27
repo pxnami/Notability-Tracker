@@ -1,12 +1,13 @@
 import { useMemo, useState } from "react";
 import { Badge } from "../components/ui/Badge";
 import { Card } from "../components/ui/Card";
-import { issues } from "../data/sample";
+import { useLiveData } from "../data/live";
 import { searchIssues } from "../lib/normalize";
 
 export function Bugs() {
+  const { issues } = useLiveData();
   const [query, setQuery] = useState("");
-  const filtered = useMemo(() => searchIssues(issues, query), [query]);
+  const filtered = useMemo(() => searchIssues(issues, query), [issues, query]);
 
   return (
     <div className="space-y-5">
@@ -32,6 +33,7 @@ export function Bugs() {
               </tr>
             </thead>
             <tbody>
+              {!filtered.length && <tr><td colSpan={7} className="p-6">{issues.length ? "No matching bugs." : "No bug reports imported yet."}</td></tr>}
               {filtered.map((issue) => (
                 <tr key={issue.id} className="border-t border-slate-100 dark:border-slate-800">
                   <td className="px-4 py-4">

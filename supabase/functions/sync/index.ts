@@ -1,92 +1,138 @@
-import { serve } from "https://deno.land/std@0.224.0/http/server.ts";
-import { createClient } from "https://esm.sh/@supabase/supabase-js@2.45.4";
+const supportOrigin = "https://support.gingerlabs.com";
+const firstPage = `${supportOrigin}/api/v2/help_center/en-us/articles.json?per_page=100&sort_by=updated_at&sort_order=desc`;
 
-const supabaseUrl = Deno.env.get("SUPABASE_URL")!;
-const serviceRoleKey = Deno.env.get("SUPABASE_SERVICE_ROLE_KEY")!;
-const supabase = createClient(supabaseUrl, serviceRoleKey);
-
-const connectors = {
-  productboard: syncProductboard,
-  reddit: syncReddit,
-  github: syncGithub,
-  discord: syncDiscord,
-  support: syncSupport,
-  release_notes: syncReleaseNotes,
-  status: syncStatus,
-  blog: syncBlog
+type Article = {
+  id: number;
+  title: string;
+  html_url: string;
+  body: string | null;
+  created_at: string;
+  updated_at: string;
+  draft: boolean;
 };
 
-serve(async (request) => {
-  const { source = "all" } = await request.json().catch(() => ({ source: "all" }));
-  const selected = source === "all" ? Object.keys(connectors) : [source];
-  const results = [];
-
-  for (const key of selected) {
-    const connector = connectors[key as keyof typeof connectors];
-    if (!connector) continue;
-    results.push(await runConnector(key, connector));
-  }
-
-  return Response.json({ ok: true, results });
-});
-
-async function runConnector(sourceId: string, connector: () => Promise<{ seen: number; changed: number; notes: string[] }>) {
-  const { data: job } = await supabase.from("sync_jobs").insert({ source_id: sourceId, status: "running" }).select().single();
+Deno.serve(async (request: Request) => {
+  if (request.method !== "POST") return Response.json({ error: "Use POST" }, { status: 405 });
+  const url = Deno.env.get("SUPABASE_URL");
+  const legacyKey = Deno.env.get("SUPABASE_SERVICE_ROLE_KEY");
+  let secretKeys: string[];
   try {
-    const result = await connector();
-    await supabase.from("sync_jobs").update({
-      status: "succeeded",
-      finished_at: new Date().toISOString(),
-      records_seen: result.seen,
-      records_changed: result.changed
-    }).eq("id", job.id);
-    await supabase.from("sources").update({ health: "healthy", last_successful_sync: new Date().toISOString() }).eq("id", sourceId);
-    return { sourceId, status: "succeeded", ...result };
+    const configured = JSON.parse(Deno.env.get("SUPABASE_SECRET_KEYS") ?? "{}");
+    if (!configured || typeof configured !== "object" || Array.isArray(configured)) throw new Error("Invalid keys");
+    secretKeys = Object.values(configured).filter((value): value is string =>
+      typeof value === "string" && value.startsWith("sb_secret_") && value.length > 10
+    );
+  } catch {
+    return Response.json({ error: "Server key configuration invalid" }, { status: 503 });
+  }
+  const key = secretKeys[0] || legacyKey;
+  if (!url || !key) return Response.json({ error: "Server configuration missing" }, { status: 503 });
+  // Public API keys and ordinary signed-in users must never trigger privileged imports.
+  const suppliedKey = request.headers.get("apikey");
+  const secretAuthorized = Boolean(suppliedKey && secretKeys.includes(suppliedKey));
+  const legacyAuthorized = Boolean(legacyKey && request.headers.get("authorization") === `Bearer ${legacyKey}`);
+  if (!secretAuthorized && !legacyAuthorized) {
+    return Response.json({ error: "Valid secret API key or service-role authorization required" }, { status: 401 });
+  }
+  let source: string;
+  try {
+    const body = await request.json();
+    if (!body || typeof body !== "object" || Array.isArray(body)) throw new Error("Invalid body");
+    source = body.source ?? "support";
+    if (source !== "support" && source !== "all") {
+      return Response.json({ error: "Only the support connector is implemented" }, { status: 400 });
+    }
+  } catch {
+    return Response.json({ error: "Expected a JSON object" }, { status: 400 });
+  }
+
+  async function database(path: string, method = "GET", body?: unknown, prefer?: string) {
+    const response = await fetch(`${url}/rest/v1/${path}`, {
+      method,
+      headers: {
+        apikey: key!, "Content-Type": "application/json",
+        ...(key === legacyKey ? { Authorization: `Bearer ${key}` } : {}),
+        ...(prefer ? { Prefer: prefer } : {})
+      },
+      body: body === undefined ? undefined : JSON.stringify(body),
+      signal: AbortSignal.timeout(15000)
+    });
+    if (!response.ok) throw new Error(`Database ${method} ${path.split("?")[0]} failed (HTTP ${response.status})`);
+    const text = await response.text();
+    return text ? JSON.parse(text) : null;
+  }
+
+  let jobId: string | undefined;
+  let seen = 0;
+  let changed = 0;
+  try {
+    await database("sources?on_conflict=id", "POST", {
+      id: "support", name: "Notability Support", url: `${supportOrigin}/hc/en-us`, official: true
+    }, "resolution=merge-duplicates,return=minimal");
+    const jobs = await database("sync_jobs", "POST", { source_id: "support", status: "running" }, "return=representation");
+    jobId = jobs[0].id;
+    const visited = new Set<string>();
+    let next: string | null = firstPage;
+    while (next) {
+      const pageUrl = new URL(next);
+      if (pageUrl.origin !== supportOrigin || !pageUrl.pathname.startsWith("/api/v2/help_center/en-us/articles")) {
+        throw new Error("Unexpected support pagination URL");
+      }
+      if (visited.has(next) || visited.size >= 10) throw new Error("Support pagination limit reached; import incomplete");
+      visited.add(next);
+      const response = await fetch(next, { headers: { Accept: "application/json" }, signal: AbortSignal.timeout(15000) });
+      if (!response.ok) throw new Error(`Support API failed (HTTP ${response.status})`);
+      const page = await response.json();
+      if (!Array.isArray(page.articles)) throw new Error("Invalid support article response");
+      const articles: Article[] = page.articles.filter((article: Article) => !article.draft);
+      for (const article of articles) {
+        if (!Number.isSafeInteger(article.id) || typeof article.title !== "string" ||
+            typeof article.updated_at !== "string" || typeof article.created_at !== "string" ||
+            typeof article.html_url !== "string" || new URL(article.html_url).origin !== supportOrigin ||
+            (article.body !== null && typeof article.body !== "string")) {
+          throw new Error("Invalid support article fields");
+        }
+      }
+      seen += articles.length;
+      if (articles.length) {
+        const ids = articles.map(article => article.id).join(",");
+        const existing: { stable_source_id: string; raw: { updated_at?: string } }[] = await database(
+          `source_records?source_id=eq.support&stable_source_id=in.(${ids})&select=stable_source_id,raw`
+        );
+        const versions = new Map(existing.map(record => [record.stable_source_id, record.raw?.updated_at]));
+        const updates = articles.filter(article => versions.get(String(article.id)) !== article.updated_at);
+        if (updates.length) {
+          await database("source_records?on_conflict=source_id,stable_source_id", "POST", updates.map(article => ({
+            source_id: "support", stable_source_id: String(article.id), title: article.title,
+            body: article.body, url: article.html_url, published_at: article.created_at,
+            fetched_at: new Date().toISOString(), raw: { updated_at: article.updated_at, format: "html" }
+          })), "resolution=merge-duplicates,return=minimal");
+          changed += updates.length;
+        }
+      }
+      if (page.next_page !== null && typeof page.next_page !== "string") throw new Error("Invalid support pagination");
+      next = page.next_page;
+    }
+    await database("sources?id=eq.support", "PATCH", { health: "healthy", last_successful_sync: new Date().toISOString() });
+    await database(`sync_jobs?id=eq.${jobId}`, "PATCH", {
+      status: "succeeded", finished_at: new Date().toISOString(), records_seen: seen, records_changed: changed
+    });
+    return Response.json({ ok: true, source: "support", seen, changed,
+      ...(source === "all" ? { skipped: ["productboard", "reddit", "github", "discord", "release_notes", "status", "blog"] } : {})
+    });
   } catch (error) {
-    await supabase.from("sync_jobs").update({ status: "failed", finished_at: new Date().toISOString() }).eq("id", job.id);
-    await supabase.from("sync_logs").insert({ sync_job_id: job.id, level: "error", message: error instanceof Error ? error.message : "Unknown error" });
-    await supabase.from("sources").update({ health: "failed" }).eq("id", sourceId);
-    return { sourceId, status: "failed" };
+    const message = error instanceof Error ? error.message : "Import failed";
+    try {
+      await database("sources?id=eq.support", "PATCH", { health: "failed" });
+      if (jobId) {
+        await database(`sync_jobs?id=eq.${jobId}`, "PATCH", {
+          status: "failed", finished_at: new Date().toISOString(), records_seen: seen, records_changed: changed
+        });
+        await database("sync_logs", "POST", { sync_job_id: jobId, level: "error", message });
+      }
+    } catch {
+      console.error("Could not persist sync failure status");
+    }
+    return Response.json({ ok: false, error: message, seen, changed }, { status: 502 });
   }
-}
-
-async function syncProductboard() {
-  return placeholder("Productboard public extraction requires confirmed allowed selectors or API key.");
-}
-
-async function syncReddit() {
-  if (!Deno.env.get("REDDIT_CLIENT_ID") || !Deno.env.get("REDDIT_CLIENT_SECRET")) {
-    return placeholder("Reddit OAuth credentials are not configured.");
-  }
-  return placeholder("Reddit OAuth connector scaffold is ready for token exchange and listing ingestion.");
-}
-
-async function syncGithub() {
-  if (!Deno.env.get("GITHUB_TOKEN")) return placeholder("GitHub token is not configured.");
-  return placeholder("GitHub organization discovery scaffold is ready.");
-}
-
-async function syncDiscord() {
-  if (!Deno.env.get("DISCORD_BOT_TOKEN")) return placeholder("Discord bot token is not configured.");
-  return placeholder("Discord event ingestion should run from an authorized bot.");
-}
-
-async function syncSupport() {
-  return placeholder("Support crawler awaits confirmed sitemap/feed endpoints.");
-}
-
-async function syncReleaseNotes() {
-  return placeholder("Release-note source discovery awaits authoritative URL confirmation.");
-}
-
-async function syncStatus() {
-  return placeholder("Status page discovery awaits authoritative URL confirmation.");
-}
-
-async function syncBlog() {
-  return placeholder("Blog RSS/public article crawler scaffold is ready.");
-}
-
-function placeholder(note: string) {
-  return Promise.resolve({ seen: 0, changed: 0, notes: [note] });
-}
+});
