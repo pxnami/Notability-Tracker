@@ -1,56 +1,85 @@
 <div align="center">
-  <img src="public/notability.png" width="72" height="72" alt="Notability Tracker icon">
-  <h1>Notability Tracker</h1>
-  <p>Public issues, fixes, feature requests, roadmap stages, and release notes in one source-backed view.</p>
-  <p>
-    <a href="https://pxnami.github.io/Notability-Tracker/"><img src="https://img.shields.io/badge/Open%20tracker-20201e?style=for-the-badge" alt="Open Notability Tracker"></a>
-    <a href="https://github.com/pxnami/Notability-Tracker/issues"><img src="https://img.shields.io/badge/Report%20an%20issue-4d8eff?style=for-the-badge" alt="Report an issue"></a>
-  </p>
+  <img src="public/notability.png" width="78" height="78" alt="Notability Tracker icon">
+
+  # Notability Tracker
+
+  **A source-backed view of public Notability issues, fixes, feature requests, roadmap stages, and releases.**
+
+  [![Open tracker](https://img.shields.io/badge/Open_tracker-171716?style=for-the-badge)](https://pxnami.github.io/Notability-Tracker/)
+  [![View sources](https://img.shields.io/badge/View_sources-4D8EFF?style=for-the-badge)](https://pxnami.github.io/Notability-Tracker/#/sources)
+  [![Report issue](https://img.shields.io/badge/Report_issue-F5B995?style=for-the-badge&labelColor=171716)](https://github.com/pxnami/Notability-Tracker/issues)
+
+  <sub>Independent community project. Not affiliated with Notability or Ginger Labs.</sub>
 </div>
 
-Notability Tracker is an independent web application that collects and presents publicly available information about Notability. Every tracked item links to its original source. The project is not affiliated with Notability or Ginger Labs.
+<br>
 
-## Features
+![Notability Tracker overview](docs/screenshots/overview.png)
 
-- Search and filter documented issues and fixes.
-- Browse the public feature board by its original roadmap stages.
-- Review structured iOS release notes and published development updates.
-- Inspect source health, collection times, and observed status changes.
-- Save records locally and export filtered results as JSON.
-- Use the responsive interface in light or dark mode.
-- Continue reading the last public snapshot when an upstream source is temporarily unavailable.
+## What it does
 
-## Technology
+Notability Tracker collects public information that would otherwise be spread across support pages, release notes, the public feature board, and GitHub. It keeps the original source close to every item instead of presenting speculation as product news.
 
-- React 18 and TypeScript
-- Vite and React Router
-- TanStack Query
-- Supabase client, PostgreSQL migrations, and an optional Edge Function importer
-- Cheerio and Marked for build-time source parsing
-- Vitest and Testing Library
-- GitHub Actions and GitHub Pages
+| Track | Browse | Verify |
+| --- | --- | --- |
+| Known issues and documented fixes | Feature requests by published roadmap stage | Original links and collection health |
+| iOS release notes | Recent public development updates | Observed status history |
+| Locally saved records | Searchable and filterable lists | Snapshot fallback during source outages |
 
-## Architecture
+## Interface
 
-The application has two data paths:
+<table>
+  <tr>
+    <td width="72%"><img src="docs/screenshots/bugs-and-fixes.png" alt="Bugs and fixes view"></td>
+    <td width="28%"><img src="docs/screenshots/mobile-overview.png" alt="Notability Tracker mobile overview"></td>
+  </tr>
+  <tr>
+    <td align="center"><sub>Search, filter, save, and inspect source evidence.</sub></td>
+    <td align="center"><sub>Responsive navigation and dashboard.</sub></td>
+  </tr>
+</table>
 
-1. `scripts/collect.mjs` fetches public sources during deployment, parses them with `scripts/parsers.mjs`, and writes `public/data/public-feed.json`.
-2. The browser loads that committed snapshot and, when configured, public Supabase records. `src/data/live.tsx` validates, sanitizes, merges, and exposes the result to the React pages. Snapshot records take precedence when duplicate records are found.
+## Data flow
 
-GitHub Actions runs the public collector and deployment every six hours. Source failures retain the most recent successful records and are reported in the interface. The optional Supabase Edge Function imports public support articles into PostgreSQL using server-side credentials.
-
-```text
-public/data/            Generated public snapshot
-scripts/                Source collection, parsers, and parser tests
-src/components/         Shared interface components
-src/data/               Data loading and merge boundary
-src/lib/                Supabase and local preference utilities
-src/pages/              Route-level views
-supabase/functions/     Optional support importer
-supabase/migrations/    Database schema and access policies
+```mermaid
+flowchart LR
+    A[Public sources] --> B[Scheduled collector]
+    B --> C[Validated JSON snapshot]
+    D[Optional Supabase records] --> E[Merge and sanitize]
+    C --> E
+    E --> F[React application]
 ```
 
-## Installation
+1. `scripts/collect.mjs` fetches public sources and parses them with `scripts/parsers.mjs`.
+2. The collector writes the validated snapshot to `public/data/public-feed.json`.
+3. `src/data/live.tsx` loads the snapshot, optionally merges public Supabase records, and exposes a normalized data model to the interface.
+4. GitHub Actions tests, refreshes, builds, and deploys the site every six hours.
+
+The committed snapshot keeps the tracker readable when an upstream service is temporarily unavailable. Snapshot records take precedence when duplicate records are found.
+
+## Sources
+
+| Source | Data | Collection method |
+| --- | --- | --- |
+| [Notability Support](https://support.gingerlabs.com/) | Public English support articles | Paginated Zendesk API |
+| [Recently Reported Issues](https://support.gingerlabs.com/hc/en-us/articles/360035063091) | Ongoing and fixed issues | Structured article parsing |
+| [Latest iOS App Updates](https://support.gingerlabs.com/hc/en-us/articles/9414165465882) | Versions, changes, and explicit fixes | Structured article parsing |
+| [Notability Feature Board](https://portal.productboard.com/gingerlabs/1-notability/tabs/14-actively-considering) | Public cards, stages, and updates | Embedded public board data |
+| [Ginger Labs on GitHub](https://github.com/Ginger-Labs) | Repositories with explicit Notability relevance | GitHub public API |
+
+Collection time, upstream modification time, and release date remain separate values. A status-history record means the tracker observed a change between snapshots; it does not establish the exact time that the source changed.
+
+## Built with
+
+| Layer | Technology |
+| --- | --- |
+| Interface | React 18, TypeScript, React Router |
+| Data | TanStack Query, Supabase, committed JSON snapshot |
+| Collection | Node.js, Cheerio, Marked |
+| Tooling | Vite, ESLint, Vitest, Testing Library |
+| Delivery | GitHub Actions, GitHub Pages |
+
+## Run locally
 
 Node.js 22 or newer is required.
 
@@ -61,64 +90,58 @@ npm ci
 npm run dev
 ```
 
-The committed snapshot allows the application to run without external credentials. To include public database records, copy `.env.example` to `.env.local` and set:
+No credentials are required because the repository includes the latest public snapshot. To include public database records, copy `.env.example` to `.env.local` and provide:
 
 ```dotenv
 VITE_SUPABASE_URL=https://your-project.supabase.co
 VITE_SUPABASE_ANON_KEY=your-public-key
 ```
 
-Do not expose a Supabase service-role key or secret key to the frontend.
+Never expose a Supabase service-role or secret key to the frontend.
 
-## Development
+### Commands
 
 ```sh
-npm run collect     # Refresh the public snapshot
-npm run lint        # Run ESLint
+npm run collect     # Refresh public source data
+npm run lint        # Check code quality
 npm run typecheck   # Check TypeScript
 npm test            # Run the test suite
-npm run build       # Create the production build
+npm run build       # Create a production build
 npm run preview     # Preview the production build
 ```
 
-Collector output is intentionally committed. This supplies a fallback for GitHub Pages and provides the previous snapshot needed to record observed status transitions.
+## Project structure
 
-## Data Sources
-
-| Source                                                                                                           | Collected data                                         | Method                     |
-| ---------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------ | -------------------------- |
-| [Notability Support](https://support.gingerlabs.com/)                                                            | Public English support articles                        | Paginated Zendesk API      |
-| [Recently Reported Issues](https://support.gingerlabs.com/hc/en-us/articles/360035063091)                        | Ongoing and fixed issues                               | Structured article parsing |
-| [Latest iOS App Updates](https://support.gingerlabs.com/hc/en-us/articles/9414165465882)                         | Version headings, changes, and explicit fixes          | Structured article parsing |
-| [Notability Feature Board](https://portal.productboard.com/gingerlabs/1-notability/tabs/14-actively-considering) | Public cards, stages, and posted updates               | Embedded public board data |
-| [Ginger Labs GitHub](https://github.com/Ginger-Labs)                                                             | Public repositories with explicit Notability relevance | GitHub public API          |
-
-The scheduled workflow checks these sources every six hours. Collection time, upstream modification time, and release date remain separate values. A status-history entry means the project observed a change between snapshots; it does not establish the exact time the upstream status changed.
-
-The parsers preserve source wording and URLs. They do not infer release dates, private development activity, roadmap commitments, or hidden vote counts. External HTML is converted to text before display.
+```text
+public/data/            Generated public snapshot
+scripts/                Collection, parsers, and parser tests
+src/components/         Shared interface components
+src/data/               Loading, validation, and merge boundary
+src/lib/                Supabase and local preference utilities
+src/pages/              Route-level views
+supabase/functions/     Optional support importer
+supabase/migrations/    Database schema and access policies
+```
 
 ## Deployment
 
-`.github/workflows/deploy.yml` tests, collects, builds, and deploys the application to GitHub Pages on pushes to `main`, manual runs, and the six-hour schedule. The workflow commits a new snapshot only when source content or status changes; collection-only timestamps do not create repository commits.
+`.github/workflows/deploy.yml` runs on pushes to `main`, manual dispatches, and a six-hour schedule. It validates the project, refreshes the public data, builds the Vite application, and deploys it to GitHub Pages. A snapshot commit is created only when source content or status changes.
 
-GitHub Pages must use **GitHub Actions** as its deployment source. The Vite base path is derived from `GITHUB_REPOSITORY`, and hash routing supports direct navigation without server rewrites.
-
-`.github/workflows/sync.yml` is a separate manual workflow for the optional Supabase importer. It requires `SUPABASE_SYNC_URL` as a repository variable and `SUPABASE_SYNC_TOKEN` as a repository secret.
+The optional `.github/workflows/sync.yml` workflow calls the Supabase importer. It requires `SUPABASE_SYNC_URL` as a repository variable and `SUPABASE_SYNC_TOKEN` as a repository secret.
 
 ## Limitations
 
-- The tracker reflects public sources and does not provide access to private Notability development information.
-- Reddit is displayed as unavailable because authorized Reddit API access is not configured.
+- Only publicly available information is collected; the tracker has no access to private Notability development activity.
 - Productboard stages are reproduced as published and are not delivery commitments.
 - Release dates remain unspecified when the source does not publish one.
-- Local bookmarks are stored in the browser and are not synchronized between devices.
-- The Supabase schema includes supporting tables that are not exposed as user-facing account or notification features.
+- Reddit data is unavailable until authorized API access is configured.
+- Saved records live in the browser and do not synchronize between devices.
 
 ## Contributing
 
-See [CONTRIBUTING.md](CONTRIBUTING.md) for the development workflow and data-integrity requirements.
+Bug reports and focused improvements are welcome. Read [CONTRIBUTING.md](CONTRIBUTING.md) before changing collectors or source-handling behavior; source wording, attribution, and data integrity must be preserved.
 
-## License and Attribution
+## License and attribution
 
 No software license is currently provided. The repository is publicly readable, but no permission to copy, modify, or redistribute its contents is granted by default.
 
