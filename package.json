@@ -15,12 +15,12 @@
   "type": "module",
   "scripts": {
     "collect": "node scripts/collect.mjs",
-    "dev": "vite --host 127.0.0.1",
-    "build": "tsc -b && vite build",
-    "preview": "vite preview --host 127.0.0.1",
-    "lint": "eslint .",
-    "test": "vitest run",
-    "typecheck": "tsc -b"
+    "dev": "vite --config config/vite.config.ts --host 127.0.0.1",
+    "build": "tsc -b config/tsconfig.json && vite build --config config/vite.config.ts",
+    "preview": "vite preview --config config/vite.config.ts --host 127.0.0.1",
+    "lint": "eslint --config config/eslint.config.js .",
+    "test": "vitest run --config config/vite.config.ts",
+    "typecheck": "tsc -b config/tsconfig.json"
   },
   "dependencies": {
     "@fontsource-variable/nunito-sans": "^5.3.0",

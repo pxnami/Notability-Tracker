@@ -90,7 +90,7 @@ npm ci
 npm run dev
 ```
 
-No credentials are required because the repository includes the latest public snapshot. To include public database records, copy `.env.example` to `.env.local` and provide:
+No credentials are required because the repository includes the latest public snapshot. To include public database records, copy `config/.env.example` to `.env.local` and provide:
 
 ```dotenv
 VITE_SUPABASE_URL=https://your-project.supabase.co
@@ -114,6 +114,7 @@ npm run preview     # Preview the production build
 
 ```text
 public/data/            Generated public snapshot
+config/                 Build, lint, TypeScript, and environment templates
 scripts/                Collection, parsers, and parser tests
 src/components/         Shared interface components
 src/data/               Loading, validation, and merge boundary
@@ -139,7 +140,7 @@ The optional `.github/workflows/sync.yml` workflow calls the Supabase importer. 
 
 ## Contributing
 
-Bug reports and focused improvements are welcome. Read [CONTRIBUTING.md](CONTRIBUTING.md) before changing collectors or source-handling behavior; source wording, attribution, and data integrity must be preserved.
+Bug reports and focused improvements are welcome. Read [CONTRIBUTING.md](.github/CONTRIBUTING.md) before changing collectors or source-handling behavior; source wording, attribution, and data integrity must be preserved.
 
 ## License and attribution
 
