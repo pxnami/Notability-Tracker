@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-28T12:35:07.028Z",
+  "generatedAt": "2026-09-28T19:43:41.375Z",
   "sources": [
     {
       "id": "support",
@@ -7,7 +7,7 @@
       "url": "https://support.gingerlabs.com/hc/en-us",
       "official": true,
       "health": "healthy",
-      "lastSync": "2026-09-28T12:35:07.028Z",
+      "lastSync": "2026-09-28T19:43:41.375Z",
       "cadence": "Every 6 hours",
       "note": "Public source checked successfully."
     },
@@ -17,7 +17,7 @@
       "url": "https://portal.productboard.com/gingerlabs/1-notability/tabs/14-actively-considering",
       "official": true,
       "health": "healthy",
-      "lastSync": "2026-09-28T12:35:07.028Z",
+      "lastSync": "2026-09-28T19:43:41.375Z",
       "cadence": "Every 6 hours",
       "note": "Public source checked successfully."
     },
@@ -27,7 +27,7 @@
       "url": "https://github.com/Ginger-Labs",
       "official": true,
       "health": "healthy",
-      "lastSync": "2026-09-28T12:35:07.028Z",
+      "lastSync": "2026-09-28T19:43:41.375Z",
       "cadence": "Every 6 hours",
       "note": "Public source checked successfully."
     },
@@ -60,7 +60,7 @@
       "officialEvidence": "Ongoing Issues",
       "aiGenerated": false,
       "url": "https://support.gingerlabs.com/hc/en-us/articles/360035063091-Recently-Reported-Issues",
-      "checkedAt": "2026-09-28T12:35:07.028Z"
+      "checkedAt": "2026-09-28T19:43:41.375Z"
     },
     {
       "id": "support-issue-708d780697b0289d",
@@ -80,7 +80,7 @@
       "officialEvidence": "Ongoing Issues",
       "aiGenerated": false,
       "url": "https://support.gingerlabs.com/hc/en-us/articles/360035063091-Recently-Reported-Issues",
-      "checkedAt": "2026-09-28T12:35:07.028Z"
+      "checkedAt": "2026-09-28T19:43:41.375Z"
     },
     {
       "id": "support-issue-3b77c4ebe3b42834",
@@ -100,7 +100,7 @@
       "officialEvidence": "Ongoing Issues",
       "aiGenerated": false,
       "url": "https://support.gingerlabs.com/hc/en-us/articles/360035063091-Recently-Reported-Issues",
-      "checkedAt": "2026-09-28T12:35:07.028Z"
+      "checkedAt": "2026-09-28T19:43:41.375Z"
     },
     {
       "id": "support-issue-13c67264f3873bc6",
@@ -120,7 +120,7 @@
       "officialEvidence": "Ongoing Issues",
       "aiGenerated": false,
       "url": "https://support.gingerlabs.com/hc/en-us/articles/360035063091-Recently-Reported-Issues",
-      "checkedAt": "2026-09-28T12:35:07.028Z"
+      "checkedAt": "2026-09-28T19:43:41.375Z"
     },
     {
       "id": "support-issue-7553ac6654911c4d",
@@ -140,7 +140,7 @@
       "officialEvidence": "Ongoing Issues",
       "aiGenerated": false,
       "url": "https://support.gingerlabs.com/hc/en-us/articles/360035063091-Recently-Reported-Issues",
-      "checkedAt": "2026-09-28T12:35:07.028Z"
+      "checkedAt": "2026-09-28T19:43:41.375Z"
     },
     {
       "id": "support-issue-cdcb60292f35b978",
@@ -160,7 +160,7 @@
       "officialEvidence": "Ongoing Issues",
       "aiGenerated": false,
       "url": "https://support.gingerlabs.com/hc/en-us/articles/360035063091-Recently-Reported-Issues",
-      "checkedAt": "2026-09-28T12:35:07.028Z"
+      "checkedAt": "2026-09-28T19:43:41.375Z"
     },
     {
       "id": "support-issue-e4a725d8323b6140",
@@ -180,7 +180,7 @@
       "officialEvidence": "Ongoing Issues",
       "aiGenerated": false,
       "url": "https://support.gingerlabs.com/hc/en-us/articles/360035063091-Recently-Reported-Issues",
-      "checkedAt": "2026-09-28T12:35:07.028Z"
+      "checkedAt": "2026-09-28T19:43:41.375Z"
     },
     {
       "id": "support-issue-e7b9fe285a1a48b4",
@@ -200,7 +200,7 @@
       "officialEvidence": "Ongoing Issues",
       "aiGenerated": false,
       "url": "https://support.gingerlabs.com/hc/en-us/articles/360035063091-Recently-Reported-Issues",
-      "checkedAt": "2026-09-28T12:35:07.028Z"
+      "checkedAt": "2026-09-28T19:43:41.375Z"
     },
     {
       "id": "support-issue-4a75fc178147e897",
@@ -220,7 +220,7 @@
       "officialEvidence": "Ongoing Issues",
       "aiGenerated": false,
       "url": "https://support.gingerlabs.com/hc/en-us/articles/360035063091-Recently-Reported-Issues",
-      "checkedAt": "2026-09-28T12:35:07.028Z"
+      "checkedAt": "2026-09-28T19:43:41.375Z"
     },
     {
       "id": "support-issue-342bc2b6b86b1fcb",
@@ -240,7 +240,7 @@
       "officialEvidence": "Ongoing Issues",
       "aiGenerated": false,
       "url": "https://support.gingerlabs.com/hc/en-us/articles/360035063091-Recently-Reported-Issues",
-      "checkedAt": "2026-09-28T12:35:07.028Z"
+      "checkedAt": "2026-09-28T19:43:41.375Z"
     },
     {
       "id": "support-issue-9b8c00e953c26dd3",
@@ -260,7 +260,7 @@
       "officialEvidence": "Ongoing Issues",
       "aiGenerated": false,
       "url": "https://support.gingerlabs.com/hc/en-us/articles/360035063091-Recently-Reported-Issues",
-      "checkedAt": "2026-09-28T12:35:07.028Z"
+      "checkedAt": "2026-09-28T19:43:41.375Z"
     },
     {
       "id": "support-issue-3e0347b6df8b70a0",
@@ -280,7 +280,7 @@
       "officialEvidence": "Ongoing Issues",
       "aiGenerated": false,
       "url": "https://support.gingerlabs.com/hc/en-us/articles/360035063091-Recently-Reported-Issues",
-      "checkedAt": "2026-09-28T12:35:07.028Z"
+      "checkedAt": "2026-09-28T19:43:41.375Z"
     },
     {
       "id": "support-issue-8196a976cb7d7fce",
@@ -300,7 +300,7 @@
       "officialEvidence": "Ongoing Issues",
       "aiGenerated": false,
       "url": "https://support.gingerlabs.com/hc/en-us/articles/360035063091-Recently-Reported-Issues",
-      "checkedAt": "2026-09-28T12:35:07.028Z"
+      "checkedAt": "2026-09-28T19:43:41.375Z"
     },
     {
       "id": "support-issue-609c47282ea8c48e",
@@ -320,7 +320,7 @@
       "officialEvidence": "Ongoing Issues",
       "aiGenerated": false,
       "url": "https://support.gingerlabs.com/hc/en-us/articles/360035063091-Recently-Reported-Issues",
-      "checkedAt": "2026-09-28T12:35:07.028Z"
+      "checkedAt": "2026-09-28T19:43:41.375Z"
     },
     {
       "id": "support-issue-3c49aa3d15d99ddd",
@@ -340,7 +340,7 @@
       "officialEvidence": "Ongoing Issues",
       "aiGenerated": false,
       "url": "https://support.gingerlabs.com/hc/en-us/articles/360035063091-Recently-Reported-Issues",
-      "checkedAt": "2026-09-28T12:35:07.028Z"
+      "checkedAt": "2026-09-28T19:43:41.375Z"
     },
     {
       "id": "support-issue-2c5cf3712cdee543",
@@ -360,7 +360,7 @@
       "officialEvidence": "Ongoing Issues",
       "aiGenerated": false,
       "url": "https://support.gingerlabs.com/hc/en-us/articles/360035063091-Recently-Reported-Issues",
-      "checkedAt": "2026-09-28T12:35:07.028Z"
+      "checkedAt": "2026-09-28T19:43:41.375Z"
     },
     {
       "id": "support-issue-47d7b7bc8dfec0e3",
@@ -380,7 +380,7 @@
       "officialEvidence": "Ongoing Issues",
       "aiGenerated": false,
       "url": "https://support.gingerlabs.com/hc/en-us/articles/360035063091-Recently-Reported-Issues",
-      "checkedAt": "2026-09-28T12:35:07.028Z"
+      "checkedAt": "2026-09-28T19:43:41.375Z"
     },
     {
       "id": "support-issue-d825b0b53c83df4a",
@@ -400,7 +400,7 @@
       "officialEvidence": "Ongoing Issues",
       "aiGenerated": false,
       "url": "https://support.gingerlabs.com/hc/en-us/articles/360035063091-Recently-Reported-Issues",
-      "checkedAt": "2026-09-28T12:35:07.028Z"
+      "checkedAt": "2026-09-28T19:43:41.375Z"
     },
     {
       "id": "support-issue-a98fde522977230d",
@@ -420,7 +420,7 @@
       "officialEvidence": "Fixed Issues",
       "aiGenerated": false,
       "url": "https://support.gingerlabs.com/hc/en-us/articles/360035063091-Recently-Reported-Issues",
-      "checkedAt": "2026-09-28T12:35:07.028Z"
+      "checkedAt": "2026-09-28T19:43:41.375Z"
     },
     {
       "id": "support-issue-3fc090f975936f03",
@@ -440,7 +440,7 @@
       "officialEvidence": "Fixed Issues",
       "aiGenerated": false,
       "url": "https://support.gingerlabs.com/hc/en-us/articles/360035063091-Recently-Reported-Issues",
-      "checkedAt": "2026-09-28T12:35:07.028Z",
+      "checkedAt": "2026-09-28T19:43:41.375Z",
       "version": "14.10.11"
     },
     {
@@ -461,7 +461,7 @@
       "officialEvidence": "Fixed Issues",
       "aiGenerated": false,
       "url": "https://support.gingerlabs.com/hc/en-us/articles/360035063091-Recently-Reported-Issues",
-      "checkedAt": "2026-09-28T12:35:07.028Z",
+      "checkedAt": "2026-09-28T19:43:41.375Z",
       "version": "14.9.4"
     },
     {
@@ -482,7 +482,7 @@
       "officialEvidence": "Fixed Issues",
       "aiGenerated": false,
       "url": "https://support.gingerlabs.com/hc/en-us/articles/360035063091-Recently-Reported-Issues",
-      "checkedAt": "2026-09-28T12:35:07.028Z",
+      "checkedAt": "2026-09-28T19:43:41.375Z",
       "version": "14.9"
     },
     {
@@ -503,7 +503,7 @@
       "officialEvidence": "Fixed Issues",
       "aiGenerated": false,
       "url": "https://support.gingerlabs.com/hc/en-us/articles/360035063091-Recently-Reported-Issues",
-      "checkedAt": "2026-09-28T12:35:07.028Z"
+      "checkedAt": "2026-09-28T19:43:41.375Z"
     },
     {
       "id": "support-issue-4f5fd370df9b0f26",
@@ -523,7 +523,7 @@
       "officialEvidence": "Fixed Issues",
       "aiGenerated": false,
       "url": "https://support.gingerlabs.com/hc/en-us/articles/360035063091-Recently-Reported-Issues",
-      "checkedAt": "2026-09-28T12:35:07.028Z"
+      "checkedAt": "2026-09-28T19:43:41.375Z"
     },
     {
       "id": "support-issue-ac387f44d115da98",
@@ -543,7 +543,7 @@
       "officialEvidence": "Fixed Issues",
       "aiGenerated": false,
       "url": "https://support.gingerlabs.com/hc/en-us/articles/360035063091-Recently-Reported-Issues",
-      "checkedAt": "2026-09-28T12:35:07.028Z"
+      "checkedAt": "2026-09-28T19:43:41.375Z"
     },
     {
       "id": "support-issue-157ca29466f8de9d",
@@ -563,7 +563,7 @@
       "officialEvidence": "Fixed Issues",
       "aiGenerated": false,
       "url": "https://support.gingerlabs.com/hc/en-us/articles/360035063091-Recently-Reported-Issues",
-      "checkedAt": "2026-09-28T12:35:07.028Z",
+      "checkedAt": "2026-09-28T19:43:41.375Z",
       "version": "14.7.2"
     },
     {
@@ -584,7 +584,7 @@
       "officialEvidence": "Fixed Issues",
       "aiGenerated": false,
       "url": "https://support.gingerlabs.com/hc/en-us/articles/360035063091-Recently-Reported-Issues",
-      "checkedAt": "2026-09-28T12:35:07.028Z",
+      "checkedAt": "2026-09-28T19:43:41.375Z",
       "version": "14.7.2"
     },
     {
@@ -605,7 +605,7 @@
       "officialEvidence": "Fixed Issues",
       "aiGenerated": false,
       "url": "https://support.gingerlabs.com/hc/en-us/articles/360035063091-Recently-Reported-Issues",
-      "checkedAt": "2026-09-28T12:35:07.028Z",
+      "checkedAt": "2026-09-28T19:43:41.375Z",
       "version": "14.7.1"
     },
     {
@@ -626,7 +626,7 @@
       "officialEvidence": "Fixed Issues",
       "aiGenerated": false,
       "url": "https://support.gingerlabs.com/hc/en-us/articles/360035063091-Recently-Reported-Issues",
-      "checkedAt": "2026-09-28T12:35:07.028Z",
+      "checkedAt": "2026-09-28T19:43:41.375Z",
       "version": "14.5.4"
     },
     {
@@ -647,7 +647,7 @@
       "officialEvidence": "Fixed Issues",
       "aiGenerated": false,
       "url": "https://support.gingerlabs.com/hc/en-us/articles/360035063091-Recently-Reported-Issues",
-      "checkedAt": "2026-09-28T12:35:07.028Z",
+      "checkedAt": "2026-09-28T19:43:41.375Z",
       "version": "14.5"
     },
     {
@@ -668,7 +668,7 @@
       "officialEvidence": "Fixed Issues",
       "aiGenerated": false,
       "url": "https://support.gingerlabs.com/hc/en-us/articles/360035063091-Recently-Reported-Issues",
-      "checkedAt": "2026-09-28T12:35:07.028Z",
+      "checkedAt": "2026-09-28T19:43:41.375Z",
       "version": "14.5"
     },
     {
@@ -689,7 +689,7 @@
       "officialEvidence": "Fixed Issues",
       "aiGenerated": false,
       "url": "https://support.gingerlabs.com/hc/en-us/articles/360035063091-Recently-Reported-Issues",
-      "checkedAt": "2026-09-28T12:35:07.028Z",
+      "checkedAt": "2026-09-28T19:43:41.375Z",
       "version": "14.4.3"
     },
     {
@@ -710,7 +710,7 @@
       "officialEvidence": "Fixed Issues",
       "aiGenerated": false,
       "url": "https://support.gingerlabs.com/hc/en-us/articles/360035063091-Recently-Reported-Issues",
-      "checkedAt": "2026-09-28T12:35:07.028Z",
+      "checkedAt": "2026-09-28T19:43:41.375Z",
       "version": "14.4.1"
     },
     {
@@ -731,7 +731,7 @@
       "officialEvidence": "Fixed Issues",
       "aiGenerated": false,
       "url": "https://support.gingerlabs.com/hc/en-us/articles/360035063091-Recently-Reported-Issues",
-      "checkedAt": "2026-09-28T12:35:07.028Z",
+      "checkedAt": "2026-09-28T19:43:41.375Z",
       "version": "14.4"
     },
     {
@@ -752,7 +752,7 @@
       "officialEvidence": "Fixed Issues",
       "aiGenerated": false,
       "url": "https://support.gingerlabs.com/hc/en-us/articles/360035063091-Recently-Reported-Issues",
-      "checkedAt": "2026-09-28T12:35:07.028Z",
+      "checkedAt": "2026-09-28T19:43:41.375Z",
       "version": "14.3.2"
     },
     {
@@ -773,7 +773,7 @@
       "officialEvidence": "Fixed Issues",
       "aiGenerated": false,
       "url": "https://support.gingerlabs.com/hc/en-us/articles/360035063091-Recently-Reported-Issues",
-      "checkedAt": "2026-09-28T12:35:07.028Z"
+      "checkedAt": "2026-09-28T19:43:41.375Z"
     },
     {
       "id": "support-issue-602d45b9740c30bc",
@@ -793,7 +793,7 @@
       "officialEvidence": "Fixed Issues",
       "aiGenerated": false,
       "url": "https://support.gingerlabs.com/hc/en-us/articles/360035063091-Recently-Reported-Issues",
-      "checkedAt": "2026-09-28T12:35:07.028Z"
+      "checkedAt": "2026-09-28T19:43:41.375Z"
     },
     {
       "id": "support-issue-883ce795d12b5c1c",
@@ -813,7 +813,7 @@
       "officialEvidence": "Fixed Issues",
       "aiGenerated": false,
       "url": "https://support.gingerlabs.com/hc/en-us/articles/360035063091-Recently-Reported-Issues",
-      "checkedAt": "2026-09-28T12:35:07.028Z"
+      "checkedAt": "2026-09-28T19:43:41.375Z"
     }
   ],
   "features": [
@@ -824,7 +824,7 @@
       "roadmapStatus": "Actively Considering",
       "source": "productboard",
       "updatedAt": "2026-09-17T22:29:03.738651+00:00",
-      "checkedAt": "2026-09-28T12:35:07.028Z",
+      "checkedAt": "2026-09-28T19:43:41.375Z",
       "url": "https://portal.productboard.com/gingerlabs/1-notability/c/139-ocr-support-scanned-files-imported-pdfs-"
     },
     {
@@ -834,7 +834,7 @@
       "roadmapStatus": "Prototyping / Experimenting",
       "source": "productboard",
       "updatedAt": "2026-09-27T19:40:12.520144+00:00",
-      "checkedAt": "2026-09-28T12:35:07.028Z",
+      "checkedAt": "2026-09-28T19:43:41.375Z",
       "url": "https://portal.productboard.com/gingerlabs/1-notability/c/27-rotate-pages"
     },
     {
@@ -844,7 +844,7 @@
       "roadmapStatus": "Launched",
       "source": "productboard",
       "updatedAt": "2026-09-26T03:10:17.674721+00:00",
-      "checkedAt": "2026-09-28T12:35:07.028Z",
+      "checkedAt": "2026-09-28T19:43:41.375Z",
       "url": "https://portal.productboard.com/gingerlabs/1-notability/c/161-study-games"
     },
     {
@@ -854,7 +854,7 @@
       "roadmapStatus": "Launched",
       "source": "productboard",
       "updatedAt": "2026-08-29T21:27:00.683922+00:00",
-      "checkedAt": "2026-09-28T12:35:07.028Z",
+      "checkedAt": "2026-09-28T19:43:41.375Z",
       "url": "https://portal.productboard.com/gingerlabs/1-notability/c/124-subscript-and-superscript-support"
     },
     {
@@ -864,7 +864,7 @@
       "roadmapStatus": "Launched",
       "source": "productboard",
       "updatedAt": "2025-03-04T18:11:53.288925+00:00",
-      "checkedAt": "2026-09-28T12:35:07.028Z",
+      "checkedAt": "2026-09-28T19:43:41.375Z",
       "url": "https://portal.productboard.com/gingerlabs/1-notability/c/147-apple-image-playground"
     },
     {
@@ -874,7 +874,7 @@
       "roadmapStatus": "Launched",
       "source": "productboard",
       "updatedAt": "2026-05-03T13:38:58.626122+00:00",
-      "checkedAt": "2026-09-28T12:35:07.028Z",
+      "checkedAt": "2026-09-28T19:43:41.375Z",
       "url": "https://portal.productboard.com/gingerlabs/1-notability/c/146-flashcards"
     },
     {
@@ -884,7 +884,7 @@
       "roadmapStatus": "Actively Considering",
       "source": "productboard",
       "updatedAt": "2026-09-15T22:46:34.072486+00:00",
-      "checkedAt": "2026-09-28T12:35:07.028Z",
+      "checkedAt": "2026-09-28T19:43:41.375Z",
       "url": "https://portal.productboard.com/gingerlabs/1-notability/c/163-save-learn-quiz-questions"
     },
     {
@@ -894,7 +894,7 @@
       "roadmapStatus": "Launched",
       "source": "productboard",
       "updatedAt": "2026-04-04T22:20:17.859188+00:00",
-      "checkedAt": "2026-09-28T12:35:07.028Z",
+      "checkedAt": "2026-09-28T19:43:41.375Z",
       "url": "https://portal.productboard.com/gingerlabs/1-notability/c/104-multi-note-and-note-switcher"
     },
     {
@@ -904,7 +904,7 @@
       "roadmapStatus": "Launched",
       "source": "productboard",
       "updatedAt": "2026-02-13T16:42:26.460556+00:00",
-      "checkedAt": "2026-09-28T12:35:07.028Z",
+      "checkedAt": "2026-09-28T19:43:41.375Z",
       "url": "https://portal.productboard.com/gingerlabs/1-notability/c/119-copy-all-transcripts"
     },
     {
@@ -914,7 +914,7 @@
       "roadmapStatus": "Actively Considering",
       "source": "productboard",
       "updatedAt": "2026-09-25T18:29:11.820811+00:00",
-      "checkedAt": "2026-09-28T12:35:07.028Z",
+      "checkedAt": "2026-09-28T19:43:41.375Z",
       "url": "https://portal.productboard.com/gingerlabs/1-notability/c/186-siri-shortcuts-shortcuts-app"
     },
     {
@@ -924,7 +924,7 @@
       "roadmapStatus": "Launched",
       "source": "productboard",
       "updatedAt": "2026-03-24T18:05:23.612048+00:00",
-      "checkedAt": "2026-09-28T12:35:07.028Z",
+      "checkedAt": "2026-09-28T19:43:41.375Z",
       "url": "https://portal.productboard.com/gingerlabs/1-notability/c/170-more-tape-patterns-colors"
     },
     {
@@ -934,7 +934,7 @@
       "roadmapStatus": "Launched",
       "source": "productboard",
       "updatedAt": "2026-03-24T17:56:12.709102+00:00",
-      "checkedAt": "2026-09-28T12:35:07.028Z",
+      "checkedAt": "2026-09-28T19:43:41.375Z",
       "url": "https://portal.productboard.com/gingerlabs/1-notability/c/110-mirroring-ink"
     },
     {
@@ -944,7 +944,7 @@
       "roadmapStatus": "Building",
       "source": "productboard",
       "updatedAt": "2026-08-28T22:26:20.478992+00:00",
-      "checkedAt": "2026-09-28T12:35:07.028Z",
+      "checkedAt": "2026-09-28T19:43:41.375Z",
       "url": "https://portal.productboard.com/gingerlabs/1-notability/c/138-comments"
     },
     {
@@ -954,7 +954,7 @@
       "roadmapStatus": "Launched",
       "source": "productboard",
       "updatedAt": "2026-08-16T18:01:50.53483+00:00",
-      "checkedAt": "2026-09-28T12:35:07.028Z",
+      "checkedAt": "2026-09-28T19:43:41.375Z",
       "url": "https://portal.productboard.com/gingerlabs/1-notability/c/74-bring-to-the-front"
     },
     {
@@ -964,7 +964,7 @@
       "roadmapStatus": "Building",
       "source": "productboard",
       "updatedAt": "2026-09-15T00:36:01.352476+00:00",
-      "checkedAt": "2026-09-28T12:35:07.028Z",
+      "checkedAt": "2026-09-28T19:43:41.375Z",
       "url": "https://portal.productboard.com/gingerlabs/1-notability/c/183-syllabus-import"
     },
     {
@@ -974,7 +974,7 @@
       "roadmapStatus": "Launched",
       "source": "productboard",
       "updatedAt": "2024-06-28T16:52:18.877539+00:00",
-      "checkedAt": "2026-09-28T12:35:07.028Z",
+      "checkedAt": "2026-09-28T19:43:41.375Z",
       "url": "https://portal.productboard.com/gingerlabs/1-notability/c/16-rewind-fast-forward-10-seconds"
     },
     {
@@ -984,7 +984,7 @@
       "roadmapStatus": "Prototyping / Experimenting",
       "source": "productboard",
       "updatedAt": "2026-09-26T03:08:41.821814+00:00",
-      "checkedAt": "2026-09-28T12:35:07.028Z",
+      "checkedAt": "2026-09-28T19:43:41.375Z",
       "url": "https://portal.productboard.com/gingerlabs/1-notability/c/185-study-from-folders"
     },
     {
@@ -994,7 +994,7 @@
       "roadmapStatus": "Actively Considering",
       "source": "productboard",
       "updatedAt": "2026-09-25T16:11:39.98259+00:00",
-      "checkedAt": "2026-09-28T12:35:07.028Z",
+      "checkedAt": "2026-09-28T19:43:41.375Z",
       "url": "https://portal.productboard.com/gingerlabs/1-notability/c/122-more-math-tools"
     },
     {
@@ -1004,7 +1004,7 @@
       "roadmapStatus": "Launched",
       "source": "productboard",
       "updatedAt": "2026-02-13T16:48:05.053942+00:00",
-      "checkedAt": "2026-09-28T12:35:07.028Z",
+      "checkedAt": "2026-09-28T19:43:41.375Z",
       "url": "https://portal.productboard.com/gingerlabs/1-notability/c/150-improve-learn-quality"
     },
     {
@@ -1014,7 +1014,7 @@
       "roadmapStatus": "Launched",
       "source": "productboard",
       "updatedAt": "2026-04-24T16:08:12.975418+00:00",
-      "checkedAt": "2026-09-28T12:35:07.028Z",
+      "checkedAt": "2026-09-28T19:43:41.375Z",
       "url": "https://portal.productboard.com/gingerlabs/1-notability/c/89-transcribe-audio-to-text"
     },
     {
@@ -1024,7 +1024,7 @@
       "roadmapStatus": "Launched",
       "source": "productboard",
       "updatedAt": "2026-02-09T22:49:24.919734+00:00",
-      "checkedAt": "2026-09-28T12:35:07.028Z",
+      "checkedAt": "2026-09-28T19:43:41.375Z",
       "url": "https://portal.productboard.com/gingerlabs/1-notability/c/156-emojifying-subjects"
     },
     {
@@ -1034,7 +1034,7 @@
       "roadmapStatus": "Launched",
       "source": "productboard",
       "updatedAt": "2025-03-22T13:10:43.536753+00:00",
-      "checkedAt": "2026-09-28T12:35:07.028Z",
+      "checkedAt": "2026-09-28T19:43:41.375Z",
       "url": "https://portal.productboard.com/gingerlabs/1-notability/c/117-widgets"
     },
     {
@@ -1044,7 +1044,7 @@
       "roadmapStatus": "Actively Considering",
       "source": "productboard",
       "updatedAt": "2026-09-12T03:48:31.732895+00:00",
-      "checkedAt": "2026-09-28T12:35:07.028Z",
+      "checkedAt": "2026-09-28T19:43:41.375Z",
       "url": "https://portal.productboard.com/gingerlabs/1-notability/c/88-name-bookmarks"
     },
     {
@@ -1054,7 +1054,7 @@
       "roadmapStatus": "Launched",
       "source": "productboard",
       "updatedAt": "2021-05-25T22:41:45.835361+00:00",
-      "checkedAt": "2026-09-28T12:35:07.028Z",
+      "checkedAt": "2026-09-28T19:43:41.375Z",
       "url": "https://portal.productboard.com/gingerlabs/1-notability/c/40-open-password-protected-pdfs"
     },
     {
@@ -1064,7 +1064,7 @@
       "roadmapStatus": "Prototyping / Experimenting",
       "source": "productboard",
       "updatedAt": "2026-09-25T20:05:41.397024+00:00",
-      "checkedAt": "2026-09-28T12:35:07.028Z",
+      "checkedAt": "2026-09-28T19:43:41.375Z",
       "url": "https://portal.productboard.com/gingerlabs/1-notability/c/51-url-scheme-links-within-and-between-notes"
     },
     {
@@ -1073,8 +1073,8 @@
       "description": "Ability to share note links from Notability Cloud—the note will appear in Read Only mode for viewers (no Notability account needed).",
       "roadmapStatus": "Actively Considering",
       "source": "productboard",
-      "updatedAt": "2026-09-28T02:56:43.34692+00:00",
-      "checkedAt": "2026-09-28T12:35:07.028Z",
+      "updatedAt": "2026-09-28T18:36:42.827913+00:00",
+      "checkedAt": "2026-09-28T19:43:41.375Z",
       "url": "https://portal.productboard.com/gingerlabs/1-notability/c/173-read-only-for-link-sharing"
     },
     {
@@ -1084,7 +1084,7 @@
       "roadmapStatus": "Launched",
       "source": "productboard",
       "updatedAt": "2026-09-06T11:40:48.263019+00:00",
-      "checkedAt": "2026-09-28T12:35:07.028Z",
+      "checkedAt": "2026-09-28T19:43:41.375Z",
       "url": "https://portal.productboard.com/gingerlabs/1-notability/c/47-outlines"
     },
     {
@@ -1094,7 +1094,7 @@
       "roadmapStatus": "Launched",
       "source": "productboard",
       "updatedAt": "2026-09-26T09:27:40.111209+00:00",
-      "checkedAt": "2026-09-28T12:35:07.028Z",
+      "checkedAt": "2026-09-28T19:43:41.375Z",
       "url": "https://portal.productboard.com/gingerlabs/1-notability/c/14-text-justification"
     },
     {
@@ -1104,7 +1104,7 @@
       "roadmapStatus": "Launched",
       "source": "productboard",
       "updatedAt": "2024-01-30T20:25:14.703111+00:00",
-      "checkedAt": "2026-09-28T12:35:07.028Z",
+      "checkedAt": "2026-09-28T19:43:41.375Z",
       "url": "https://portal.productboard.com/gingerlabs/1-notability/c/78-non-unique-subject-names"
     },
     {
@@ -1114,7 +1114,7 @@
       "roadmapStatus": "Launched",
       "source": "productboard",
       "updatedAt": "2026-09-26T03:11:54.986109+00:00",
-      "checkedAt": "2026-09-28T12:35:07.028Z",
+      "checkedAt": "2026-09-28T19:43:41.375Z",
       "url": "https://portal.productboard.com/gingerlabs/1-notability/c/155-study-timer"
     },
     {
@@ -1124,7 +1124,7 @@
       "roadmapStatus": "Actively Considering",
       "source": "productboard",
       "updatedAt": "2026-09-15T22:45:42.535309+00:00",
-      "checkedAt": "2026-09-28T12:35:07.028Z",
+      "checkedAt": "2026-09-28T19:43:41.375Z",
       "url": "https://portal.productboard.com/gingerlabs/1-notability/c/152-study-video-content"
     },
     {
@@ -1134,7 +1134,7 @@
       "roadmapStatus": "Launched",
       "source": "productboard",
       "updatedAt": "2026-02-13T16:52:59.799586+00:00",
-      "checkedAt": "2026-09-28T12:35:07.028Z",
+      "checkedAt": "2026-09-28T19:43:41.375Z",
       "url": "https://portal.productboard.com/gingerlabs/1-notability/c/96-move-all-content-together-with-the-select-tool"
     },
     {
@@ -1144,7 +1144,7 @@
       "roadmapStatus": "Launched",
       "source": "productboard",
       "updatedAt": "2024-01-30T20:07:14.829636+00:00",
-      "checkedAt": "2026-09-28T12:35:07.028Z",
+      "checkedAt": "2026-09-28T19:43:41.375Z",
       "url": "https://portal.productboard.com/gingerlabs/1-notability/c/57-bulk-actions"
     },
     {
@@ -1154,7 +1154,7 @@
       "roadmapStatus": "Building",
       "source": "productboard",
       "updatedAt": "2026-09-15T07:13:17.999989+00:00",
-      "checkedAt": "2026-09-28T12:35:07.028Z",
+      "checkedAt": "2026-09-28T19:43:41.375Z",
       "url": "https://portal.productboard.com/gingerlabs/1-notability/c/125-shapes-library"
     },
     {
@@ -1164,7 +1164,7 @@
       "roadmapStatus": "Prototyping / Experimenting",
       "source": "productboard",
       "updatedAt": "2026-09-22T19:18:56.523429+00:00",
-      "checkedAt": "2026-09-28T12:35:07.028Z",
+      "checkedAt": "2026-09-28T19:43:41.375Z",
       "url": "https://portal.productboard.com/gingerlabs/1-notability/c/118-customize-page-backgrounds-inside-each-note"
     },
     {
@@ -1174,7 +1174,7 @@
       "roadmapStatus": "Launched",
       "source": "productboard",
       "updatedAt": "2026-02-13T16:55:20.771646+00:00",
-      "checkedAt": "2026-09-28T12:35:07.028Z",
+      "checkedAt": "2026-09-28T19:43:41.375Z",
       "url": "https://portal.productboard.com/gingerlabs/1-notability/c/97-partial-eraser"
     },
     {
@@ -1184,7 +1184,7 @@
       "roadmapStatus": "Prototyping / Experimenting",
       "source": "productboard",
       "updatedAt": "2026-09-26T20:50:08.894416+00:00",
-      "checkedAt": "2026-09-28T12:35:07.028Z",
+      "checkedAt": "2026-09-28T19:43:41.375Z",
       "url": "https://portal.productboard.com/gingerlabs/1-notability/c/66-infinite-paper"
     },
     {
@@ -1194,7 +1194,7 @@
       "roadmapStatus": "Launched",
       "source": "productboard",
       "updatedAt": "2025-02-20T03:35:41.875497+00:00",
-      "checkedAt": "2026-09-28T12:35:07.028Z",
+      "checkedAt": "2026-09-28T19:43:41.375Z",
       "url": "https://portal.productboard.com/gingerlabs/1-notability/c/91-improved-highlighter-tool"
     },
     {
@@ -1204,7 +1204,7 @@
       "roadmapStatus": "Launched",
       "source": "productboard",
       "updatedAt": "2024-06-19T19:37:54.229579+00:00",
-      "checkedAt": "2026-09-28T12:35:07.028Z",
+      "checkedAt": "2026-09-28T19:43:41.375Z",
       "url": "https://portal.productboard.com/gingerlabs/1-notability/c/116-custom-templates"
     },
     {
@@ -1214,7 +1214,7 @@
       "roadmapStatus": "Launched",
       "source": "productboard",
       "updatedAt": "2026-08-27T18:09:07.483051+00:00",
-      "checkedAt": "2026-09-28T12:35:07.028Z",
+      "checkedAt": "2026-09-28T19:43:41.375Z",
       "url": "https://portal.productboard.com/gingerlabs/1-notability/c/131-auto-deselect-eraser"
     },
     {
@@ -1224,7 +1224,7 @@
       "roadmapStatus": "Launched",
       "source": "productboard",
       "updatedAt": "2024-01-30T22:16:53.910109+00:00",
-      "checkedAt": "2026-09-28T12:35:07.028Z",
+      "checkedAt": "2026-09-28T19:43:41.375Z",
       "url": "https://portal.productboard.com/gingerlabs/1-notability/c/94-import-files-from-files-app"
     },
     {
@@ -1234,7 +1234,7 @@
       "roadmapStatus": "Launched",
       "source": "productboard",
       "updatedAt": "2025-06-05T21:32:07.066239+00:00",
-      "checkedAt": "2026-09-28T12:35:07.028Z",
+      "checkedAt": "2026-09-28T19:43:41.375Z",
       "url": "https://portal.productboard.com/gingerlabs/1-notability/c/102-custom-colors"
     },
     {
@@ -1244,7 +1244,7 @@
       "roadmapStatus": "Launched",
       "source": "productboard",
       "updatedAt": "2025-01-26T23:52:29.053643+00:00",
-      "checkedAt": "2026-09-28T12:35:07.028Z",
+      "checkedAt": "2026-09-28T19:43:41.375Z",
       "url": "https://portal.productboard.com/gingerlabs/1-notability/c/76-dashed-dotted-lines"
     },
     {
@@ -1254,7 +1254,7 @@
       "roadmapStatus": "Launched",
       "source": "productboard",
       "updatedAt": "2026-02-13T16:41:18.133221+00:00",
-      "checkedAt": "2026-09-28T12:35:07.028Z",
+      "checkedAt": "2026-09-28T19:43:41.375Z",
       "url": "https://portal.productboard.com/gingerlabs/1-notability/c/162-web-app-pdf-table-of-contents-for-learn"
     },
     {
@@ -1264,7 +1264,7 @@
       "roadmapStatus": "Launched",
       "source": "productboard",
       "updatedAt": "2025-05-27T16:32:06.896105+00:00",
-      "checkedAt": "2026-09-28T12:35:07.028Z",
+      "checkedAt": "2026-09-28T19:43:41.375Z",
       "url": "https://portal.productboard.com/gingerlabs/1-notability/c/159-media-menu-revamp"
     },
     {
@@ -1274,7 +1274,7 @@
       "roadmapStatus": "Launched",
       "source": "productboard",
       "updatedAt": "2026-07-10T01:15:51.418973+00:00",
-      "checkedAt": "2026-09-28T12:35:07.028Z",
+      "checkedAt": "2026-09-28T19:43:41.375Z",
       "url": "https://portal.productboard.com/gingerlabs/1-notability/c/43-rtl-right-to-left-typing"
     },
     {
@@ -1284,7 +1284,7 @@
       "roadmapStatus": "Actively Considering",
       "source": "productboard",
       "updatedAt": "2026-09-17T22:30:26.848478+00:00",
-      "checkedAt": "2026-09-28T12:35:07.028Z",
+      "checkedAt": "2026-09-28T19:43:41.375Z",
       "url": "https://portal.productboard.com/gingerlabs/1-notability/c/132-sort-search-results"
     },
     {
@@ -1294,7 +1294,7 @@
       "roadmapStatus": "Launched",
       "source": "productboard",
       "updatedAt": "2026-08-27T18:05:42.878499+00:00",
-      "checkedAt": "2026-09-28T12:35:07.028Z",
+      "checkedAt": "2026-09-28T19:43:41.375Z",
       "url": "https://portal.productboard.com/gingerlabs/1-notability/c/174-support-apple-pencil-hover"
     },
     {
@@ -1304,7 +1304,7 @@
       "roadmapStatus": "Actively Considering",
       "source": "productboard",
       "updatedAt": "2026-09-28T07:34:37.765337+00:00",
-      "checkedAt": "2026-09-28T12:35:07.028Z",
+      "checkedAt": "2026-09-28T19:43:41.375Z",
       "url": "https://portal.productboard.com/gingerlabs/1-notability/c/71-reminders"
     },
     {
@@ -1314,7 +1314,7 @@
       "roadmapStatus": "Launched",
       "source": "productboard",
       "updatedAt": "2024-09-23T02:51:05.883698+00:00",
-      "checkedAt": "2026-09-28T12:35:07.028Z",
+      "checkedAt": "2026-09-28T19:43:41.375Z",
       "url": "https://portal.productboard.com/gingerlabs/1-notability/c/144-auto-switch-to-last-used-tool-after-erasing"
     },
     {
@@ -1324,7 +1324,7 @@
       "roadmapStatus": "Launched",
       "source": "productboard",
       "updatedAt": "2026-07-24T19:59:08.679815+00:00",
-      "checkedAt": "2026-09-28T12:35:07.028Z",
+      "checkedAt": "2026-09-28T19:43:41.375Z",
       "url": "https://portal.productboard.com/gingerlabs/1-notability/c/167-version-history"
     },
     {
@@ -1334,7 +1334,7 @@
       "roadmapStatus": "Launched",
       "source": "productboard",
       "updatedAt": "2026-09-15T00:38:47.750715+00:00",
-      "checkedAt": "2026-09-28T12:35:07.028Z",
+      "checkedAt": "2026-09-28T19:43:41.375Z",
       "url": "https://portal.productboard.com/gingerlabs/1-notability/c/177-notability-for-mac-and-windows"
     },
     {
@@ -1344,7 +1344,7 @@
       "roadmapStatus": "Launched",
       "source": "productboard",
       "updatedAt": "2026-04-14T00:02:11.005501+00:00",
-      "checkedAt": "2026-09-28T12:35:07.028Z",
+      "checkedAt": "2026-09-28T19:43:41.375Z",
       "url": "https://portal.productboard.com/gingerlabs/1-notability/c/48-line-spacing-options"
     },
     {
@@ -1354,7 +1354,7 @@
       "roadmapStatus": "Launched",
       "source": "productboard",
       "updatedAt": "2025-09-04T12:58:56.414359+00:00",
-      "checkedAt": "2026-09-28T12:35:07.028Z",
+      "checkedAt": "2026-09-28T19:43:41.375Z",
       "url": "https://portal.productboard.com/gingerlabs/1-notability/c/107-different-speeds-for-audio-playback"
     },
     {
@@ -1364,7 +1364,7 @@
       "roadmapStatus": "Prototyping / Experimenting",
       "source": "productboard",
       "updatedAt": "2026-09-26T03:15:55.099313+00:00",
-      "checkedAt": "2026-09-28T12:35:07.028Z",
+      "checkedAt": "2026-09-28T19:43:41.375Z",
       "url": "https://portal.productboard.com/gingerlabs/1-notability/c/179-smart-notes-customization"
     },
     {
@@ -1374,7 +1374,7 @@
       "roadmapStatus": "Launched",
       "source": "productboard",
       "updatedAt": "2026-09-06T11:42:38.132175+00:00",
-      "checkedAt": "2026-09-28T12:35:07.028Z",
+      "checkedAt": "2026-09-28T19:43:41.375Z",
       "url": "https://portal.productboard.com/gingerlabs/1-notability/c/154-single-sign-on-sso-"
     },
     {
@@ -1384,7 +1384,7 @@
       "roadmapStatus": "Launched",
       "source": "productboard",
       "updatedAt": "2026-02-13T16:54:04.16896+00:00",
-      "checkedAt": "2026-09-28T12:35:07.028Z",
+      "checkedAt": "2026-09-28T19:43:41.375Z",
       "url": "https://portal.productboard.com/gingerlabs/1-notability/c/157-mix-and-match-game"
     },
     {
@@ -1394,7 +1394,7 @@
       "roadmapStatus": "Actively Considering",
       "source": "productboard",
       "updatedAt": "2026-09-15T07:14:33.739796+00:00",
-      "checkedAt": "2026-09-28T12:35:07.028Z",
+      "checkedAt": "2026-09-28T19:43:41.375Z",
       "url": "https://portal.productboard.com/gingerlabs/1-notability/c/184-custom-or-multiple-app-icons"
     },
     {
@@ -1404,7 +1404,7 @@
       "roadmapStatus": "Launched",
       "source": "productboard",
       "updatedAt": "2025-03-04T17:53:31.346957+00:00",
-      "checkedAt": "2026-09-28T12:35:07.028Z",
+      "checkedAt": "2026-09-28T19:43:41.375Z",
       "url": "https://portal.productboard.com/gingerlabs/1-notability/c/149-fill-in-the-blanks"
     },
     {
@@ -1414,7 +1414,7 @@
       "roadmapStatus": "Launched",
       "source": "productboard",
       "updatedAt": "2025-09-04T12:58:56.363405+00:00",
-      "checkedAt": "2026-09-28T12:35:07.028Z",
+      "checkedAt": "2026-09-28T19:43:41.375Z",
       "url": "https://portal.productboard.com/gingerlabs/1-notability/c/101-word-count"
     },
     {
@@ -1424,7 +1424,7 @@
       "roadmapStatus": "Actively Considering",
       "source": "productboard",
       "updatedAt": "2026-09-22T20:32:20.781607+00:00",
-      "checkedAt": "2026-09-28T12:35:07.028Z",
+      "checkedAt": "2026-09-28T19:43:41.375Z",
       "url": "https://portal.productboard.com/gingerlabs/1-notability/c/168-handwriting-font"
     },
     {
@@ -1434,7 +1434,7 @@
       "roadmapStatus": "Launched",
       "source": "productboard",
       "updatedAt": "2026-09-06T11:38:55.146271+00:00",
-      "checkedAt": "2026-09-28T12:35:07.028Z",
+      "checkedAt": "2026-09-28T19:43:41.375Z",
       "url": "https://portal.productboard.com/gingerlabs/1-notability/c/120-note-covers"
     },
     {
@@ -1444,7 +1444,7 @@
       "roadmapStatus": "Launched",
       "source": "productboard",
       "updatedAt": "2025-10-31T11:22:37.981832+00:00",
-      "checkedAt": "2026-09-28T12:35:07.028Z",
+      "checkedAt": "2026-09-28T19:43:41.375Z",
       "url": "https://portal.productboard.com/gingerlabs/1-notability/c/111-zoom-view-added-to-toolbox"
     },
     {
@@ -1454,7 +1454,7 @@
       "roadmapStatus": "Launched",
       "source": "productboard",
       "updatedAt": "2025-10-21T11:41:56.29429+00:00",
-      "checkedAt": "2026-09-28T12:35:07.028Z",
+      "checkedAt": "2026-09-28T19:43:41.375Z",
       "url": "https://portal.productboard.com/gingerlabs/1-notability/c/128-web-app"
     },
     {
@@ -1464,7 +1464,7 @@
       "roadmapStatus": "Actively Considering",
       "source": "productboard",
       "updatedAt": "2026-09-27T10:38:44.241842+00:00",
-      "checkedAt": "2026-09-28T12:35:07.028Z",
+      "checkedAt": "2026-09-28T19:43:41.375Z",
       "url": "https://portal.productboard.com/gingerlabs/1-notability/c/53-tags"
     },
     {
@@ -1474,7 +1474,7 @@
       "roadmapStatus": "Launched",
       "source": "productboard",
       "updatedAt": "2026-08-16T18:03:40.073956+00:00",
-      "checkedAt": "2026-09-28T12:35:07.028Z",
+      "checkedAt": "2026-09-28T19:43:41.375Z",
       "url": "https://portal.productboard.com/gingerlabs/1-notability/c/95-perfect-shapes"
     },
     {
@@ -1484,7 +1484,7 @@
       "roadmapStatus": "Launched",
       "source": "productboard",
       "updatedAt": "2026-06-25T15:37:39.352304+00:00",
-      "checkedAt": "2026-09-28T12:35:07.028Z",
+      "checkedAt": "2026-09-28T19:43:41.375Z",
       "url": "https://portal.productboard.com/gingerlabs/1-notability/c/172-nested-folders"
     },
     {
@@ -1494,7 +1494,7 @@
       "roadmapStatus": "Prototyping / Experimenting",
       "source": "productboard",
       "updatedAt": "2026-09-14T17:03:22.765737+00:00",
-      "checkedAt": "2026-09-28T12:35:07.028Z",
+      "checkedAt": "2026-09-28T19:43:41.375Z",
       "url": "https://portal.productboard.com/gingerlabs/1-notability/c/145-summarize-highlighted-text"
     },
     {
@@ -1504,7 +1504,7 @@
       "roadmapStatus": "Actively Considering",
       "source": "productboard",
       "updatedAt": "2026-08-08T14:44:36.024486+00:00",
-      "checkedAt": "2026-09-28T12:35:07.028Z",
+      "checkedAt": "2026-09-28T19:43:41.375Z",
       "url": "https://portal.productboard.com/gingerlabs/1-notability/c/82-automatically-sort-subjects-and-dividers"
     },
     {
@@ -1514,7 +1514,7 @@
       "roadmapStatus": "Launched",
       "source": "productboard",
       "updatedAt": "2025-06-17T13:10:11.334241+00:00",
-      "checkedAt": "2026-09-28T12:35:07.028Z",
+      "checkedAt": "2026-09-28T19:43:41.375Z",
       "url": "https://portal.productboard.com/gingerlabs/1-notability/c/85-same-note-viewing"
     },
     {
@@ -1524,7 +1524,7 @@
       "roadmapStatus": "Launched",
       "source": "productboard",
       "updatedAt": "2026-03-24T17:56:50.884645+00:00",
-      "checkedAt": "2026-09-28T12:35:07.028Z",
+      "checkedAt": "2026-09-28T19:43:41.375Z",
       "url": "https://portal.productboard.com/gingerlabs/1-notability/c/127-live-collaboration"
     },
     {
@@ -1534,7 +1534,7 @@
       "roadmapStatus": "Launched",
       "source": "productboard",
       "updatedAt": "2026-08-28T22:37:28.591314+00:00",
-      "checkedAt": "2026-09-28T12:35:07.028Z",
+      "checkedAt": "2026-09-28T19:43:41.375Z",
       "url": "https://portal.productboard.com/gingerlabs/1-notability/c/176-spaced-repetition-system"
     },
     {
@@ -1544,7 +1544,7 @@
       "roadmapStatus": "Launched",
       "source": "productboard",
       "updatedAt": "2024-07-08T21:23:44.457285+00:00",
-      "checkedAt": "2026-09-28T12:35:07.028Z",
+      "checkedAt": "2026-09-28T19:43:41.375Z",
       "url": "https://portal.productboard.com/gingerlabs/1-notability/c/129-show-hide-all-tape"
     },
     {
@@ -1554,7 +1554,7 @@
       "roadmapStatus": "Actively Considering",
       "source": "productboard",
       "updatedAt": "2026-09-12T03:47:58.002071+00:00",
-      "checkedAt": "2026-09-28T12:35:07.028Z",
+      "checkedAt": "2026-09-28T19:43:41.375Z",
       "url": "https://portal.productboard.com/gingerlabs/1-notability/c/130-custom-toolsets"
     },
     {
@@ -1564,7 +1564,7 @@
       "roadmapStatus": "Launched",
       "source": "productboard",
       "updatedAt": "2025-06-20T22:20:52.546275+00:00",
-      "checkedAt": "2026-09-28T12:35:07.028Z",
+      "checkedAt": "2026-09-28T19:43:41.375Z",
       "url": "https://portal.productboard.com/gingerlabs/1-notability/c/121-summarize-audio-transcripts"
     },
     {
@@ -1574,7 +1574,7 @@
       "roadmapStatus": "Launched",
       "source": "productboard",
       "updatedAt": "2026-04-22T13:55:59.905007+00:00",
-      "checkedAt": "2026-09-28T12:35:07.028Z",
+      "checkedAt": "2026-09-28T19:43:41.375Z",
       "url": "https://portal.productboard.com/gingerlabs/1-notability/c/160-web-and-ios-sync"
     },
     {
@@ -1584,7 +1584,7 @@
       "roadmapStatus": "Building",
       "source": "productboard",
       "updatedAt": "2026-09-12T04:06:14.206781+00:00",
-      "checkedAt": "2026-09-28T12:35:07.028Z",
+      "checkedAt": "2026-09-28T19:43:41.375Z",
       "url": "https://portal.productboard.com/gingerlabs/1-notability/c/178-achievements-and-study-goals"
     },
     {
@@ -1594,7 +1594,7 @@
       "roadmapStatus": "Launched",
       "source": "productboard",
       "updatedAt": "2024-01-30T22:51:23.041668+00:00",
-      "checkedAt": "2026-09-28T12:35:07.028Z",
+      "checkedAt": "2026-09-28T19:43:41.375Z",
       "url": "https://portal.productboard.com/gingerlabs/1-notability/c/38-iphone-content-manager"
     },
     {
@@ -1604,7 +1604,7 @@
       "roadmapStatus": "Launched",
       "source": "productboard",
       "updatedAt": "2026-09-12T16:23:31.619091+00:00",
-      "checkedAt": "2026-09-28T12:35:07.028Z",
+      "checkedAt": "2026-09-28T19:43:41.375Z",
       "url": "https://portal.productboard.com/gingerlabs/1-notability/c/60-calligraphy-pen"
     },
     {
@@ -1613,8 +1613,8 @@
       "description": "Ability to make tables with rows and columns in a note. Questions What would you use tables for?",
       "roadmapStatus": "Actively Considering",
       "source": "productboard",
-      "updatedAt": "2026-09-27T10:26:07.234698+00:00",
-      "checkedAt": "2026-09-28T12:35:07.028Z",
+      "updatedAt": "2026-09-28T18:38:10.388965+00:00",
+      "checkedAt": "2026-09-28T19:43:41.375Z",
       "url": "https://portal.productboard.com/gingerlabs/1-notability/c/59-tables"
     },
     {
@@ -1624,7 +1624,7 @@
       "roadmapStatus": "Launched",
       "source": "productboard",
       "updatedAt": "2026-09-06T11:41:47.698997+00:00",
-      "checkedAt": "2026-09-28T12:35:07.028Z",
+      "checkedAt": "2026-09-28T19:43:41.375Z",
       "url": "https://portal.productboard.com/gingerlabs/1-notability/c/151-ai-chat"
     },
     {
@@ -1634,7 +1634,7 @@
       "roadmapStatus": "Actively Considering",
       "source": "productboard",
       "updatedAt": "2026-09-23T18:28:55.558843+00:00",
-      "checkedAt": "2026-09-28T12:35:07.028Z",
+      "checkedAt": "2026-09-28T19:43:41.375Z",
       "url": "https://portal.productboard.com/gingerlabs/1-notability/c/153-study-photos-images"
     },
     {
@@ -1644,7 +1644,7 @@
       "roadmapStatus": "Launched",
       "source": "productboard",
       "updatedAt": "2026-01-09T23:08:26.658378+00:00",
-      "checkedAt": "2026-09-28T12:35:07.028Z",
+      "checkedAt": "2026-09-28T19:43:41.375Z",
       "url": "https://portal.productboard.com/gingerlabs/1-notability/c/166-web-app-youtube-links"
     },
     {
@@ -1654,7 +1654,7 @@
       "roadmapStatus": "Launched",
       "source": "productboard",
       "updatedAt": "2026-07-24T20:18:21.2008+00:00",
-      "checkedAt": "2026-09-28T12:35:07.028Z",
+      "checkedAt": "2026-09-28T19:43:41.375Z",
       "url": "https://portal.productboard.com/gingerlabs/1-notability/c/175-focus-mode"
     },
     {
@@ -1664,7 +1664,7 @@
       "roadmapStatus": "Launched",
       "source": "productboard",
       "updatedAt": "2026-02-13T16:44:43.622951+00:00",
-      "checkedAt": "2026-09-28T12:35:07.028Z",
+      "checkedAt": "2026-09-28T19:43:41.375Z",
       "url": "https://portal.productboard.com/gingerlabs/1-notability/c/90-presentation-mode"
     },
     {
@@ -1674,7 +1674,7 @@
       "roadmapStatus": "Launched",
       "source": "productboard",
       "updatedAt": "2026-09-26T03:09:49.055497+00:00",
-      "checkedAt": "2026-09-28T12:35:07.028Z",
+      "checkedAt": "2026-09-28T19:43:41.375Z",
       "url": "https://portal.productboard.com/gingerlabs/1-notability/c/165-flashcard-import-support"
     },
     {
@@ -1684,7 +1684,7 @@
       "roadmapStatus": "Launched",
       "source": "productboard",
       "updatedAt": "2026-03-24T17:55:47.30081+00:00",
-      "checkedAt": "2026-09-28T12:35:07.028Z",
+      "checkedAt": "2026-09-28T19:43:41.375Z",
       "url": "https://portal.productboard.com/gingerlabs/1-notability/c/169-lock-contents-to-prevent-editing"
     },
     {
@@ -1694,7 +1694,7 @@
       "roadmapStatus": "Launched",
       "source": "productboard",
       "updatedAt": "2026-08-26T23:35:55.341273+00:00",
-      "checkedAt": "2026-09-28T12:35:07.028Z",
+      "checkedAt": "2026-09-28T19:43:41.375Z",
       "url": "https://portal.productboard.com/gingerlabs/1-notability/c/108-multi-level-library-organization"
     },
     {
@@ -1704,7 +1704,7 @@
       "roadmapStatus": "Building",
       "source": "productboard",
       "updatedAt": "2026-09-26T03:13:20.678571+00:00",
-      "checkedAt": "2026-09-28T12:35:07.028Z",
+      "checkedAt": "2026-09-28T19:43:41.375Z",
       "url": "https://portal.productboard.com/gingerlabs/1-notability/c/182-chat-across-your-notes"
     },
     {
@@ -1714,7 +1714,7 @@
       "roadmapStatus": "Launched",
       "source": "productboard",
       "updatedAt": "2026-09-27T04:17:55.333106+00:00",
-      "checkedAt": "2026-09-28T12:35:07.028Z",
+      "checkedAt": "2026-09-28T19:43:41.375Z",
       "url": "https://portal.productboard.com/gingerlabs/1-notability/c/158-android-app"
     },
     {
@@ -1724,7 +1724,7 @@
       "roadmapStatus": "Building",
       "source": "productboard",
       "updatedAt": "2026-09-15T00:37:05.309314+00:00",
-      "checkedAt": "2026-09-28T12:35:07.028Z",
+      "checkedAt": "2026-09-28T19:43:41.375Z",
       "url": "https://portal.productboard.com/gingerlabs/1-notability/c/113-integrate-planners-with-calendar-apps"
     },
     {
@@ -1734,7 +1734,7 @@
       "roadmapStatus": "Prototyping / Experimenting",
       "source": "productboard",
       "updatedAt": "2026-09-03T16:26:48.458472+00:00",
-      "checkedAt": "2026-09-28T12:35:07.028Z",
+      "checkedAt": "2026-09-28T19:43:41.375Z",
       "url": "https://portal.productboard.com/gingerlabs/1-notability/c/164-live-transcripts-diarization"
     },
     {
@@ -1744,7 +1744,7 @@
       "roadmapStatus": "Launched",
       "source": "productboard",
       "updatedAt": "2026-02-06T19:41:03.222134+00:00",
-      "checkedAt": "2026-09-28T12:35:07.028Z",
+      "checkedAt": "2026-09-28T19:43:41.375Z",
       "url": "https://portal.productboard.com/gingerlabs/1-notability/c/73-non-unique-note-names"
     },
     {
@@ -1754,7 +1754,7 @@
       "roadmapStatus": "Building",
       "source": "productboard",
       "updatedAt": "2026-09-03T16:27:38.576586+00:00",
-      "checkedAt": "2026-09-28T12:35:07.028Z",
+      "checkedAt": "2026-09-28T19:43:41.375Z",
       "url": "https://portal.productboard.com/gingerlabs/1-notability/c/181-scale-of-measurement"
     }
   ],
@@ -1771,7 +1771,7 @@
         "Fixed an issue with scrolling alongside text selection"
       ],
       "sourceUrl": "https://support.gingerlabs.com/hc/en-us/articles/9414165465882-Latest-iOS-App-Updates#h_01JZ12E1QFX53ZEBB9EM432CNC",
-      "checkedAt": "2026-09-28T12:35:07.028Z",
+      "checkedAt": "2026-09-28T19:43:41.375Z",
       "sourceUpdatedAt": "2026-09-23T19:45:08Z"
     },
     {
@@ -1785,7 +1785,7 @@
       ],
       "fixes": [],
       "sourceUrl": "https://support.gingerlabs.com/hc/en-us/articles/9414165465882-Latest-iOS-App-Updates#h_01M32JX3D568T2DSMBM8QQXMY6",
-      "checkedAt": "2026-09-28T12:35:07.028Z",
+      "checkedAt": "2026-09-28T19:43:41.375Z",
       "sourceUpdatedAt": "2026-09-23T19:45:08Z"
     },
     {
@@ -1800,7 +1800,7 @@
       ],
       "fixes": [],
       "sourceUrl": "https://support.gingerlabs.com/hc/en-us/articles/9414165465882-Latest-iOS-App-Updates#h_01M2GD9K482H35RHZ3SB4WY8TD",
-      "checkedAt": "2026-09-28T12:35:07.028Z",
+      "checkedAt": "2026-09-28T19:43:41.375Z",
       "sourceUpdatedAt": "2026-09-23T19:45:08Z"
     },
     {
@@ -1817,7 +1817,7 @@
         "Fixed an iCloud sync issue after reconnecting to the internet"
       ],
       "sourceUrl": "https://support.gingerlabs.com/hc/en-us/articles/9414165465882-Latest-iOS-App-Updates#h_01M21GRTVQSQQDTSJKXC2ZV8X7",
-      "checkedAt": "2026-09-28T12:35:07.028Z",
+      "checkedAt": "2026-09-28T19:43:41.375Z",
       "sourceUpdatedAt": "2026-09-23T19:45:08Z"
     },
     {
@@ -1831,7 +1831,7 @@
       ],
       "fixes": [],
       "sourceUrl": "https://support.gingerlabs.com/hc/en-us/articles/9414165465882-Latest-iOS-App-Updates#h_01M1CRHRWJGGQGT0RGJE8Q4K9N",
-      "checkedAt": "2026-09-28T12:35:07.028Z",
+      "checkedAt": "2026-09-28T19:43:41.375Z",
       "sourceUpdatedAt": "2026-09-23T19:45:08Z"
     },
     {
@@ -1846,7 +1846,7 @@
       ],
       "fixes": [],
       "sourceUrl": "https://support.gingerlabs.com/hc/en-us/articles/9414165465882-Latest-iOS-App-Updates#h_01M0T5BNV9B16A75ZYPK91FCPC",
-      "checkedAt": "2026-09-28T12:35:07.028Z",
+      "checkedAt": "2026-09-28T19:43:41.375Z",
       "sourceUpdatedAt": "2026-09-23T19:45:08Z"
     },
     {
@@ -1864,7 +1864,7 @@
       ],
       "fixes": [],
       "sourceUrl": "https://support.gingerlabs.com/hc/en-us/articles/9414165465882-Latest-iOS-App-Updates#h_01M08G0TY3HQ2NW89H6ADEKZ6E",
-      "checkedAt": "2026-09-28T12:35:07.028Z",
+      "checkedAt": "2026-09-28T19:43:41.375Z",
       "sourceUpdatedAt": "2026-09-23T19:45:08Z"
     },
     {
@@ -1881,7 +1881,7 @@
       ],
       "fixes": [],
       "sourceUrl": "https://support.gingerlabs.com/hc/en-us/articles/9414165465882-Latest-iOS-App-Updates#h_01KZPZ4C1CBEEDCQYWB5BQZ1ND",
-      "checkedAt": "2026-09-28T12:35:07.028Z",
+      "checkedAt": "2026-09-28T19:43:41.375Z",
       "sourceUpdatedAt": "2026-09-23T19:45:08Z"
     },
     {
@@ -1897,7 +1897,7 @@
         "Fixed a bug with handwriting conversion across page breaks"
       ],
       "sourceUrl": "https://support.gingerlabs.com/hc/en-us/articles/9414165465882-Latest-iOS-App-Updates#h_01KZ4QHZ03VBVC0KTC4FQ1THK6",
-      "checkedAt": "2026-09-28T12:35:07.028Z",
+      "checkedAt": "2026-09-28T19:43:41.375Z",
       "sourceUpdatedAt": "2026-09-23T19:45:08Z"
     },
     {
@@ -1911,7 +1911,7 @@
         "Fixed an issue with Apple Pencil squeeze"
       ],
       "sourceUrl": "https://support.gingerlabs.com/hc/en-us/articles/9414165465882-Latest-iOS-App-Updates#h_01KYQ6QT2S6VJ0Z7PZDCKBBM2A",
-      "checkedAt": "2026-09-28T12:35:07.028Z",
+      "checkedAt": "2026-09-28T19:43:41.375Z",
       "sourceUpdatedAt": "2026-09-23T19:45:08Z"
     },
     {
@@ -1929,7 +1929,7 @@
         "Fixed bugs with the selection menu, Apple Pencil squeeze, and blurry PDF's"
       ],
       "sourceUrl": "https://support.gingerlabs.com/hc/en-us/articles/9414165465882-Latest-iOS-App-Updates#h_01KYAD750EG1AYPPGTTA1648ZE",
-      "checkedAt": "2026-09-28T12:35:07.028Z",
+      "checkedAt": "2026-09-28T19:43:41.375Z",
       "sourceUpdatedAt": "2026-09-23T19:45:08Z"
     },
     {
@@ -1945,7 +1945,7 @@
         "Fixed a bug on the compare plans screen"
       ],
       "sourceUrl": "https://support.gingerlabs.com/hc/en-us/articles/9414165465882-Latest-iOS-App-Updates#h_01KY082XX3GDWSQAMY27091752",
-      "checkedAt": "2026-09-28T12:35:07.028Z",
+      "checkedAt": "2026-09-28T19:43:41.375Z",
       "sourceUpdatedAt": "2026-09-23T19:45:08Z"
     }
   ],
@@ -1957,7 +1957,7 @@
       "url": "https://support.gingerlabs.com/hc/en-us/articles/11237905621146-YouTube-Links",
       "published_at": "2026-09-11T23:59:57Z",
       "updated_at": "2026-09-16T18:08:31Z",
-      "fetched_at": "2026-09-28T12:35:07.028Z",
+      "fetched_at": "2026-09-28T19:43:41.375Z",
       "category": "Support article"
     },
     {
@@ -1967,7 +1967,7 @@
       "url": "https://support.gingerlabs.com/hc/en-us/articles/11204023766426-Connecting-an-LMS-Calendar-to-Notability",
       "published_at": "2026-09-02T22:35:52Z",
       "updated_at": "2026-09-25T20:32:56Z",
-      "fetched_at": "2026-09-28T12:35:07.028Z",
+      "fetched_at": "2026-09-28T19:43:41.375Z",
       "category": "Support article"
     },
     {
@@ -1977,7 +1977,7 @@
       "url": "https://support.gingerlabs.com/hc/en-us/articles/11203804984474-Notes-Missing-After-Signing-In-to-Your-Notability-Account",
       "published_at": "2026-09-02T20:52:01Z",
       "updated_at": "2026-09-02T22:04:36Z",
-      "fetched_at": "2026-09-28T12:35:07.028Z",
+      "fetched_at": "2026-09-28T19:43:41.375Z",
       "category": "Support article"
     },
     {
@@ -1987,7 +1987,7 @@
       "url": "https://support.gingerlabs.com/hc/en-us/articles/11172169344410-Notability-for-Windows-and-Mac",
       "published_at": "2026-08-25T20:15:19Z",
       "updated_at": "2026-08-25T20:15:41Z",
-      "fetched_at": "2026-09-28T12:35:07.028Z",
+      "fetched_at": "2026-09-28T19:43:41.375Z",
       "category": "Support article"
     },
     {
@@ -1997,7 +1997,7 @@
       "url": "https://support.gingerlabs.com/hc/en-us/articles/11128218737690-Flashcards-Import",
       "published_at": "2026-08-13T23:05:56Z",
       "updated_at": "2026-08-17T18:34:13Z",
-      "fetched_at": "2026-09-28T12:35:07.028Z",
+      "fetched_at": "2026-09-28T19:43:41.375Z",
       "category": "Support article"
     },
     {
@@ -2007,7 +2007,7 @@
       "url": "https://support.gingerlabs.com/hc/en-us/articles/11113646664218-Calligraphy-Pen",
       "published_at": "2026-08-10T21:04:17Z",
       "updated_at": "2026-08-31T20:35:27Z",
-      "fetched_at": "2026-09-28T12:35:07.028Z",
+      "fetched_at": "2026-09-28T19:43:41.375Z",
       "category": "Support article"
     },
     {
@@ -2017,7 +2017,7 @@
       "url": "https://support.gingerlabs.com/hc/en-us/articles/11098423135130-Note-Covers",
       "published_at": "2026-08-06T22:21:34Z",
       "updated_at": "2026-08-11T18:11:42Z",
-      "fetched_at": "2026-09-28T12:35:07.028Z",
+      "fetched_at": "2026-09-28T19:43:41.375Z",
       "category": "Support article"
     },
     {
@@ -2027,7 +2027,7 @@
       "url": "https://support.gingerlabs.com/hc/en-us/articles/11090343122586-Audit-Log",
       "published_at": "2026-08-05T00:31:38Z",
       "updated_at": "2026-08-05T00:44:12Z",
-      "fetched_at": "2026-09-28T12:35:07.028Z",
+      "fetched_at": "2026-09-28T19:43:41.375Z",
       "category": "Support article"
     },
     {
@@ -2037,7 +2037,7 @@
       "url": "https://support.gingerlabs.com/hc/en-us/articles/11089433943962-Code-Blocks",
       "published_at": "2026-08-04T18:59:20Z",
       "updated_at": "2026-08-04T18:59:26Z",
-      "fetched_at": "2026-09-28T12:35:07.028Z",
+      "fetched_at": "2026-09-28T19:43:41.375Z",
       "category": "Support article"
     },
     {
@@ -2047,7 +2047,7 @@
       "url": "https://support.gingerlabs.com/hc/en-us/articles/11084175635354-Getting-Started-with-Notability-on-Android",
       "published_at": "2026-08-03T12:56:39Z",
       "updated_at": "2026-08-06T00:12:14Z",
-      "fetched_at": "2026-09-28T12:35:07.028Z",
+      "fetched_at": "2026-09-28T19:43:41.375Z",
       "category": "Support article"
     },
     {
@@ -2057,7 +2057,7 @@
       "url": "https://support.gingerlabs.com/hc/en-us/articles/11084032368538-Notability-for-Android-FAQ",
       "published_at": "2026-08-03T11:49:39Z",
       "updated_at": "2026-09-16T21:55:49Z",
-      "fetched_at": "2026-09-28T12:35:07.028Z",
+      "fetched_at": "2026-09-28T19:43:41.375Z",
       "category": "Support article"
     },
     {
@@ -2067,7 +2067,7 @@
       "url": "https://support.gingerlabs.com/hc/en-us/articles/11077257559834-PDF-Export-Web-App",
       "published_at": "2026-07-31T22:48:49Z",
       "updated_at": "2026-08-05T22:34:19Z",
-      "fetched_at": "2026-09-28T12:35:07.028Z",
+      "fetched_at": "2026-09-28T19:43:41.375Z",
       "category": "Support article"
     },
     {
@@ -2077,7 +2077,7 @@
       "url": "https://support.gingerlabs.com/hc/en-us/articles/11024693470618-Notability-Home-Screen",
       "published_at": "2026-07-17T23:30:52Z",
       "updated_at": "2026-07-21T18:42:13Z",
-      "fetched_at": "2026-09-28T12:35:07.028Z",
+      "fetched_at": "2026-09-28T19:43:41.375Z",
       "category": "Support article"
     },
     {
@@ -2087,7 +2087,7 @@
       "url": "https://support.gingerlabs.com/hc/en-us/articles/11024152186010-Daily-Brain-Break",
       "published_at": "2026-07-17T18:56:10Z",
       "updated_at": "2026-07-21T18:42:30Z",
-      "fetched_at": "2026-09-28T12:35:07.028Z",
+      "fetched_at": "2026-09-28T19:43:41.375Z",
       "category": "Support article"
     },
     {
@@ -2097,7 +2097,7 @@
       "url": "https://support.gingerlabs.com/hc/en-us/articles/11012024558106-Focus-Mode",
       "published_at": "2026-07-14T22:51:34Z",
       "updated_at": "2026-07-20T17:11:01Z",
-      "fetched_at": "2026-09-28T12:35:07.028Z",
+      "fetched_at": "2026-09-28T19:43:41.375Z",
       "category": "Support article"
     },
     {
@@ -2107,7 +2107,7 @@
       "url": "https://support.gingerlabs.com/hc/en-us/articles/11011207841562-Notability-Learn-Guarantee-Terms-Conditions",
       "published_at": "2026-07-14T18:14:37Z",
       "updated_at": "2026-07-20T19:36:22Z",
-      "fetched_at": "2026-09-28T12:35:07.028Z",
+      "fetched_at": "2026-09-28T19:43:41.375Z",
       "category": "Support article"
     },
     {
@@ -2117,7 +2117,7 @@
       "url": "https://support.gingerlabs.com/hc/en-us/articles/11007313062554-Notability-Classic",
       "published_at": "2026-07-13T21:14:24Z",
       "updated_at": "2026-07-13T22:07:37Z",
-      "fetched_at": "2026-09-28T12:35:07.028Z",
+      "fetched_at": "2026-09-28T19:43:41.375Z",
       "category": "Support article"
     },
     {
@@ -2127,7 +2127,7 @@
       "url": "https://support.gingerlabs.com/hc/en-us/articles/10985216306074-Notability-for-Business-Feature-Controls",
       "published_at": "2026-07-07T15:51:02Z",
       "updated_at": "2026-07-07T15:52:15Z",
-      "fetched_at": "2026-09-28T12:35:07.028Z",
+      "fetched_at": "2026-09-28T19:43:41.375Z",
       "category": "Support article"
     },
     {
@@ -2137,7 +2137,7 @@
       "url": "https://support.gingerlabs.com/hc/en-us/articles/10969881956250-Notability-Cloud-Version-History",
       "published_at": "2026-07-02T23:53:27Z",
       "updated_at": "2026-07-07T18:40:02Z",
-      "fetched_at": "2026-09-28T12:35:07.028Z",
+      "fetched_at": "2026-09-28T19:43:41.375Z",
       "category": "Support article"
     },
     {
@@ -2147,7 +2147,7 @@
       "url": "https://support.gingerlabs.com/hc/en-us/articles/10969216022298-Refer-a-Friend",
       "published_at": "2026-07-02T19:06:16Z",
       "updated_at": "2026-08-04T18:51:46Z",
-      "fetched_at": "2026-09-28T12:35:07.028Z",
+      "fetched_at": "2026-09-28T19:43:41.375Z",
       "category": "Support article"
     },
     {
@@ -2157,7 +2157,7 @@
       "url": "https://support.gingerlabs.com/hc/en-us/articles/10943402541338-Improved-Flashcards",
       "published_at": "2026-06-25T19:12:51Z",
       "updated_at": "2026-06-25T19:14:27Z",
-      "fetched_at": "2026-09-28T12:35:07.028Z",
+      "fetched_at": "2026-09-28T19:43:41.375Z",
       "category": "Support article"
     },
     {
@@ -2167,7 +2167,7 @@
       "url": "https://support.gingerlabs.com/hc/en-us/articles/10938438753818-Notability-for-Business-Intune-MAM-Guide",
       "published_at": "2026-06-24T17:23:28Z",
       "updated_at": "2026-06-24T17:38:18Z",
-      "fetched_at": "2026-09-28T12:35:07.028Z",
+      "fetched_at": "2026-09-28T19:43:41.375Z",
       "category": "Support article"
     },
     {
@@ -2177,7 +2177,7 @@
       "url": "https://support.gingerlabs.com/hc/en-us/articles/10938460879002-Notability-for-Business-Intune-MAM-Guide",
       "published_at": "2026-06-24T17:23:27Z",
       "updated_at": "2026-06-24T17:38:18Z",
-      "fetched_at": "2026-09-28T12:35:07.028Z",
+      "fetched_at": "2026-09-28T19:43:41.375Z",
       "category": "Support article"
     },
     {
@@ -2187,7 +2187,7 @@
       "url": "https://support.gingerlabs.com/hc/en-us/articles/10595630832666-Study-Timer",
       "published_at": "2026-04-24T22:38:44Z",
       "updated_at": "2026-05-12T18:39:57Z",
-      "fetched_at": "2026-09-28T12:35:07.028Z",
+      "fetched_at": "2026-09-28T19:43:41.375Z",
       "category": "Support article"
     },
     {
@@ -2197,7 +2197,7 @@
       "url": "https://support.gingerlabs.com/hc/en-us/articles/10544263339290-PDF-Outlines",
       "published_at": "2026-04-13T21:03:42Z",
       "updated_at": "2026-04-13T21:04:10Z",
-      "fetched_at": "2026-09-28T12:35:07.028Z",
+      "fetched_at": "2026-09-28T19:43:41.375Z",
       "category": "Support article"
     },
     {
@@ -2207,7 +2207,7 @@
       "url": "https://support.gingerlabs.com/hc/en-us/articles/10463526132122-Live-Collaboration",
       "published_at": "2026-03-24T15:37:18Z",
       "updated_at": "2026-07-20T17:18:42Z",
-      "fetched_at": "2026-09-28T12:35:07.028Z",
+      "fetched_at": "2026-09-28T19:43:41.375Z",
       "category": "Support article"
     },
     {
@@ -2217,7 +2217,7 @@
       "url": "https://support.gingerlabs.com/hc/en-us/articles/10463473508506-Organize-Notes-with-Folders",
       "published_at": "2026-03-24T15:33:37Z",
       "updated_at": "2026-03-26T21:47:10Z",
-      "fetched_at": "2026-09-28T12:35:07.028Z",
+      "fetched_at": "2026-09-28T19:43:41.375Z",
       "category": "Support article"
     },
     {
@@ -2227,7 +2227,7 @@
       "url": "https://support.gingerlabs.com/hc/en-us/articles/10463360275354-Organize-Notes-with-Folders-Web-App",
       "published_at": "2026-03-24T15:21:10Z",
       "updated_at": "2026-03-24T18:07:38Z",
-      "fetched_at": "2026-09-28T12:35:07.028Z",
+      "fetched_at": "2026-09-28T19:43:41.375Z",
       "category": "Support article"
     },
     {
@@ -2237,7 +2237,7 @@
       "url": "https://support.gingerlabs.com/hc/en-us/articles/10463380014618-Live-Collaboration-Web-App",
       "published_at": "2026-03-24T15:14:37Z",
       "updated_at": "2026-03-24T18:12:33Z",
-      "fetched_at": "2026-09-28T12:35:07.028Z",
+      "fetched_at": "2026-09-28T19:43:41.375Z",
       "category": "Support article"
     },
     {
@@ -2247,7 +2247,7 @@
       "url": "https://support.gingerlabs.com/hc/en-us/articles/10421766925210-Explore-Notability-Cloud",
       "published_at": "2026-03-13T23:01:55Z",
       "updated_at": "2026-07-14T19:26:44Z",
-      "fetched_at": "2026-09-28T12:35:07.028Z",
+      "fetched_at": "2026-09-28T19:43:41.375Z",
       "category": "Support article"
     },
     {
@@ -2257,7 +2257,7 @@
       "url": "https://support.gingerlabs.com/hc/en-us/articles/10332916309658-Notability-for-Business",
       "published_at": "2026-02-20T02:44:36Z",
       "updated_at": "2026-04-13T21:49:05Z",
-      "fetched_at": "2026-09-28T12:35:07.028Z",
+      "fetched_at": "2026-09-28T19:43:41.375Z",
       "category": "Support article"
     },
     {
@@ -2267,7 +2267,7 @@
       "url": "https://support.gingerlabs.com/hc/en-us/articles/10213191545754-Notability-iPhone-App",
       "published_at": "2026-01-23T22:25:29Z",
       "updated_at": "2026-03-02T17:01:01Z",
-      "fetched_at": "2026-09-28T12:35:07.028Z",
+      "fetched_at": "2026-09-28T19:43:41.375Z",
       "category": "Support article"
     },
     {
@@ -2277,7 +2277,7 @@
       "url": "https://support.gingerlabs.com/hc/en-us/articles/10050687081626-Youtube-Links-Web-App",
       "published_at": "2025-12-11T18:52:15Z",
       "updated_at": "2026-01-23T22:31:18Z",
-      "fetched_at": "2026-09-28T12:35:07.028Z",
+      "fetched_at": "2026-09-28T19:43:41.375Z",
       "category": "Support article"
     },
     {
@@ -2287,7 +2287,7 @@
       "url": "https://support.gingerlabs.com/hc/en-us/articles/9628346915738-Troubleshooting-Missing-Notes-in-Notability-Cloud",
       "published_at": "2025-08-22T21:34:24Z",
       "updated_at": "2026-06-30T21:56:51Z",
-      "fetched_at": "2026-09-28T12:35:07.028Z",
+      "fetched_at": "2026-09-28T19:43:41.375Z",
       "category": "Support article"
     },
     {
@@ -2297,7 +2297,7 @@
       "url": "https://support.gingerlabs.com/hc/en-us/articles/9628119505562-Live-Transcripts-Web-App",
       "published_at": "2025-08-22T19:56:04Z",
       "updated_at": "2026-02-26T00:29:00Z",
-      "fetched_at": "2026-09-28T12:35:07.028Z",
+      "fetched_at": "2026-09-28T19:43:41.375Z",
       "category": "Support article"
     },
     {
@@ -2307,7 +2307,7 @@
       "url": "https://support.gingerlabs.com/hc/en-us/articles/9598555904794-Smart-Notes-Web-App",
       "published_at": "2025-08-14T17:04:18Z",
       "updated_at": "2025-08-25T21:01:06Z",
-      "fetched_at": "2026-09-28T12:35:07.028Z",
+      "fetched_at": "2026-09-28T19:43:41.375Z",
       "category": "Support article"
     },
     {
@@ -2317,7 +2317,7 @@
       "url": "https://support.gingerlabs.com/hc/en-us/articles/9598417028378-Notability-Cloud-FAQ",
       "published_at": "2025-08-14T16:40:30Z",
       "updated_at": "2026-07-14T18:28:44Z",
-      "fetched_at": "2026-09-28T12:35:07.028Z",
+      "fetched_at": "2026-09-28T19:43:41.375Z",
       "category": "Support article"
     },
     {
@@ -2327,7 +2327,7 @@
       "url": "https://support.gingerlabs.com/hc/en-us/articles/9595133824410-Smart-Notes-Pro",
       "published_at": "2025-08-13T19:53:37Z",
       "updated_at": "2026-02-26T00:28:54Z",
-      "fetched_at": "2026-09-28T12:35:07.028Z",
+      "fetched_at": "2026-09-28T19:43:41.375Z",
       "category": "Support article"
     },
     {
@@ -2337,7 +2337,7 @@
       "url": "https://support.gingerlabs.com/hc/en-us/articles/9594483325722-Chat-with-Your-Notes-Web-App",
       "published_at": "2025-08-13T16:25:40Z",
       "updated_at": "2025-08-23T00:44:00Z",
-      "fetched_at": "2026-09-28T12:35:07.028Z",
+      "fetched_at": "2026-09-28T19:43:41.375Z",
       "category": "Support article"
     },
     {
@@ -2347,7 +2347,7 @@
       "url": "https://support.gingerlabs.com/hc/en-us/articles/9588037788826-Live-Transcripts-Pro",
       "published_at": "2025-08-11T23:59:00Z",
       "updated_at": "2026-05-18T22:45:09Z",
-      "fetched_at": "2026-09-28T12:35:07.028Z",
+      "fetched_at": "2026-09-28T19:43:41.375Z",
       "category": "Support article"
     },
     {
@@ -2357,7 +2357,7 @@
       "url": "https://support.gingerlabs.com/hc/en-us/articles/9414165465882-Latest-iOS-App-Updates",
       "published_at": "2025-06-24T22:09:25Z",
       "updated_at": "2026-09-23T19:45:08Z",
-      "fetched_at": "2026-09-28T12:35:07.028Z",
+      "fetched_at": "2026-09-28T19:43:41.375Z",
       "category": "Support article"
     },
     {
@@ -2367,7 +2367,7 @@
       "url": "https://support.gingerlabs.com/hc/en-us/articles/9343031114906-Web-App-FAQ",
       "published_at": "2025-06-05T22:03:19Z",
       "updated_at": "2025-08-12T23:27:17Z",
-      "fetched_at": "2026-09-28T12:35:07.028Z",
+      "fetched_at": "2026-09-28T19:43:41.375Z",
       "category": "Support article"
     },
     {
@@ -2377,7 +2377,7 @@
       "url": "https://support.gingerlabs.com/hc/en-us/articles/9212357448730-Maintenance-Updates",
       "published_at": "2025-05-02T21:39:01Z",
       "updated_at": "2026-05-19T22:22:14Z",
-      "fetched_at": "2026-09-28T12:35:07.028Z",
+      "fetched_at": "2026-09-28T19:43:41.375Z",
       "category": "Support article"
     },
     {
@@ -2387,7 +2387,7 @@
       "url": "https://support.gingerlabs.com/hc/en-us/articles/8170816192794-Email-Delivery-Troubleshooting-Guide",
       "published_at": "2024-10-09T20:13:49Z",
       "updated_at": "2026-02-10T23:48:50Z",
-      "fetched_at": "2026-09-28T12:35:07.028Z",
+      "fetched_at": "2026-09-28T19:43:41.375Z",
       "category": "Support article"
     },
     {
@@ -2397,7 +2397,7 @@
       "url": "https://support.gingerlabs.com/hc/en-us/articles/8073483239834-Notability-Learn",
       "published_at": "2024-09-23T16:21:16Z",
       "updated_at": "2026-08-27T22:48:45Z",
-      "fetched_at": "2026-09-28T12:35:07.028Z",
+      "fetched_at": "2026-09-28T19:43:41.375Z",
       "category": "Support article"
     },
     {
@@ -2407,7 +2407,7 @@
       "url": "https://support.gingerlabs.com/hc/en-us/articles/7876226120474-Troubleshooting-Missing-Images",
       "published_at": "2024-08-23T22:39:51Z",
       "updated_at": "2026-06-03T18:15:04Z",
-      "fetched_at": "2026-09-28T12:35:07.028Z",
+      "fetched_at": "2026-09-28T19:43:41.375Z",
       "category": "Support article"
     },
     {
@@ -2417,7 +2417,7 @@
       "url": "https://support.gingerlabs.com/hc/en-us/articles/7846455341850-Troubleshooting-Missing-Notes-after-iCloud-Symbol-Appears",
       "published_at": "2024-08-19T23:55:46Z",
       "updated_at": "2026-09-01T16:12:56Z",
-      "fetched_at": "2026-09-28T12:35:07.028Z",
+      "fetched_at": "2026-09-28T19:43:41.375Z",
       "category": "Support article"
     },
     {
@@ -2427,7 +2427,7 @@
       "url": "https://support.gingerlabs.com/hc/en-us/articles/7770067120922-Troubleshooting-Payment-Issues",
       "published_at": "2024-08-07T20:31:06Z",
       "updated_at": "2026-03-16T05:44:06Z",
-      "fetched_at": "2026-09-28T12:35:07.028Z",
+      "fetched_at": "2026-09-28T19:43:41.375Z",
       "category": "Support article"
     },
     {
@@ -2437,7 +2437,7 @@
       "url": "https://support.gingerlabs.com/hc/en-us/articles/7377584029082-Web-Clip",
       "published_at": "2024-06-05T15:47:59Z",
       "updated_at": "2026-02-10T23:50:35Z",
-      "fetched_at": "2026-09-28T12:35:07.028Z",
+      "fetched_at": "2026-09-28T19:43:41.375Z",
       "category": "Support article"
     },
     {
@@ -2447,7 +2447,7 @@
       "url": "https://support.gingerlabs.com/hc/en-us/articles/7316896037786-Squeeze-Gestures-with-Apple-Pencil-Pro",
       "published_at": "2024-05-24T18:30:46Z",
       "updated_at": "2026-08-05T22:08:24Z",
-      "fetched_at": "2026-09-28T12:35:07.028Z",
+      "fetched_at": "2026-09-28T19:43:41.375Z",
       "category": "Support article"
     },
     {
@@ -2457,7 +2457,7 @@
       "url": "https://support.gingerlabs.com/hc/en-us/articles/7005107341210-Group-Content-and-Make-Custom-Stickers",
       "published_at": "2024-04-02T17:30:39Z",
       "updated_at": "2026-01-27T23:27:35Z",
-      "fetched_at": "2026-09-28T12:35:07.028Z",
+      "fetched_at": "2026-09-28T19:43:41.375Z",
       "category": "Support article"
     },
     {
@@ -2467,7 +2467,7 @@
       "url": "https://support.gingerlabs.com/hc/en-us/articles/6745937397658-Add-a-habit-tracker-to-your-planner",
       "published_at": "2024-02-14T18:18:23Z",
       "updated_at": "2026-05-21T17:27:43Z",
-      "fetched_at": "2026-09-28T12:35:07.028Z",
+      "fetched_at": "2026-09-28T19:43:41.375Z",
       "category": "Support article"
     },
     {
@@ -2477,7 +2477,7 @@
       "url": "https://support.gingerlabs.com/hc/en-us/articles/6711484213018-Four-quick-steps-to-better-notes",
       "published_at": "2024-02-07T18:59:40Z",
       "updated_at": "2026-02-10T23:48:09Z",
-      "fetched_at": "2026-09-28T12:35:07.028Z",
+      "fetched_at": "2026-09-28T19:43:41.375Z",
       "category": "Support article"
     },
     {
@@ -2487,7 +2487,7 @@
       "url": "https://support.gingerlabs.com/hc/en-us/articles/6665048470810-Student-Stories",
       "published_at": "2024-01-29T20:22:02Z",
       "updated_at": "2026-02-10T23:55:40Z",
-      "fetched_at": "2026-09-28T12:35:07.028Z",
+      "fetched_at": "2026-09-28T19:43:41.375Z",
       "category": "Support article"
     },
     {
@@ -2497,7 +2497,7 @@
       "url": "https://support.gingerlabs.com/hc/en-us/articles/6325037216026-Notability-Accounts",
       "published_at": "2023-10-31T17:38:19Z",
       "updated_at": "2026-06-01T21:37:17Z",
-      "fetched_at": "2026-09-28T12:35:07.028Z",
+      "fetched_at": "2026-09-28T19:43:41.375Z",
       "category": "Support article"
     },
     {
@@ -2507,7 +2507,7 @@
       "url": "https://support.gingerlabs.com/hc/en-us/articles/6272405402650-Customize-your-Toolbox",
       "published_at": "2023-10-17T19:00:54Z",
       "updated_at": "2026-08-05T22:36:09Z",
-      "fetched_at": "2026-09-28T12:35:07.028Z",
+      "fetched_at": "2026-09-28T19:43:41.375Z",
       "category": "Support article"
     },
     {
@@ -2517,7 +2517,7 @@
       "url": "https://support.gingerlabs.com/hc/en-us/articles/6059035461146-Audio-Transcripts",
       "published_at": "2023-08-21T20:11:18Z",
       "updated_at": "2026-08-05T22:30:40Z",
-      "fetched_at": "2026-09-28T12:35:07.028Z",
+      "fetched_at": "2026-09-28T19:43:41.375Z",
       "category": "Support article"
     },
     {
@@ -2527,7 +2527,7 @@
       "url": "https://support.gingerlabs.com/hc/en-us/articles/5960301808282-Meet-the-new-Notability",
       "published_at": "2023-07-24T15:57:14Z",
       "updated_at": "2026-08-05T22:35:14Z",
-      "fetched_at": "2026-09-28T12:35:07.028Z",
+      "fetched_at": "2026-09-28T19:43:41.375Z",
       "category": "Support article"
     },
     {
@@ -2537,7 +2537,7 @@
       "url": "https://support.gingerlabs.com/hc/en-us/articles/5955207226394-Options-menu",
       "published_at": "2023-07-22T21:38:04Z",
       "updated_at": "2026-08-05T22:35:12Z",
-      "fetched_at": "2026-09-28T12:35:07.028Z",
+      "fetched_at": "2026-09-28T19:43:41.375Z",
       "category": "Support article"
     },
     {
@@ -2547,7 +2547,7 @@
       "url": "https://support.gingerlabs.com/hc/en-us/articles/5494994479642-Notability-for-Organizations",
       "published_at": "2023-03-15T00:00:38Z",
       "updated_at": "2026-02-10T23:49:03Z",
-      "fetched_at": "2026-09-28T12:35:07.028Z",
+      "fetched_at": "2026-09-28T19:43:41.375Z",
       "category": "Support article"
     },
     {
@@ -2557,7 +2557,7 @@
       "url": "https://support.gingerlabs.com/hc/en-us/articles/5044440428570-Image-to-Ink-Conversion",
       "published_at": "2022-10-18T23:54:41Z",
       "updated_at": "2026-08-05T22:36:11Z",
-      "fetched_at": "2026-09-28T12:35:07.028Z",
+      "fetched_at": "2026-09-28T19:43:41.375Z",
       "category": "Support article"
     },
     {
@@ -2567,7 +2567,7 @@
       "url": "https://support.gingerlabs.com/hc/en-us/articles/4945503624346-Unable-To-Restore-Subscription-or-In-App-Purchase",
       "published_at": "2022-09-13T20:21:24Z",
       "updated_at": "2026-08-05T22:35:34Z",
-      "fetched_at": "2026-09-28T12:35:07.028Z",
+      "fetched_at": "2026-09-28T19:43:41.375Z",
       "category": "Support article"
     },
     {
@@ -2577,7 +2577,7 @@
       "url": "https://support.gingerlabs.com/hc/en-us/articles/4867633230234-Getting-Started-with-Notability",
       "published_at": "2022-08-18T00:33:17Z",
       "updated_at": "2026-08-05T22:36:10Z",
-      "fetched_at": "2026-09-28T12:35:07.028Z",
+      "fetched_at": "2026-09-28T19:43:41.375Z",
       "category": "Support article"
     },
     {
@@ -2587,7 +2587,7 @@
       "url": "https://support.gingerlabs.com/hc/en-us/articles/4409773826586-Notability-Gallery-Overview",
       "published_at": "2021-10-29T20:17:26Z",
       "updated_at": "2026-08-05T22:31:19Z",
-      "fetched_at": "2026-09-28T12:35:07.028Z",
+      "fetched_at": "2026-09-28T19:43:41.375Z",
       "category": "Support article"
     },
     {
@@ -2597,7 +2597,7 @@
       "url": "https://support.gingerlabs.com/hc/en-us/articles/360044640052-Importing-Audio",
       "published_at": "2020-06-17T00:48:46Z",
       "updated_at": "2026-06-03T17:13:04Z",
-      "fetched_at": "2026-09-28T12:35:07.028Z",
+      "fetched_at": "2026-09-28T19:43:41.375Z",
       "category": "Support article"
     },
     {
@@ -2607,7 +2607,7 @@
       "url": "https://support.gingerlabs.com/hc/en-us/articles/360003878731-Handwriting-and-Math-Conversion",
       "published_at": "2018-05-14T22:12:35Z",
       "updated_at": "2026-08-05T22:36:08Z",
-      "fetched_at": "2026-09-28T12:35:07.028Z",
+      "fetched_at": "2026-09-28T19:43:41.375Z",
       "category": "Support article"
     },
     {
@@ -2617,7 +2617,7 @@
       "url": "https://support.gingerlabs.com/hc/en-us/articles/206061487-Syncing-Notes-across-Devices-with-iCloud",
       "published_at": "2015-05-11T21:06:34Z",
       "updated_at": "2026-08-05T22:35:13Z",
-      "fetched_at": "2026-09-28T12:35:07.028Z",
+      "fetched_at": "2026-09-28T19:43:41.375Z",
       "category": "Support article"
     },
     {
@@ -2627,7 +2627,7 @@
       "url": "https://support.gingerlabs.com/hc/en-us/articles/206061467-Auto-Backup-Third-Party-Backup-Guide",
       "published_at": "2015-05-11T21:03:49Z",
       "updated_at": "2026-08-05T22:35:12Z",
-      "fetched_at": "2026-09-28T12:35:07.028Z",
+      "fetched_at": "2026-09-28T19:43:41.375Z",
       "category": "Support article"
     },
     {
@@ -2637,7 +2637,7 @@
       "url": "https://support.gingerlabs.com/hc/en-us/articles/206061237-Create-and-Edit-Notes",
       "published_at": "2015-05-11T20:43:54Z",
       "updated_at": "2026-08-05T22:10:10Z",
-      "fetched_at": "2026-09-28T12:35:07.028Z",
+      "fetched_at": "2026-09-28T19:43:41.375Z",
       "category": "Support article"
     },
     {
@@ -2647,7 +2647,7 @@
       "url": "https://support.gingerlabs.com/hc/en-us/articles/205270648-Add-and-Edit-Media",
       "published_at": "2015-05-11T20:10:48Z",
       "updated_at": "2026-08-05T22:31:18Z",
-      "fetched_at": "2026-09-28T12:35:07.028Z",
+      "fetched_at": "2026-09-28T19:43:41.375Z",
       "category": "Support article"
     },
     {
@@ -2657,7 +2657,7 @@
       "url": "https://support.gingerlabs.com/hc/en-us/articles/206060617-Recording-and-Playing-Audio",
       "published_at": "2015-05-11T20:02:23Z",
       "updated_at": "2026-08-05T22:36:11Z",
-      "fetched_at": "2026-09-28T12:35:07.028Z",
+      "fetched_at": "2026-09-28T19:43:41.375Z",
       "category": "Support article"
     },
     {
@@ -2667,7 +2667,7 @@
       "url": "https://support.gingerlabs.com/hc/en-us/articles/11084091780250-Android-Settings",
       "published_at": "2026-08-03T12:14:18Z",
       "updated_at": "2026-08-03T12:17:10Z",
-      "fetched_at": "2026-09-28T12:35:07.028Z",
+      "fetched_at": "2026-09-28T19:43:41.375Z",
       "category": "Support article"
     },
     {
@@ -2677,7 +2677,7 @@
       "url": "https://support.gingerlabs.com/hc/en-us/articles/9342959426202-Syncing-Notes-Web-App",
       "published_at": "2025-06-05T22:04:29Z",
       "updated_at": "2025-08-21T22:56:36Z",
-      "fetched_at": "2026-09-28T12:35:07.028Z",
+      "fetched_at": "2026-09-28T19:43:41.375Z",
       "category": "Support article"
     },
     {
@@ -2687,7 +2687,7 @@
       "url": "https://support.gingerlabs.com/hc/en-us/articles/7726960179354-Notability-for-Business-MDM",
       "published_at": "2024-07-31T17:33:42Z",
       "updated_at": "2026-06-24T17:39:47Z",
-      "fetched_at": "2026-09-28T12:35:07.028Z",
+      "fetched_at": "2026-09-28T19:43:41.375Z",
       "category": "Support article"
     },
     {
@@ -2697,7 +2697,7 @@
       "url": "https://support.gingerlabs.com/hc/en-us/articles/6735217964570-Three-ways-to-customize-your-tools",
       "published_at": "2024-02-12T22:39:54Z",
       "updated_at": "2026-05-21T17:08:53Z",
-      "fetched_at": "2026-09-28T12:35:07.028Z",
+      "fetched_at": "2026-09-28T19:43:41.375Z",
       "category": "Support article"
     },
     {
@@ -2707,7 +2707,7 @@
       "url": "https://support.gingerlabs.com/hc/en-us/articles/6566037997338-Widgets",
       "published_at": "2024-01-04T17:57:51Z",
       "updated_at": "2026-08-05T22:35:33Z",
-      "fetched_at": "2026-09-28T12:35:07.028Z",
+      "fetched_at": "2026-09-28T19:43:41.375Z",
       "category": "Support article"
     },
     {
@@ -2717,7 +2717,7 @@
       "url": "https://support.gingerlabs.com/hc/en-us/articles/6325731561242-Safe-Mode",
       "published_at": "2023-10-31T21:37:13Z",
       "updated_at": "2026-08-05T22:35:33Z",
-      "fetched_at": "2026-09-28T12:35:07.028Z",
+      "fetched_at": "2026-09-28T19:43:41.375Z",
       "category": "Support article"
     },
     {
@@ -2727,7 +2727,7 @@
       "url": "https://support.gingerlabs.com/hc/en-us/articles/5949216168474-Subjects-and-Dividers-Version-15-and-Below",
       "published_at": "2023-07-20T23:53:03Z",
       "updated_at": "2026-08-05T22:35:12Z",
-      "fetched_at": "2026-09-28T12:35:07.028Z",
+      "fetched_at": "2026-09-28T19:43:41.375Z",
       "category": "Support article"
     },
     {
@@ -2737,7 +2737,7 @@
       "url": "https://support.gingerlabs.com/hc/en-us/articles/5459034545178-Join-the-Notability-Discord-Server",
       "published_at": "2023-03-02T19:16:27Z",
       "updated_at": "2026-02-10T23:58:37Z",
-      "fetched_at": "2026-09-28T12:35:07.028Z",
+      "fetched_at": "2026-09-28T19:43:41.375Z",
       "category": "Support article"
     },
     {
@@ -2747,7 +2747,7 @@
       "url": "https://support.gingerlabs.com/hc/en-us/articles/5363620836634-Pencil",
       "published_at": "2023-01-31T22:09:07Z",
       "updated_at": "2026-08-05T22:35:15Z",
-      "fetched_at": "2026-09-28T12:35:07.028Z",
+      "fetched_at": "2026-09-28T19:43:41.375Z",
       "category": "Support article"
     },
     {
@@ -2757,7 +2757,7 @@
       "url": "https://support.gingerlabs.com/hc/en-us/articles/5014099387418-Notability-Gallery-Community-Guidelines",
       "published_at": "2022-10-07T18:39:10Z",
       "updated_at": "2026-01-27T23:27:12Z",
-      "fetched_at": "2026-09-28T12:35:07.028Z",
+      "fetched_at": "2026-09-28T19:43:41.375Z",
       "category": "Support article"
     },
     {
@@ -2767,7 +2767,7 @@
       "url": "https://support.gingerlabs.com/hc/en-us/articles/4414054941594-Contact-Support",
       "published_at": "2021-12-17T21:32:11Z",
       "updated_at": "2026-08-05T22:36:08Z",
-      "fetched_at": "2026-09-28T12:35:07.028Z",
+      "fetched_at": "2026-09-28T19:43:41.375Z",
       "category": "Support article"
     },
     {
@@ -2777,7 +2777,7 @@
       "url": "https://support.gingerlabs.com/hc/en-us/articles/360035063091-Recently-Reported-Issues",
       "published_at": "2019-10-11T00:16:51Z",
       "updated_at": "2026-07-20T19:51:49Z",
-      "fetched_at": "2026-09-28T12:35:07.028Z",
+      "fetched_at": "2026-09-28T19:43:41.375Z",
       "category": "Support article"
     },
     {
@@ -2787,7 +2787,7 @@
       "url": "https://support.gingerlabs.com/hc/en-us/articles/360021489291-Keyboard-shortcuts",
       "published_at": "2019-01-02T21:23:30Z",
       "updated_at": "2026-07-20T17:11:59Z",
-      "fetched_at": "2026-09-28T12:35:07.028Z",
+      "fetched_at": "2026-09-28T19:43:41.375Z",
       "category": "Support article"
     },
     {
@@ -2797,7 +2797,7 @@
       "url": "https://support.gingerlabs.com/hc/en-us/articles/206061357-Importing-Files",
       "published_at": "2015-05-11T20:57:48Z",
       "updated_at": "2026-09-03T19:07:08Z",
-      "fetched_at": "2026-09-28T12:35:07.028Z",
+      "fetched_at": "2026-09-28T19:43:41.375Z",
       "category": "Support article"
     },
     {
@@ -2807,7 +2807,7 @@
       "url": "https://support.gingerlabs.com/hc/en-us/articles/205688797-Troubleshooting-iCloud-Sync",
       "published_at": "2015-04-28T22:27:23Z",
       "updated_at": "2026-08-05T22:38:07Z",
-      "fetched_at": "2026-09-28T12:35:07.028Z",
+      "fetched_at": "2026-09-28T19:43:41.375Z",
       "category": "Support article"
     },
     {
@@ -2817,7 +2817,7 @@
       "url": "https://support.gingerlabs.com/hc/en-us/articles/9591067383322-Syncing-Notes-Across-Devices-with-Notability-Cloud",
       "published_at": "2025-08-12T18:48:56Z",
       "updated_at": "2026-07-14T18:28:07Z",
-      "fetched_at": "2026-09-28T12:35:07.028Z",
+      "fetched_at": "2026-09-28T19:43:41.375Z",
       "category": "Support article"
     },
     {
@@ -2827,7 +2827,7 @@
       "url": "https://support.gingerlabs.com/hc/en-us/articles/9343010270618-Troubleshooting-Syncing-Subscriptions-Web-App",
       "published_at": "2025-06-05T22:00:53Z",
       "updated_at": "2025-06-12T21:49:52Z",
-      "fetched_at": "2026-09-28T12:35:07.028Z",
+      "fetched_at": "2026-09-28T19:43:41.375Z",
       "category": "Support article"
     },
     {
@@ -2837,7 +2837,7 @@
       "url": "https://support.gingerlabs.com/hc/en-us/articles/7197011787930-Notability-for-Education",
       "published_at": "2024-05-02T22:27:00Z",
       "updated_at": "2026-03-24T17:15:56Z",
-      "fetched_at": "2026-09-28T12:35:07.028Z",
+      "fetched_at": "2026-09-28T19:43:41.375Z",
       "category": "Support article"
     },
     {
@@ -2847,7 +2847,7 @@
       "url": "https://support.gingerlabs.com/hc/en-us/articles/6712141082266-Make-a-shortcut-to-your-planner-on-iPad",
       "published_at": "2024-02-07T21:23:52Z",
       "updated_at": "2026-05-21T16:42:18Z",
-      "fetched_at": "2026-09-28T12:35:07.028Z",
+      "fetched_at": "2026-09-28T19:43:41.375Z",
       "category": "Support article"
     },
     {
@@ -2857,7 +2857,7 @@
       "url": "https://support.gingerlabs.com/hc/en-us/articles/5543562363162-iCloud-Version-History-Restore-Older-Versions-of-Notes",
       "published_at": "2023-03-30T22:51:19Z",
       "updated_at": "2026-08-05T22:36:10Z",
-      "fetched_at": "2026-09-28T12:35:07.028Z",
+      "fetched_at": "2026-09-28T19:43:41.375Z",
       "category": "Support article"
     },
     {
@@ -2867,7 +2867,7 @@
       "url": "https://support.gingerlabs.com/hc/en-us/articles/5106468945434-Content-Matches-Theme",
       "published_at": "2022-11-08T19:48:32Z",
       "updated_at": "2026-08-05T22:35:11Z",
-      "fetched_at": "2026-09-28T12:35:07.028Z",
+      "fetched_at": "2026-09-28T19:43:41.375Z",
       "category": "Support article"
     },
     {
@@ -2877,7 +2877,7 @@
       "url": "https://support.gingerlabs.com/hc/en-us/articles/5014002045594-Academic-Honesty-Policy",
       "published_at": "2022-10-07T18:20:34Z",
       "updated_at": "2026-02-10T23:59:44Z",
-      "fetched_at": "2026-09-28T12:35:07.028Z",
+      "fetched_at": "2026-09-28T19:43:41.375Z",
       "category": "Support article"
     },
     {
@@ -2887,7 +2887,7 @@
       "url": "https://support.gingerlabs.com/hc/en-us/articles/360019098351-Custom-Colors",
       "published_at": "2018-11-05T20:59:48Z",
       "updated_at": "2026-08-05T22:35:13Z",
-      "fetched_at": "2026-09-28T12:35:07.028Z",
+      "fetched_at": "2026-09-28T19:43:41.375Z",
       "category": "Support article"
     },
     {
@@ -2897,7 +2897,7 @@
       "url": "https://support.gingerlabs.com/hc/en-us/articles/360004294112-Acknowledgements",
       "published_at": "2018-05-29T18:52:10Z",
       "updated_at": "2026-01-27T18:50:30Z",
-      "fetched_at": "2026-09-28T12:35:07.028Z",
+      "fetched_at": "2026-09-28T19:43:41.375Z",
       "category": "Support article"
     },
     {
@@ -2907,7 +2907,7 @@
       "url": "https://support.gingerlabs.com/hc/en-us/articles/226905028-Creating-and-Styling-Perfect-Shapes",
       "published_at": "2016-09-07T16:44:52Z",
       "updated_at": "2026-08-05T22:36:11Z",
-      "fetched_at": "2026-09-28T12:35:07.028Z",
+      "fetched_at": "2026-09-28T19:43:41.375Z",
       "category": "Support article"
     },
     {
@@ -2917,7 +2917,7 @@
       "url": "https://support.gingerlabs.com/hc/en-us/articles/216037238-Apply-to-Beta-Test-Notability",
       "published_at": "2016-01-26T01:06:48Z",
       "updated_at": "2026-02-10T23:59:10Z",
-      "fetched_at": "2026-09-28T12:35:07.028Z",
+      "fetched_at": "2026-09-28T19:43:41.375Z",
       "category": "Support article"
     },
     {
@@ -2927,7 +2927,7 @@
       "url": "https://support.gingerlabs.com/hc/en-us/articles/205270968-Viewing-Your-Notes",
       "published_at": "2015-05-11T20:28:56Z",
       "updated_at": "2026-08-05T22:35:38Z",
-      "fetched_at": "2026-09-28T12:35:07.028Z",
+      "fetched_at": "2026-09-28T19:43:41.375Z",
       "category": "Support article"
     },
     {
@@ -2937,7 +2937,7 @@
       "url": "https://support.gingerlabs.com/hc/en-us/articles/205228298-Sharing-Notes",
       "published_at": "2015-05-07T23:34:47Z",
       "updated_at": "2026-08-05T22:36:12Z",
-      "fetched_at": "2026-09-28T12:35:07.028Z",
+      "fetched_at": "2026-09-28T19:43:41.375Z",
       "category": "Support article"
     },
     {
@@ -2947,7 +2947,7 @@
       "url": "https://support.gingerlabs.com/hc/en-us/articles/9591149777178-Backing-Up-Notes-Outside-of-Notability-Cloud",
       "published_at": "2025-08-12T19:01:14Z",
       "updated_at": "2026-06-02T23:01:04Z",
-      "fetched_at": "2026-09-28T12:35:07.028Z",
+      "fetched_at": "2026-09-28T19:43:41.375Z",
       "category": "Support article"
     },
     {
@@ -2957,7 +2957,7 @@
       "url": "https://support.gingerlabs.com/hc/en-us/articles/9265503216794-Getting-Started-with-the-Notability-Web-App",
       "published_at": "2025-05-17T03:35:51Z",
       "updated_at": "2026-03-24T16:25:20Z",
-      "fetched_at": "2026-09-28T12:35:07.028Z",
+      "fetched_at": "2026-09-28T19:43:41.375Z",
       "category": "Support article"
     },
     {
@@ -2967,7 +2967,7 @@
       "url": "https://support.gingerlabs.com/hc/en-us/articles/8142701346074-Notability-for-Business-Billing-Guide",
       "published_at": "2024-10-04T18:18:25Z",
       "updated_at": "2026-01-27T23:17:50Z",
-      "fetched_at": "2026-09-28T12:35:07.028Z",
+      "fetched_at": "2026-09-28T19:43:41.375Z",
       "category": "Support article"
     },
     {
@@ -2977,7 +2977,7 @@
       "url": "https://support.gingerlabs.com/hc/en-us/articles/6325764400922-Refund-Policy",
       "published_at": "2023-10-31T21:41:05Z",
       "updated_at": "2026-08-05T22:36:09Z",
-      "fetched_at": "2026-09-28T12:35:07.028Z",
+      "fetched_at": "2026-09-28T19:43:41.375Z",
       "category": "Support article"
     },
     {
@@ -2987,7 +2987,7 @@
       "url": "https://support.gingerlabs.com/hc/en-us/articles/4912437077914-Search",
       "published_at": "2022-09-01T19:49:02Z",
       "updated_at": "2026-08-05T22:36:10Z",
-      "fetched_at": "2026-09-28T12:35:07.028Z",
+      "fetched_at": "2026-09-28T19:43:41.375Z",
       "category": "Support article"
     },
     {
@@ -2997,7 +2997,7 @@
       "url": "https://support.gingerlabs.com/hc/en-us/articles/4784930808602-iCloud-Storage-Full",
       "published_at": "2022-07-20T21:55:02Z",
       "updated_at": "2026-05-19T22:00:13Z",
-      "fetched_at": "2026-09-28T12:35:07.028Z",
+      "fetched_at": "2026-09-28T19:43:41.375Z",
       "category": "Support article"
     },
     {
@@ -3007,7 +3007,7 @@
       "url": "https://support.gingerlabs.com/hc/en-us/articles/4409501940122-Notability-Subscription-FAQ",
       "published_at": "2021-10-26T23:33:56Z",
       "updated_at": "2026-08-10T16:43:47Z",
-      "fetched_at": "2026-09-28T12:35:07.028Z",
+      "fetched_at": "2026-09-28T19:43:41.375Z",
       "category": "Support article"
     },
     {
@@ -3017,7 +3017,7 @@
       "url": "https://support.gingerlabs.com/hc/en-us/articles/360052943751-Link-Sharing",
       "published_at": "2020-11-24T21:02:00Z",
       "updated_at": "2026-08-05T22:35:13Z",
-      "fetched_at": "2026-09-28T12:35:07.028Z",
+      "fetched_at": "2026-09-28T19:43:41.375Z",
       "category": "Support article"
     },
     {
@@ -3027,7 +3027,7 @@
       "url": "https://support.gingerlabs.com/hc/en-us/articles/360018837092-Note-Security-Locked-Folders",
       "published_at": "2018-11-06T19:39:23Z",
       "updated_at": "2026-08-05T22:36:09Z",
-      "fetched_at": "2026-09-28T12:35:07.028Z",
+      "fetched_at": "2026-09-28T19:43:41.375Z",
       "category": "Support article"
     },
     {
@@ -3037,7 +3037,7 @@
       "url": "https://support.gingerlabs.com/hc/en-us/articles/115003040291-Import-File-Content-Doesn-t-Appear",
       "published_at": "2017-11-28T07:37:58Z",
       "updated_at": "2026-08-05T22:38:47Z",
-      "fetched_at": "2026-09-28T12:35:07.028Z",
+      "fetched_at": "2026-09-28T19:43:41.375Z",
       "category": "Support article"
     },
     {
@@ -3047,7 +3047,7 @@
       "url": "https://support.gingerlabs.com/hc/en-us/articles/227864627-Custom-Templates-and-Note-Background",
       "published_at": "2016-09-23T16:30:27Z",
       "updated_at": "2026-08-05T22:35:14Z",
-      "fetched_at": "2026-09-28T12:35:07.028Z",
+      "fetched_at": "2026-09-28T19:43:41.375Z",
       "category": "Support article"
     },
     {
@@ -3057,7 +3057,7 @@
       "url": "https://support.gingerlabs.com/hc/en-us/articles/206058497-Zoom-View",
       "published_at": "2015-05-11T17:39:25Z",
       "updated_at": "2026-08-05T22:35:13Z",
-      "fetched_at": "2026-09-28T12:35:07.028Z",
+      "fetched_at": "2026-09-28T19:43:41.375Z",
       "category": "Support article"
     },
     {
@@ -3067,7 +3067,7 @@
       "url": "https://support.gingerlabs.com/hc/en-us/articles/8215074451482-Deploying-Notability-on-macOS-with-Jamf-Pro",
       "published_at": "2024-10-17T15:59:45Z",
       "updated_at": "2026-03-24T17:20:29Z",
-      "fetched_at": "2026-09-28T12:35:07.028Z",
+      "fetched_at": "2026-09-28T19:43:41.375Z",
       "category": "Support article"
     },
     {
@@ -3077,7 +3077,7 @@
       "url": "https://support.gingerlabs.com/hc/en-us/articles/6655405438490-Scribble-Talks",
       "published_at": "2024-01-27T01:44:21Z",
       "updated_at": "2026-02-10T23:55:50Z",
-      "fetched_at": "2026-09-28T12:35:07.028Z",
+      "fetched_at": "2026-09-28T19:43:41.375Z",
       "category": "Support article"
     },
     {
@@ -3087,7 +3087,7 @@
       "url": "https://support.gingerlabs.com/hc/en-us/articles/6366232770970-Privacy-Policy",
       "published_at": "2023-11-10T17:34:29Z",
       "updated_at": "2026-06-03T17:49:04Z",
-      "fetched_at": "2026-09-28T12:35:07.028Z",
+      "fetched_at": "2026-09-28T19:43:41.375Z",
       "category": "Support article"
     },
     {
@@ -3097,7 +3097,7 @@
       "url": "https://support.gingerlabs.com/hc/en-us/articles/5955187356442-Note-View-Settings",
       "published_at": "2023-07-22T21:47:30Z",
       "updated_at": "2026-08-05T22:35:10Z",
-      "fetched_at": "2026-09-28T12:35:07.028Z",
+      "fetched_at": "2026-09-28T19:43:41.375Z",
       "category": "Support article"
     },
     {
@@ -3107,7 +3107,7 @@
       "url": "https://support.gingerlabs.com/hc/en-us/articles/360029432891-Eraser",
       "published_at": "2019-06-12T17:25:13Z",
       "updated_at": "2026-08-05T22:10:07Z",
-      "fetched_at": "2026-09-28T12:35:07.028Z",
+      "fetched_at": "2026-09-28T19:43:41.375Z",
       "category": "Support article"
     },
     {
@@ -3117,7 +3117,7 @@
       "url": "https://support.gingerlabs.com/hc/en-us/articles/6655316697882-Turn-an-outline-into-an-essay-with-Notability",
       "published_at": "2024-01-27T01:17:04Z",
       "updated_at": "2026-02-10T23:54:47Z",
-      "fetched_at": "2026-09-28T12:35:07.028Z",
+      "fetched_at": "2026-09-28T19:43:41.375Z",
       "category": "Support article"
     },
     {
@@ -3127,7 +3127,7 @@
       "url": "https://support.gingerlabs.com/hc/en-us/articles/5955258733082-Recovering-Recently-Deleted-Notes",
       "published_at": "2023-07-22T22:07:57Z",
       "updated_at": "2026-08-05T22:35:10Z",
-      "fetched_at": "2026-09-28T12:35:07.028Z",
+      "fetched_at": "2026-09-28T19:43:41.375Z",
       "category": "Support article"
     },
     {
@@ -3137,7 +3137,7 @@
       "url": "https://support.gingerlabs.com/hc/en-us/articles/4968218861978-Highlighter",
       "published_at": "2022-09-21T22:09:53Z",
       "updated_at": "2026-08-05T22:10:10Z",
-      "fetched_at": "2026-09-28T12:35:07.028Z",
+      "fetched_at": "2026-09-28T19:43:41.375Z",
       "category": "Support article"
     },
     {
@@ -3147,7 +3147,7 @@
       "url": "https://support.gingerlabs.com/hc/en-us/articles/115003192047-Troubleshooting-Third-Party-Backup",
       "published_at": "2017-02-21T17:20:38Z",
       "updated_at": "2026-08-05T22:38:47Z",
-      "fetched_at": "2026-09-28T12:35:07.028Z",
+      "fetched_at": "2026-09-28T19:43:41.375Z",
       "category": "Support article"
     },
     {
@@ -3157,7 +3157,7 @@
       "url": "https://support.gingerlabs.com/hc/en-us/articles/230169308-Restoring-Notes-after-Deleting-Notability",
       "published_at": "2016-10-17T21:02:46Z",
       "updated_at": "2026-08-05T22:38:29Z",
-      "fetched_at": "2026-09-28T12:35:07.028Z",
+      "fetched_at": "2026-09-28T19:43:41.375Z",
       "category": "Support article"
     },
     {
@@ -3167,7 +3167,7 @@
       "url": "https://support.gingerlabs.com/hc/en-us/articles/218333197-Writing-with-Apple-Pencil",
       "published_at": "2016-03-25T18:01:55Z",
       "updated_at": "2026-08-05T22:35:10Z",
-      "fetched_at": "2026-09-28T12:35:07.028Z",
+      "fetched_at": "2026-09-28T19:43:41.375Z",
       "category": "Support article"
     },
     {
@@ -3177,7 +3177,7 @@
       "url": "https://support.gingerlabs.com/hc/en-us/articles/6711804293018-Active-Recall-Studying",
       "published_at": "2024-02-07T20:14:57Z",
       "updated_at": "2026-05-21T16:32:08Z",
-      "fetched_at": "2026-09-28T12:35:07.028Z",
+      "fetched_at": "2026-09-28T19:43:41.375Z",
       "category": "Support article"
     },
     {
@@ -3187,7 +3187,7 @@
       "url": "https://support.gingerlabs.com/hc/en-us/articles/6119650188570-Troubleshooting-Missing-Subjects-and-Dividers",
       "published_at": "2023-09-06T22:01:40Z",
       "updated_at": "2026-06-03T17:45:41Z",
-      "fetched_at": "2026-09-28T12:35:07.028Z",
+      "fetched_at": "2026-09-28T19:43:41.375Z",
       "category": "Support article"
     },
     {
@@ -3197,7 +3197,7 @@
       "url": "https://support.gingerlabs.com/hc/en-us/articles/5955230402714-Settings-Account-Subscription-Help",
       "published_at": "2023-07-22T22:13:49Z",
       "updated_at": "2026-08-05T22:35:11Z",
-      "fetched_at": "2026-09-28T12:35:07.028Z",
+      "fetched_at": "2026-09-28T19:43:41.375Z",
       "category": "Support article"
     },
     {
@@ -3207,7 +3207,7 @@
       "url": "https://support.gingerlabs.com/hc/en-us/articles/360010811331-General-FAQ-and-Quick-Links-iCloud-Sync",
       "published_at": "2018-07-30T23:50:25Z",
       "updated_at": "2026-08-05T22:36:08Z",
-      "fetched_at": "2026-09-28T12:35:07.028Z",
+      "fetched_at": "2026-09-28T19:43:41.375Z",
       "category": "Support article"
     },
     {
@@ -3217,7 +3217,7 @@
       "url": "https://support.gingerlabs.com/hc/en-us/articles/360003857512-Multi-Note-and-Note-Switcher",
       "published_at": "2018-05-14T22:15:22Z",
       "updated_at": "2026-08-05T22:35:14Z",
-      "fetched_at": "2026-09-28T12:35:07.028Z",
+      "fetched_at": "2026-09-28T19:43:41.375Z",
       "category": "Support article"
     },
     {
@@ -3227,7 +3227,7 @@
       "url": "https://support.gingerlabs.com/hc/en-us/articles/205308898-Moving-Notes-to-a-New-Device-or-a-New-Apple-Account",
       "published_at": "2015-05-12T18:27:23Z",
       "updated_at": "2026-08-05T22:38:24Z",
-      "fetched_at": "2026-09-28T12:35:07.028Z",
+      "fetched_at": "2026-09-28T19:43:41.375Z",
       "category": "Support article"
     },
     {
@@ -3237,7 +3237,7 @@
       "url": "https://support.gingerlabs.com/hc/en-us/articles/6712460262682-Starting-Off-a-New-Semester-with-Notability",
       "published_at": "2024-02-07T23:10:52Z",
       "updated_at": "2026-05-21T16:57:24Z",
-      "fetched_at": "2026-09-28T12:35:07.028Z",
+      "fetched_at": "2026-09-28T19:43:41.375Z",
       "category": "Support article"
     },
     {
@@ -3247,7 +3247,7 @@
       "url": "https://support.gingerlabs.com/hc/en-us/articles/5955260981786-Settings-Appearances-Tools-Gestures",
       "published_at": "2023-07-22T22:21:58Z",
       "updated_at": "2026-08-05T22:08:27Z",
-      "fetched_at": "2026-09-28T12:35:07.028Z",
+      "fetched_at": "2026-09-28T19:43:41.375Z",
       "category": "Support article"
     },
     {
@@ -3257,7 +3257,7 @@
       "url": "https://support.gingerlabs.com/hc/en-us/articles/5501245246490-Notes-Disappear-After-Signing-Out-of-Apple-Account",
       "published_at": "2023-03-16T22:44:51Z",
       "updated_at": "2026-06-03T17:21:46Z",
-      "fetched_at": "2026-09-28T12:35:07.028Z",
+      "fetched_at": "2026-09-28T19:43:41.375Z",
       "category": "Support article"
     },
     {
@@ -3267,7 +3267,7 @@
       "url": "https://support.gingerlabs.com/hc/en-us/articles/5293937538586-App-Update-History",
       "published_at": "2023-01-09T20:28:20Z",
       "updated_at": "2026-07-07T23:33:20Z",
-      "fetched_at": "2026-09-28T12:35:07.028Z",
+      "fetched_at": "2026-09-28T19:43:41.375Z",
       "category": "Support article"
     },
     {
@@ -3277,7 +3277,7 @@
       "url": "https://support.gingerlabs.com/hc/en-us/articles/360016653851-Troubleshooting-Search-Issues",
       "published_at": "2018-10-02T20:57:01Z",
       "updated_at": "2026-08-05T22:33:55Z",
-      "fetched_at": "2026-09-28T12:35:07.028Z",
+      "fetched_at": "2026-09-28T19:43:41.375Z",
       "category": "Support article"
     },
     {
@@ -3287,7 +3287,7 @@
       "url": "https://support.gingerlabs.com/hc/en-us/articles/206059167-Content-Manager-and-Bulk-Actions",
       "published_at": "2015-05-11T18:20:03Z",
       "updated_at": "2026-08-05T22:36:11Z",
-      "fetched_at": "2026-09-28T12:35:07.028Z",
+      "fetched_at": "2026-09-28T19:43:41.375Z",
       "category": "Support article"
     },
     {
@@ -3297,7 +3297,7 @@
       "url": "https://support.gingerlabs.com/hc/en-us/articles/5955261983258-Settings-Connected-Services",
       "published_at": "2023-07-22T22:27:29Z",
       "updated_at": "2026-08-05T22:35:40Z",
-      "fetched_at": "2026-09-28T12:35:07.028Z",
+      "fetched_at": "2026-09-28T19:43:41.375Z",
       "category": "Support article"
     },
     {
@@ -3307,7 +3307,7 @@
       "url": "https://support.gingerlabs.com/hc/en-us/articles/4546486303514-Ruler",
       "published_at": "2022-04-19T21:27:13Z",
       "updated_at": "2026-08-05T22:35:11Z",
-      "fetched_at": "2026-09-28T12:35:07.028Z",
+      "fetched_at": "2026-09-28T19:43:41.375Z",
       "category": "Support article"
     },
     {
@@ -3317,7 +3317,7 @@
       "url": "https://support.gingerlabs.com/hc/en-us/articles/360054114791-Random-Lines-while-Writing-with-Apple-Pencil",
       "published_at": "2020-12-14T18:28:20Z",
       "updated_at": "2026-08-05T22:35:15Z",
-      "fetched_at": "2026-09-28T12:35:07.028Z",
+      "fetched_at": "2026-09-28T19:43:41.375Z",
       "category": "Support article"
     },
     {
@@ -3327,7 +3327,7 @@
       "url": "https://support.gingerlabs.com/hc/en-us/articles/360040604772-Tips-for-Online-Learning-with-Notability",
       "published_at": "2020-03-16T21:15:14Z",
       "updated_at": "2026-02-10T23:48:26Z",
-      "fetched_at": "2026-09-28T12:35:07.028Z",
+      "fetched_at": "2026-09-28T19:43:41.375Z",
       "category": "Support article"
     },
     {
@@ -3337,7 +3337,7 @@
       "url": "https://support.gingerlabs.com/hc/en-us/articles/5871329959066-Laser-Pointer",
       "published_at": "2023-06-28T22:41:55Z",
       "updated_at": "2026-08-05T22:35:14Z",
-      "fetched_at": "2026-09-28T12:35:07.028Z",
+      "fetched_at": "2026-09-28T19:43:41.375Z",
       "category": "Support article"
     },
     {
@@ -3347,7 +3347,7 @@
       "url": "https://support.gingerlabs.com/hc/en-us/articles/360044382131-Troubleshooting-PDF-Backgrounds",
       "published_at": "2020-06-01T21:20:14Z",
       "updated_at": "2026-08-05T22:35:33Z",
-      "fetched_at": "2026-09-28T12:35:07.028Z",
+      "fetched_at": "2026-09-28T19:43:41.375Z",
       "category": "Support article"
     },
     {
@@ -3357,7 +3357,7 @@
       "url": "https://support.gingerlabs.com/hc/en-us/articles/360000556351-Using-Notability-as-a-Student",
       "published_at": "2018-02-02T20:32:18Z",
       "updated_at": "2026-02-10T23:59:21Z",
-      "fetched_at": "2026-09-28T12:35:07.028Z",
+      "fetched_at": "2026-09-28T19:43:41.375Z",
       "category": "Support article"
     },
     {
@@ -3367,7 +3367,7 @@
       "url": "https://support.gingerlabs.com/hc/en-us/articles/360018646412-Select-Tool",
       "published_at": "2018-10-31T20:31:34Z",
       "updated_at": "2026-08-05T22:35:13Z",
-      "fetched_at": "2026-09-28T12:35:07.028Z",
+      "fetched_at": "2026-09-28T19:43:41.375Z",
       "category": "Support article"
     },
     {
@@ -3377,7 +3377,7 @@
       "url": "https://support.gingerlabs.com/hc/en-us/articles/5957217076762-Importing-External-Planners-into-Notability",
       "published_at": "2023-07-23T16:30:18Z",
       "updated_at": "2026-08-05T22:36:08Z",
-      "fetched_at": "2026-09-28T12:35:07.028Z",
+      "fetched_at": "2026-09-28T19:43:41.375Z",
       "category": "Support article"
     },
     {
@@ -3387,7 +3387,7 @@
       "url": "https://support.gingerlabs.com/hc/en-us/articles/360016657591-Note-Reminders-with-Siri",
       "published_at": "2018-10-02T22:48:15Z",
       "updated_at": "2026-06-03T16:53:18Z",
-      "fetched_at": "2026-09-28T12:35:07.028Z",
+      "fetched_at": "2026-09-28T19:43:41.375Z",
       "category": "Support article"
     },
     {
@@ -3397,7 +3397,7 @@
       "url": "https://support.gingerlabs.com/hc/en-us/articles/5554940885402-Tape",
       "published_at": "2023-04-03T16:01:40Z",
       "updated_at": "2026-08-05T22:30:27Z",
-      "fetched_at": "2026-09-28T12:35:07.028Z",
+      "fetched_at": "2026-09-28T19:43:41.375Z",
       "category": "Support article"
     },
     {
@@ -3407,7 +3407,7 @@
       "url": "https://support.gingerlabs.com/hc/en-us/articles/206059387-Text-and-Text-Boxes",
       "published_at": "2015-05-11T18:31:08Z",
       "updated_at": "2026-09-24T16:08:45Z",
-      "fetched_at": "2026-09-28T12:35:07.028Z",
+      "fetched_at": "2026-09-28T19:43:41.375Z",
       "category": "Support article"
     },
     {
@@ -3417,7 +3417,7 @@
       "url": "https://support.gingerlabs.com/hc/en-us/articles/226961367-Troubleshooting-Import-Errors",
       "published_at": "2016-09-10T02:19:57Z",
       "updated_at": "2026-08-05T22:38:28Z",
-      "fetched_at": "2026-09-28T12:35:07.028Z",
+      "fetched_at": "2026-09-28T19:43:41.375Z",
       "category": "Support article"
     },
     {
@@ -3427,7 +3427,7 @@
       "url": "https://support.gingerlabs.com/hc/en-us/articles/4409494284314-A-New-Generation-of-Notability-for-Students-Teachers-is-Here",
       "published_at": "2021-10-26T23:52:23Z",
       "updated_at": "2026-06-03T17:52:06Z",
-      "fetched_at": "2026-09-28T12:35:07.028Z",
+      "fetched_at": "2026-09-28T19:43:41.375Z",
       "category": "Support article"
     },
     {
@@ -3437,7 +3437,7 @@
       "url": "https://support.gingerlabs.com/hc/en-us/articles/360054385231-How-to-use-Digital-Planners",
       "published_at": "2020-12-15T21:37:37Z",
       "updated_at": "2025-12-08T18:55:27Z",
-      "fetched_at": "2026-09-28T12:35:07.028Z",
+      "fetched_at": "2026-09-28T19:43:41.375Z",
       "category": "Support article"
     },
     {
@@ -3448,7 +3448,7 @@
       "url": "https://portal.productboard.com/gingerlabs/1-notability/c/119-copy-all-transcripts",
       "published_at": "2024-06-28T21:43:55.430013+00:00",
       "updated_at": "2024-06-28T21:43:59.175171+00:00",
-      "fetched_at": "2026-09-28T12:35:07.028Z",
+      "fetched_at": "2026-09-28T19:43:41.375Z",
       "category": "Development update"
     },
     {
@@ -3459,7 +3459,7 @@
       "url": "https://portal.productboard.com/gingerlabs/1-notability/c/110-mirroring-ink",
       "published_at": "2026-02-18T23:54:42.662963+00:00",
       "updated_at": "2026-02-18T23:54:52.327623+00:00",
-      "fetched_at": "2026-09-28T12:35:07.028Z",
+      "fetched_at": "2026-09-28T19:43:41.375Z",
       "category": "Development update"
     },
     {
@@ -3470,7 +3470,7 @@
       "url": "https://portal.productboard.com/gingerlabs/1-notability/c/43-rtl-right-to-left-typing",
       "published_at": "2026-07-09T20:30:47.897146+00:00",
       "updated_at": "2026-07-09T20:31:32.299511+00:00",
-      "fetched_at": "2026-09-28T12:35:07.028Z",
+      "fetched_at": "2026-09-28T19:43:41.375Z",
       "category": "Development update"
     },
     {
@@ -3481,7 +3481,7 @@
       "url": "https://portal.productboard.com/gingerlabs/1-notability/c/167-version-history",
       "published_at": "2026-07-09T20:33:01.302168+00:00",
       "updated_at": "2026-07-09T20:33:04.751336+00:00",
-      "fetched_at": "2026-09-28T12:35:07.028Z",
+      "fetched_at": "2026-09-28T19:43:41.375Z",
       "category": "Development update"
     },
     {
@@ -3492,7 +3492,7 @@
       "url": "https://portal.productboard.com/gingerlabs/1-notability/c/129-show-hide-all-tape",
       "published_at": "2024-07-08T21:23:42.502936+00:00",
       "updated_at": "2024-07-08T21:23:44.453873+00:00",
-      "fetched_at": "2026-09-28T12:35:07.028Z",
+      "fetched_at": "2026-09-28T19:43:41.375Z",
       "category": "Development update"
     },
     {
@@ -3503,7 +3503,7 @@
       "url": "https://portal.productboard.com/gingerlabs/1-notability/c/175-focus-mode",
       "published_at": "2026-07-09T20:24:46.288749+00:00",
       "updated_at": "2026-07-09T20:24:47.269403+00:00",
-      "fetched_at": "2026-09-28T12:35:07.028Z",
+      "fetched_at": "2026-09-28T19:43:41.375Z",
       "category": "Development update"
     },
     {
@@ -3514,7 +3514,7 @@
       "url": "https://portal.productboard.com/gingerlabs/1-notability/c/169-lock-contents-to-prevent-editing",
       "published_at": "2026-02-19T17:14:37.784751+00:00",
       "updated_at": "2026-02-19T17:14:39.168941+00:00",
-      "fetched_at": "2026-09-28T12:35:07.028Z",
+      "fetched_at": "2026-09-28T19:43:41.375Z",
       "category": "Development update"
     },
     {
@@ -3525,7 +3525,7 @@
       "url": "https://portal.productboard.com/gingerlabs/1-notability/c/73-non-unique-note-names",
       "published_at": "2026-02-06T19:40:41.971403+00:00",
       "updated_at": "2026-02-06T19:41:03.193696+00:00",
-      "fetched_at": "2026-09-28T12:35:07.028Z",
+      "fetched_at": "2026-09-28T19:43:41.375Z",
       "category": "Development update"
     },
     {
@@ -3536,7 +3536,7 @@
       "url": "https://github.com/Ginger-Labs/GraphicsPathNearest",
       "published_at": "2021-03-05T22:06:19Z",
       "updated_at": "2021-03-05T22:13:04Z",
-      "fetched_at": "2026-09-28T12:35:07.028Z",
+      "fetched_at": "2026-09-28T19:43:41.375Z",
       "category": "Public repository"
     }
   ],
