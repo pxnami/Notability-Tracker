@@ -66,7 +66,8 @@ export function Overview() {
       <header className="overview-heading">
         <p className="eyebrow">THE UNOFFICIAL NOTABILITY TRACKER</p>
         <h1>
-          Notability Tracker<span className="blue-dot">.</span>
+          Notability <span className="hero-mark">Tracker</span>
+          <span className="blue-dot">.</span>
         </h1>
         <div className="intro-line">
           <p className="lede">The bugs. The fixes. The next big thing.</p>

@@ -1,39 +1,59 @@
-@import "@fontsource/archivo-black/latin-400.css";
+@import "@fontsource/paytone-one/latin-400.css";
+
+@font-face {
+  font-family: "Nunito Sans Variable";
+  src: url("@fontsource-variable/nunito-sans/files/nunito-sans-latin-wght-normal.woff2")
+    format("woff2-variations");
+  font-style: normal;
+  font-weight: 200 1000;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Source Serif 4 Variable";
+  src: url("@fontsource-variable/source-serif-4/files/source-serif-4-latin-wght-normal.woff2")
+    format("woff2-variations");
+  font-style: normal;
+  font-weight: 200 900;
+  font-display: swap;
+}
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 :root {
-  font-family: Arial, Helvetica, sans-serif;
-  color: #20201e;
-  background: #fafaf7;
+  font-family: "Nunito Sans Variable", Arial, Helvetica, sans-serif;
+  color: #1a1a1a;
+  background: #fcfaf4;
   font-synthesis: none;
-  --paper: #fafaf7;
-  --surface: #fff;
-  --ink: #20201e;
-  --muted: #64645f;
-  --line: #deded6;
-  --blue: #4d8eff;
-  --link: #235cbb;
-  --soft: #f0f0eb;
-  --peach: #ffe0c9;
-  --green: #dcebcf;
-  --yellow: #f7edb3;
-  --blue-light: #dce9ff;
+  --font-display: "Paytone One", "Arial Black", sans-serif;
+  --font-serif: "Source Serif 4 Variable", Georgia, serif;
+  --font-ui: "Nunito Sans Variable", Arial, sans-serif;
+  --paper: #fcfaf4;
+  --surface: #fffefa;
+  --ink: #1a1a1a;
+  --muted: #625f58;
+  --line: #dcd7cc;
+  --blue: #5698ff;
+  --link: #2366c7;
+  --soft: #f0ede5;
+  --peach: #ffd6bb;
+  --green: #dceacf;
+  --yellow: #f8ecad;
+  --blue-light: #d9e7ff;
   color-scheme: light;
 }
 :root[data-theme="dark"] {
-  --paper: #191a1b;
-  --surface: #222426;
-  --ink: #f7f7ed;
-  --muted: #b9bbb6;
-  --line: #404442;
-  --link: #9cbeff;
-  --soft: #2b2e2b;
-  --peach: #523c30;
-  --green: #344936;
-  --yellow: #494529;
-  --blue-light: #2b405f;
+  --paper: #171817;
+  --surface: #222320;
+  --ink: #fffdf5;
+  --muted: #c1beb5;
+  --line: #41423e;
+  --link: #9fc2ff;
+  --soft: #2b2d29;
+  --peach: #593d31;
+  --green: #344b37;
+  --yellow: #514a29;
+  --blue-light: #2d4366;
   color-scheme: dark;
 }
 * {
@@ -45,6 +65,8 @@ body {
   min-width: 320px;
   background: var(--paper);
   color: var(--ink);
+  font-family: var(--font-ui);
+  font-weight: 450;
 }
 button,
 input,
@@ -92,20 +114,20 @@ h3 {
   overflow-wrap: anywhere;
 }
 h1 {
-  font-family: "Archivo Black", Arial, sans-serif;
-  font-size: 42px;
-  line-height: 1.12;
+  font-family: var(--font-display);
+  font-size: 48px;
+  line-height: 1.04;
   font-weight: 400;
   max-width: 940px;
 }
 h2 {
   font-size: 23px;
-  font-weight: 700;
+  font-weight: 800;
   line-height: 1.25;
 }
 h3 {
   font-size: 18px;
-  font-weight: 700;
+  font-weight: 800;
   line-height: 1.35;
 }
 p {
@@ -150,24 +172,28 @@ select {
   top: 10px;
 }
 .announcement {
-  background: #1b1b19;
+  background: #1a1a1a;
   color: #fff;
   text-align: center;
-  padding: 10px 16px;
-  font-size: 12px;
-  line-height: 1.6;
+  padding: 11px 16px 12px;
+  font-family: var(--font-display);
+  font-size: 13px;
+  line-height: 1.35;
 }
 .announcement a {
-  color: #93b9ff;
+  color: #83b2ff;
   margin-left: 8px;
+  text-decoration: underline;
+  text-decoration-thickness: 2px;
+  text-underline-offset: 3px;
 }
 .site-header {
   border-bottom: 1px solid var(--line);
   background: var(--paper);
 }
 .header-inner {
-  max-width: 1264px;
-  padding: 26px 32px 22px;
+  max-width: 1200px;
+  padding: 24px 32px 20px;
   margin: auto;
   display: flex;
   align-items: center;
@@ -178,8 +204,8 @@ select {
   gap: 10px;
   align-items: center;
   flex-shrink: 0;
-  font-family: "Archivo Black", Arial, sans-serif;
-  font-size: 23px;
+  font-family: var(--font-display);
+  font-size: 24px;
   line-height: 1;
 }
 .brand:hover {
@@ -190,11 +216,10 @@ select {
 }
 .brand-tracker {
   display: block;
-  font:
-    11px Arial,
-    sans-serif;
+  font: 700 10px/1 var(--font-ui);
   text-transform: uppercase;
-  margin-top: 6px;
+  margin-top: 7px;
+  color: var(--muted);
 }
 .global-search {
   margin-left: auto;
@@ -203,8 +228,10 @@ select {
   gap: 9px;
   width: 290px;
   color: var(--muted);
-  border-bottom: 1px solid var(--line);
-  padding: 8px 0;
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  background: var(--surface);
+  padding: 10px 14px;
 }
 .global-search input {
   border: 0;
@@ -226,8 +253,8 @@ select {
   align-items: center;
   justify-content: center;
   flex-shrink: 0;
-  width: 38px;
-  height: 38px;
+  width: 40px;
+  height: 40px;
   border-radius: 50%;
 }
 .icon-button:hover {
@@ -253,15 +280,16 @@ select {
 .main-nav {
   display: flex;
   gap: 32px;
-  max-width: 1200px;
+  max-width: 1136px;
   margin: auto;
   padding: 0 0 0;
   overflow: auto;
 }
 .main-nav a {
-  font-family: Georgia, serif;
-  font-size: 17px;
-  padding: 14px 0 17px;
+  font-family: var(--font-serif);
+  font-size: 18px;
+  font-weight: 550;
+  padding: 15px 0 17px;
   white-space: nowrap;
   border-bottom: 3px solid transparent;
 }
@@ -274,18 +302,16 @@ select {
   font-weight: bold;
 }
 .main-content {
-  max-width: 1264px;
+  max-width: 1200px;
   margin: auto;
-  padding: 44px 32px 72px;
+  padding: 54px 32px 84px;
   min-height: 65vh;
 }
 .eyebrow {
-  font:
-    11px/1.5 "Courier New",
-    monospace;
-  font-weight: bold;
+  font: 800 11px/1.5 var(--font-ui);
   text-transform: uppercase;
   color: var(--muted);
+  letter-spacing: 0.08em;
 }
 .page-heading {
   display: flex;
@@ -295,24 +321,41 @@ select {
   margin-bottom: 32px;
 }
 .page-heading h1 {
-  margin: 14px 0 16px;
+  margin: 16px 0 18px;
 }
 .lede {
-  font-family: Georgia, serif;
-  font-size: 21px;
-  line-height: 1.5;
+  font-family: var(--font-serif);
+  font-size: 23px;
+  line-height: 1.4;
   max-width: 750px;
 }
 .page-heading .lede {
   color: var(--muted);
-  font-size: 19px;
+  font-size: 20px;
 }
 .overview-heading {
-  margin: 5px 0 34px;
+  margin: 8px 0 42px;
 }
 .overview-heading h1 {
-  font-size: 54px;
-  margin: 16px 0;
+  font-size: 68px;
+  margin: 18px 0 20px;
+}
+.hero-mark {
+  position: relative;
+  display: inline-block;
+  isolation: isolate;
+}
+.hero-mark::after {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  left: 2%;
+  right: -2%;
+  bottom: 0.02em;
+  height: 0.12em;
+  border-radius: 999px;
+  background: var(--blue);
+  transform: rotate(-1.5deg);
 }
 .blue-dot {
   color: var(--blue);
@@ -341,13 +384,15 @@ select {
 }
 .stat {
   display: block;
-  padding: 22px 24px;
+  padding: 24px;
   border-radius: 8px;
   border: 1px solid rgba(0, 0, 0, 0.04);
+  transition: transform 160ms ease, box-shadow 160ms ease;
 }
 .stat:hover {
   text-decoration: none;
-  box-shadow: 0 3px 0 var(--ink);
+  box-shadow: 0 4px 0 var(--ink);
+  transform: translateY(-2px);
 }
 .stat-top {
   display: flex;
@@ -356,7 +401,7 @@ select {
 }
 .stat strong {
   display: block;
-  font-family: "Archivo Black", Arial, sans-serif;
+  font-family: var(--font-display);
   font-size: 46px;
   margin: 14px 0 4px;
   font-weight: 400;
@@ -364,6 +409,7 @@ select {
 }
 .stat h2 {
   font-size: 18px;
+  font-weight: 850;
 }
 .stat p {
   font-size: 12px;
@@ -396,12 +442,12 @@ select {
   justify-content: space-between;
   gap: 16px;
   padding-bottom: 20px;
-  border-bottom: 2px solid var(--ink);
+  border-bottom: 3px solid var(--ink);
   margin-bottom: 0;
 }
 .section-heading h2 {
-  font-family: "Archivo Black", Arial, sans-serif;
-  font-size: 22px;
+  font-family: var(--font-display);
+  font-size: 23px;
   font-weight: 400;
 }
 .section-heading a {
@@ -421,7 +467,8 @@ select {
 }
 .issue-preview h3 {
   margin: 12px 0;
-  font-size: 18px;
+  font-family: var(--font-serif);
+  font-size: 19px;
 }
 .issue-preview:hover h3 {
   color: var(--link);
@@ -436,7 +483,7 @@ select {
   padding: 26px 0;
 }
 .latest-release h3 {
-  font-family: "Archivo Black", Arial, sans-serif;
+  font-family: var(--font-display);
   font-weight: 400;
   font-size: 42px;
   margin: 12px 0;
@@ -450,13 +497,13 @@ select {
   justify-content: center;
   gap: 9px;
   border: 1px solid var(--ink);
-  border-radius: 30px;
+  border-radius: 999px;
   background: var(--ink);
   color: var(--paper);
   padding: 11px 20px;
   min-height: 42px;
   font-size: 14px;
-  font-weight: bold;
+  font-weight: 800;
   white-space: normal;
 }
 .button:hover {
@@ -510,6 +557,8 @@ select {
 }
 .reading-grid article h3 {
   margin: 12px 0 20px;
+  font-family: var(--font-serif);
+  font-size: 20px;
 }
 .reading-grid p {
   font-size: 14px;
@@ -536,7 +585,7 @@ select {
   color: var(--muted);
 }
 .site-footer strong {
-  font-family: "Archivo Black", Arial, sans-serif;
+  font-family: var(--font-display);
   color: var(--ink);
   font-size: 18px;
   font-weight: 400;
@@ -570,8 +619,8 @@ select {
   gap: 9px;
   border: 1px solid var(--line);
   background: var(--surface);
-  border-radius: 6px;
-  padding: 10px 12px;
+  border-radius: 999px;
+  padding: 11px 14px;
   min-width: 200px;
   flex: 1;
   color: var(--muted);
@@ -595,7 +644,8 @@ select {
 select {
   max-width: 240px;
   border: 1px solid var(--line);
-  padding: 10px;
+  border-radius: 999px;
+  padding: 10px 34px 10px 14px;
   background: var(--surface);
   color: var(--ink);
   font-size: 13px;
@@ -625,7 +675,8 @@ input[type="checkbox"] {
   padding: 70px 20px;
   color: var(--muted);
 }
-.empty-state > svg {
+.empty-state > .sf-icon {
+  display: block;
   margin: 0 auto 18px;
 }
 .empty-state h2 {
@@ -653,9 +704,8 @@ input[type="checkbox"] {
   border-bottom: 1px solid var(--line);
 }
 .issue-number {
-  font:
-    11px "Courier New",
-    monospace;
+  font: 800 10px var(--font-ui);
+  letter-spacing: 0.08em;
   color: var(--muted);
   padding-top: 8px;
   flex-shrink: 0;
@@ -665,7 +715,8 @@ input[type="checkbox"] {
   min-width: 0;
 }
 .issue-content h2 {
-  font-size: 19px;
+  font-family: var(--font-serif);
+  font-size: 21px;
   margin: 12px 0;
 }
 .issue-row > .icon-button {
@@ -713,6 +764,7 @@ details p {
   border-radius: 8px;
   background: var(--surface);
   min-width: 0;
+  box-shadow: 0 10px 26px rgba(26, 26, 26, 0.05);
 }
 .card-top {
   display: flex;
@@ -722,7 +774,8 @@ details p {
   min-height: 38px;
 }
 .feature-card h2 {
-  font-size: 20px;
+  font-family: var(--font-serif);
+  font-size: 21px;
   margin: 18px 0 12px;
 }
 .feature-card > p {
@@ -761,7 +814,9 @@ details p {
   gap: 12px;
 }
 .roadmap-title h2 {
+  font-family: var(--font-display);
   font-size: 20px;
+  font-weight: 400;
   flex: 1;
 }
 .roadmap-title > span:last-child {
@@ -772,7 +827,8 @@ details p {
   border-bottom: 1px solid var(--line);
 }
 .roadmap-item h3 {
-  font-size: 16px;
+  font-family: var(--font-serif);
+  font-size: 17px;
 }
 .release {
   display: grid;
@@ -782,7 +838,7 @@ details p {
   border-bottom: 1px solid var(--line);
 }
 .release-version h2 {
-  font-family: "Archivo Black", Arial, sans-serif;
+  font-family: var(--font-display);
   font-size: 34px;
   font-weight: 400;
   margin: 14px 0;
@@ -820,7 +876,8 @@ details p {
   min-width: 0;
 }
 .feed-content h2 {
-  font-size: 21px;
+  font-family: var(--font-serif);
+  font-size: 22px;
   margin: 12px 0;
 }
 .feed-content p {
@@ -838,6 +895,7 @@ details p {
   border-radius: 8px;
   padding: 26px;
   background: var(--surface);
+  box-shadow: 0 10px 26px rgba(26, 26, 26, 0.05);
 }
 .source-initial {
   display: grid;
@@ -846,7 +904,7 @@ details p {
   height: 38px;
   border-radius: 8px;
   background: var(--blue-light);
-  font-family: "Archivo Black", Arial, sans-serif;
+  font-family: var(--font-display);
 }
 .source-card h2 {
   margin: 20px 0 12px;
@@ -979,7 +1037,7 @@ details p {
 }
 @media (max-width: 767px) {
   h1 {
-    font-size: 32px;
+    font-size: 38px;
   }
   .announcement {
     font-size: 10px;
@@ -1037,7 +1095,7 @@ details p {
     margin-bottom: 24px;
   }
   .overview-heading h1 {
-    font-size: 36px;
+    font-size: 44px;
     margin: 15px 0;
   }
   .lede {

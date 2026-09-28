@@ -122,4 +122,4 @@ See [CONTRIBUTING.md](CONTRIBUTING.md) for the development workflow and data-int
 
 No software license is currently provided. The repository is publicly readable, but no permission to copy, modify, or redistribute its contents is granted by default.
 
-Notability is a trademark of Ginger Labs. Its name and icon are used only to identify the product being tracked. Interface symbols are from the [Icons8 Apple SF Symbols](https://icons8.com/icons/family-sf-symbols) family. Archivo Black is distributed through Fontsource under its included upstream license.
+Notability is a trademark of Ginger Labs. Its name and icon are used only to identify the product being tracked. Interface symbols are from the [Icons8 Apple SF Symbols](https://icons8.com/icons/family-sf-symbols) family. Paytone One, Nunito Sans, and Source Serif 4 are distributed through Fontsource under their included upstream licenses.
