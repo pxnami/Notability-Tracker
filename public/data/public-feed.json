@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-09T22:37:50.499Z",
+  "generatedAt": "2026-10-10T05:51:56.898Z",
   "sources": [
     {
       "id": "support",
@@ -17,7 +17,7 @@
       "url": "https://portal.productboard.com/gingerlabs/1-notability/tabs/14-actively-considering",
       "official": true,
       "health": "healthy",
-      "lastSync": "2026-10-09T22:37:50.499Z",
+      "lastSync": "2026-10-10T05:51:56.898Z",
       "cadence": "Every 6 hours",
       "note": "Public source checked successfully."
     },
@@ -27,7 +27,7 @@
       "url": "https://github.com/Ginger-Labs",
       "official": true,
       "health": "healthy",
-      "lastSync": "2026-10-09T22:37:50.499Z",
+      "lastSync": "2026-10-10T05:51:56.898Z",
       "cadence": "Every 6 hours",
       "note": "Public source checked successfully."
     },
@@ -824,7 +824,7 @@
       "roadmapStatus": "Actively Considering",
       "source": "productboard",
       "updatedAt": "2026-10-08T12:44:10.044129+00:00",
-      "checkedAt": "2026-10-09T22:37:50.499Z",
+      "checkedAt": "2026-10-10T05:51:56.898Z",
       "url": "https://portal.productboard.com/gingerlabs/1-notability/c/139-ocr-support-scanned-files-imported-pdfs-"
     },
     {
@@ -833,8 +833,8 @@
       "description": "Ability to rotate pages in a note.",
       "roadmapStatus": "Prototyping / Experimenting",
       "source": "productboard",
-      "updatedAt": "2026-09-27T19:40:12.520144+00:00",
-      "checkedAt": "2026-10-09T22:37:50.499Z",
+      "updatedAt": "2026-10-10T05:50:19.594084+00:00",
+      "checkedAt": "2026-10-10T05:51:56.898Z",
       "url": "https://portal.productboard.com/gingerlabs/1-notability/c/27-rotate-pages"
     },
     {
@@ -844,7 +844,7 @@
       "roadmapStatus": "Launched",
       "source": "productboard",
       "updatedAt": "2026-09-26T03:10:17.674721+00:00",
-      "checkedAt": "2026-10-09T22:37:50.499Z",
+      "checkedAt": "2026-10-10T05:51:56.898Z",
       "url": "https://portal.productboard.com/gingerlabs/1-notability/c/161-study-games"
     },
     {
@@ -854,7 +854,7 @@
       "roadmapStatus": "Launched",
       "source": "productboard",
       "updatedAt": "2026-08-29T21:27:00.683922+00:00",
-      "checkedAt": "2026-10-09T22:37:50.499Z",
+      "checkedAt": "2026-10-10T05:51:56.898Z",
       "url": "https://portal.productboard.com/gingerlabs/1-notability/c/124-subscript-and-superscript-support"
     },
     {
@@ -864,7 +864,7 @@
       "roadmapStatus": "Launched",
       "source": "productboard",
       "updatedAt": "2025-03-04T18:11:53.288925+00:00",
-      "checkedAt": "2026-10-09T22:37:50.499Z",
+      "checkedAt": "2026-10-10T05:51:56.898Z",
       "url": "https://portal.productboard.com/gingerlabs/1-notability/c/147-apple-image-playground"
     },
     {
@@ -874,7 +874,7 @@
       "roadmapStatus": "Launched",
       "source": "productboard",
       "updatedAt": "2026-05-03T13:38:58.626122+00:00",
-      "checkedAt": "2026-10-09T22:37:50.499Z",
+      "checkedAt": "2026-10-10T05:51:56.898Z",
       "url": "https://portal.productboard.com/gingerlabs/1-notability/c/146-flashcards"
     },
     {
@@ -884,7 +884,7 @@
       "roadmapStatus": "Actively Considering",
       "source": "productboard",
       "updatedAt": "2026-09-15T22:46:34.072486+00:00",
-      "checkedAt": "2026-10-09T22:37:50.499Z",
+      "checkedAt": "2026-10-10T05:51:56.898Z",
       "url": "https://portal.productboard.com/gingerlabs/1-notability/c/163-save-learn-quiz-questions"
     },
     {
@@ -894,7 +894,7 @@
       "roadmapStatus": "Launched",
       "source": "productboard",
       "updatedAt": "2026-04-04T22:20:17.859188+00:00",
-      "checkedAt": "2026-10-09T22:37:50.499Z",
+      "checkedAt": "2026-10-10T05:51:56.898Z",
       "url": "https://portal.productboard.com/gingerlabs/1-notability/c/104-multi-note-and-note-switcher"
     },
     {
@@ -904,7 +904,7 @@
       "roadmapStatus": "Launched",
       "source": "productboard",
       "updatedAt": "2026-02-13T16:42:26.460556+00:00",
-      "checkedAt": "2026-10-09T22:37:50.499Z",
+      "checkedAt": "2026-10-10T05:51:56.898Z",
       "url": "https://portal.productboard.com/gingerlabs/1-notability/c/119-copy-all-transcripts"
     },
     {
@@ -914,7 +914,7 @@
       "roadmapStatus": "Actively Considering",
       "source": "productboard",
       "updatedAt": "2026-09-25T18:29:11.820811+00:00",
-      "checkedAt": "2026-10-09T22:37:50.499Z",
+      "checkedAt": "2026-10-10T05:51:56.898Z",
       "url": "https://portal.productboard.com/gingerlabs/1-notability/c/186-siri-shortcuts-shortcuts-app"
     },
     {
@@ -924,7 +924,7 @@
       "roadmapStatus": "Launched",
       "source": "productboard",
       "updatedAt": "2026-03-24T18:05:23.612048+00:00",
-      "checkedAt": "2026-10-09T22:37:50.499Z",
+      "checkedAt": "2026-10-10T05:51:56.898Z",
       "url": "https://portal.productboard.com/gingerlabs/1-notability/c/170-more-tape-patterns-colors"
     },
     {
@@ -934,7 +934,7 @@
       "roadmapStatus": "Launched",
       "source": "productboard",
       "updatedAt": "2026-03-24T17:56:12.709102+00:00",
-      "checkedAt": "2026-10-09T22:37:50.499Z",
+      "checkedAt": "2026-10-10T05:51:56.898Z",
       "url": "https://portal.productboard.com/gingerlabs/1-notability/c/110-mirroring-ink"
     },
     {
@@ -944,7 +944,7 @@
       "roadmapStatus": "Building",
       "source": "productboard",
       "updatedAt": "2026-10-03T02:40:21.644018+00:00",
-      "checkedAt": "2026-10-09T22:37:50.499Z",
+      "checkedAt": "2026-10-10T05:51:56.898Z",
       "url": "https://portal.productboard.com/gingerlabs/1-notability/c/138-comments"
     },
     {
@@ -954,7 +954,7 @@
       "roadmapStatus": "Launched",
       "source": "productboard",
       "updatedAt": "2026-08-16T18:01:50.53483+00:00",
-      "checkedAt": "2026-10-09T22:37:50.499Z",
+      "checkedAt": "2026-10-10T05:51:56.898Z",
       "url": "https://portal.productboard.com/gingerlabs/1-notability/c/74-bring-to-the-front"
     },
     {
@@ -964,7 +964,7 @@
       "roadmapStatus": "Building",
       "source": "productboard",
       "updatedAt": "2026-09-15T00:36:01.352476+00:00",
-      "checkedAt": "2026-10-09T22:37:50.499Z",
+      "checkedAt": "2026-10-10T05:51:56.898Z",
       "url": "https://portal.productboard.com/gingerlabs/1-notability/c/183-syllabus-import"
     },
     {
@@ -974,7 +974,7 @@
       "roadmapStatus": "Launched",
       "source": "productboard",
       "updatedAt": "2024-06-28T16:52:18.877539+00:00",
-      "checkedAt": "2026-10-09T22:37:50.499Z",
+      "checkedAt": "2026-10-10T05:51:56.898Z",
       "url": "https://portal.productboard.com/gingerlabs/1-notability/c/16-rewind-fast-forward-10-seconds"
     },
     {
@@ -984,7 +984,7 @@
       "roadmapStatus": "Prototyping / Experimenting",
       "source": "productboard",
       "updatedAt": "2026-09-29T18:37:09.280307+00:00",
-      "checkedAt": "2026-10-09T22:37:50.499Z",
+      "checkedAt": "2026-10-10T05:51:56.898Z",
       "url": "https://portal.productboard.com/gingerlabs/1-notability/c/185-study-from-folders"
     },
     {
@@ -994,7 +994,7 @@
       "roadmapStatus": "Actively Considering",
       "source": "productboard",
       "updatedAt": "2026-10-09T03:02:28.283945+00:00",
-      "checkedAt": "2026-10-09T22:37:50.499Z",
+      "checkedAt": "2026-10-10T05:51:56.898Z",
       "url": "https://portal.productboard.com/gingerlabs/1-notability/c/122-more-math-tools"
     },
     {
@@ -1004,7 +1004,7 @@
       "roadmapStatus": "Launched",
       "source": "productboard",
       "updatedAt": "2026-02-13T16:48:05.053942+00:00",
-      "checkedAt": "2026-10-09T22:37:50.499Z",
+      "checkedAt": "2026-10-10T05:51:56.898Z",
       "url": "https://portal.productboard.com/gingerlabs/1-notability/c/150-improve-learn-quality"
     },
     {
@@ -1014,7 +1014,7 @@
       "roadmapStatus": "Launched",
       "source": "productboard",
       "updatedAt": "2026-04-24T16:08:12.975418+00:00",
-      "checkedAt": "2026-10-09T22:37:50.499Z",
+      "checkedAt": "2026-10-10T05:51:56.898Z",
       "url": "https://portal.productboard.com/gingerlabs/1-notability/c/89-transcribe-audio-to-text"
     },
     {
@@ -1024,7 +1024,7 @@
       "roadmapStatus": "Launched",
       "source": "productboard",
       "updatedAt": "2026-02-09T22:49:24.919734+00:00",
-      "checkedAt": "2026-10-09T22:37:50.499Z",
+      "checkedAt": "2026-10-10T05:51:56.898Z",
       "url": "https://portal.productboard.com/gingerlabs/1-notability/c/156-emojifying-subjects"
     },
     {
@@ -1034,7 +1034,7 @@
       "roadmapStatus": "Launched",
       "source": "productboard",
       "updatedAt": "2025-03-22T13:10:43.536753+00:00",
-      "checkedAt": "2026-10-09T22:37:50.499Z",
+      "checkedAt": "2026-10-10T05:51:56.898Z",
       "url": "https://portal.productboard.com/gingerlabs/1-notability/c/117-widgets"
     },
     {
@@ -1044,7 +1044,7 @@
       "roadmapStatus": "Actively Considering",
       "source": "productboard",
       "updatedAt": "2026-09-12T03:48:31.732895+00:00",
-      "checkedAt": "2026-10-09T22:37:50.499Z",
+      "checkedAt": "2026-10-10T05:51:56.898Z",
       "url": "https://portal.productboard.com/gingerlabs/1-notability/c/88-name-bookmarks"
     },
     {
@@ -1054,7 +1054,7 @@
       "roadmapStatus": "Launched",
       "source": "productboard",
       "updatedAt": "2021-05-25T22:41:45.835361+00:00",
-      "checkedAt": "2026-10-09T22:37:50.499Z",
+      "checkedAt": "2026-10-10T05:51:56.898Z",
       "url": "https://portal.productboard.com/gingerlabs/1-notability/c/40-open-password-protected-pdfs"
     },
     {
@@ -1064,7 +1064,7 @@
       "roadmapStatus": "Prototyping / Experimenting",
       "source": "productboard",
       "updatedAt": "2026-09-25T20:05:41.397024+00:00",
-      "checkedAt": "2026-10-09T22:37:50.499Z",
+      "checkedAt": "2026-10-10T05:51:56.898Z",
       "url": "https://portal.productboard.com/gingerlabs/1-notability/c/51-url-scheme-links-within-and-between-notes"
     },
     {
@@ -1074,7 +1074,7 @@
       "roadmapStatus": "Actively Considering",
       "source": "productboard",
       "updatedAt": "2026-09-28T18:36:42.827913+00:00",
-      "checkedAt": "2026-10-09T22:37:50.499Z",
+      "checkedAt": "2026-10-10T05:51:56.898Z",
       "url": "https://portal.productboard.com/gingerlabs/1-notability/c/173-read-only-for-link-sharing"
     },
     {
@@ -1084,7 +1084,7 @@
       "roadmapStatus": "Launched",
       "source": "productboard",
       "updatedAt": "2026-09-06T11:40:48.263019+00:00",
-      "checkedAt": "2026-10-09T22:37:50.499Z",
+      "checkedAt": "2026-10-10T05:51:56.898Z",
       "url": "https://portal.productboard.com/gingerlabs/1-notability/c/47-outlines"
     },
     {
@@ -1094,7 +1094,7 @@
       "roadmapStatus": "Launched",
       "source": "productboard",
       "updatedAt": "2026-09-26T09:27:40.111209+00:00",
-      "checkedAt": "2026-10-09T22:37:50.499Z",
+      "checkedAt": "2026-10-10T05:51:56.898Z",
       "url": "https://portal.productboard.com/gingerlabs/1-notability/c/14-text-justification"
     },
     {
@@ -1104,7 +1104,7 @@
       "roadmapStatus": "Launched",
       "source": "productboard",
       "updatedAt": "2024-01-30T20:25:14.703111+00:00",
-      "checkedAt": "2026-10-09T22:37:50.499Z",
+      "checkedAt": "2026-10-10T05:51:56.898Z",
       "url": "https://portal.productboard.com/gingerlabs/1-notability/c/78-non-unique-subject-names"
     },
     {
@@ -1114,7 +1114,7 @@
       "roadmapStatus": "Launched",
       "source": "productboard",
       "updatedAt": "2026-09-26T03:11:54.986109+00:00",
-      "checkedAt": "2026-10-09T22:37:50.499Z",
+      "checkedAt": "2026-10-10T05:51:56.898Z",
       "url": "https://portal.productboard.com/gingerlabs/1-notability/c/155-study-timer"
     },
     {
@@ -1124,7 +1124,7 @@
       "roadmapStatus": "Actively Considering",
       "source": "productboard",
       "updatedAt": "2026-09-15T22:45:42.535309+00:00",
-      "checkedAt": "2026-10-09T22:37:50.499Z",
+      "checkedAt": "2026-10-10T05:51:56.898Z",
       "url": "https://portal.productboard.com/gingerlabs/1-notability/c/152-study-video-content"
     },
     {
@@ -1134,7 +1134,7 @@
       "roadmapStatus": "Launched",
       "source": "productboard",
       "updatedAt": "2026-02-13T16:52:59.799586+00:00",
-      "checkedAt": "2026-10-09T22:37:50.499Z",
+      "checkedAt": "2026-10-10T05:51:56.898Z",
       "url": "https://portal.productboard.com/gingerlabs/1-notability/c/96-move-all-content-together-with-the-select-tool"
     },
     {
@@ -1144,7 +1144,7 @@
       "roadmapStatus": "Launched",
       "source": "productboard",
       "updatedAt": "2024-01-30T20:07:14.829636+00:00",
-      "checkedAt": "2026-10-09T22:37:50.499Z",
+      "checkedAt": "2026-10-10T05:51:56.898Z",
       "url": "https://portal.productboard.com/gingerlabs/1-notability/c/57-bulk-actions"
     },
     {
@@ -1154,7 +1154,7 @@
       "roadmapStatus": "Building",
       "source": "productboard",
       "updatedAt": "2026-10-09T03:06:17.398787+00:00",
-      "checkedAt": "2026-10-09T22:37:50.499Z",
+      "checkedAt": "2026-10-10T05:51:56.898Z",
       "url": "https://portal.productboard.com/gingerlabs/1-notability/c/125-shapes-library"
     },
     {
@@ -1164,7 +1164,7 @@
       "roadmapStatus": "Prototyping / Experimenting",
       "source": "productboard",
       "updatedAt": "2026-09-22T19:18:56.523429+00:00",
-      "checkedAt": "2026-10-09T22:37:50.499Z",
+      "checkedAt": "2026-10-10T05:51:56.898Z",
       "url": "https://portal.productboard.com/gingerlabs/1-notability/c/118-customize-page-backgrounds-inside-each-note"
     },
     {
@@ -1174,7 +1174,7 @@
       "roadmapStatus": "Launched",
       "source": "productboard",
       "updatedAt": "2026-02-13T16:55:20.771646+00:00",
-      "checkedAt": "2026-10-09T22:37:50.499Z",
+      "checkedAt": "2026-10-10T05:51:56.898Z",
       "url": "https://portal.productboard.com/gingerlabs/1-notability/c/97-partial-eraser"
     },
     {
@@ -1184,7 +1184,7 @@
       "roadmapStatus": "Prototyping / Experimenting",
       "source": "productboard",
       "updatedAt": "2026-10-09T03:03:29.536049+00:00",
-      "checkedAt": "2026-10-09T22:37:50.499Z",
+      "checkedAt": "2026-10-10T05:51:56.898Z",
       "url": "https://portal.productboard.com/gingerlabs/1-notability/c/66-infinite-paper"
     },
     {
@@ -1194,7 +1194,7 @@
       "roadmapStatus": "Launched",
       "source": "productboard",
       "updatedAt": "2025-02-20T03:35:41.875497+00:00",
-      "checkedAt": "2026-10-09T22:37:50.499Z",
+      "checkedAt": "2026-10-10T05:51:56.898Z",
       "url": "https://portal.productboard.com/gingerlabs/1-notability/c/91-improved-highlighter-tool"
     },
     {
@@ -1204,7 +1204,7 @@
       "roadmapStatus": "Launched",
       "source": "productboard",
       "updatedAt": "2024-06-19T19:37:54.229579+00:00",
-      "checkedAt": "2026-10-09T22:37:50.499Z",
+      "checkedAt": "2026-10-10T05:51:56.898Z",
       "url": "https://portal.productboard.com/gingerlabs/1-notability/c/116-custom-templates"
     },
     {
@@ -1214,7 +1214,7 @@
       "roadmapStatus": "Launched",
       "source": "productboard",
       "updatedAt": "2026-08-27T18:09:07.483051+00:00",
-      "checkedAt": "2026-10-09T22:37:50.499Z",
+      "checkedAt": "2026-10-10T05:51:56.898Z",
       "url": "https://portal.productboard.com/gingerlabs/1-notability/c/131-auto-deselect-eraser"
     },
     {
@@ -1224,7 +1224,7 @@
       "roadmapStatus": "Launched",
       "source": "productboard",
       "updatedAt": "2024-01-30T22:16:53.910109+00:00",
-      "checkedAt": "2026-10-09T22:37:50.499Z",
+      "checkedAt": "2026-10-10T05:51:56.898Z",
       "url": "https://portal.productboard.com/gingerlabs/1-notability/c/94-import-files-from-files-app"
     },
     {
@@ -1234,7 +1234,7 @@
       "roadmapStatus": "Launched",
       "source": "productboard",
       "updatedAt": "2025-06-05T21:32:07.066239+00:00",
-      "checkedAt": "2026-10-09T22:37:50.499Z",
+      "checkedAt": "2026-10-10T05:51:56.898Z",
       "url": "https://portal.productboard.com/gingerlabs/1-notability/c/102-custom-colors"
     },
     {
@@ -1244,7 +1244,7 @@
       "roadmapStatus": "Launched",
       "source": "productboard",
       "updatedAt": "2025-01-26T23:52:29.053643+00:00",
-      "checkedAt": "2026-10-09T22:37:50.499Z",
+      "checkedAt": "2026-10-10T05:51:56.898Z",
       "url": "https://portal.productboard.com/gingerlabs/1-notability/c/76-dashed-dotted-lines"
     },
     {
@@ -1254,7 +1254,7 @@
       "roadmapStatus": "Launched",
       "source": "productboard",
       "updatedAt": "2026-02-13T16:41:18.133221+00:00",
-      "checkedAt": "2026-10-09T22:37:50.499Z",
+      "checkedAt": "2026-10-10T05:51:56.898Z",
       "url": "https://portal.productboard.com/gingerlabs/1-notability/c/162-web-app-pdf-table-of-contents-for-learn"
     },
     {
@@ -1264,7 +1264,7 @@
       "roadmapStatus": "Launched",
       "source": "productboard",
       "updatedAt": "2025-05-27T16:32:06.896105+00:00",
-      "checkedAt": "2026-10-09T22:37:50.499Z",
+      "checkedAt": "2026-10-10T05:51:56.898Z",
       "url": "https://portal.productboard.com/gingerlabs/1-notability/c/159-media-menu-revamp"
     },
     {
@@ -1274,7 +1274,7 @@
       "roadmapStatus": "Launched",
       "source": "productboard",
       "updatedAt": "2026-07-10T01:15:51.418973+00:00",
-      "checkedAt": "2026-10-09T22:37:50.499Z",
+      "checkedAt": "2026-10-10T05:51:56.898Z",
       "url": "https://portal.productboard.com/gingerlabs/1-notability/c/43-rtl-right-to-left-typing"
     },
     {
@@ -1284,7 +1284,7 @@
       "roadmapStatus": "Actively Considering",
       "source": "productboard",
       "updatedAt": "2026-09-17T22:30:26.848478+00:00",
-      "checkedAt": "2026-10-09T22:37:50.499Z",
+      "checkedAt": "2026-10-10T05:51:56.898Z",
       "url": "https://portal.productboard.com/gingerlabs/1-notability/c/132-sort-search-results"
     },
     {
@@ -1294,7 +1294,7 @@
       "roadmapStatus": "Launched",
       "source": "productboard",
       "updatedAt": "2026-08-27T18:05:42.878499+00:00",
-      "checkedAt": "2026-10-09T22:37:50.499Z",
+      "checkedAt": "2026-10-10T05:51:56.898Z",
       "url": "https://portal.productboard.com/gingerlabs/1-notability/c/174-support-apple-pencil-hover"
     },
     {
@@ -1304,7 +1304,7 @@
       "roadmapStatus": "Actively Considering",
       "source": "productboard",
       "updatedAt": "2026-10-08T19:00:51.759974+00:00",
-      "checkedAt": "2026-10-09T22:37:50.499Z",
+      "checkedAt": "2026-10-10T05:51:56.898Z",
       "url": "https://portal.productboard.com/gingerlabs/1-notability/c/71-reminders"
     },
     {
@@ -1314,7 +1314,7 @@
       "roadmapStatus": "Launched",
       "source": "productboard",
       "updatedAt": "2024-09-23T02:51:05.883698+00:00",
-      "checkedAt": "2026-10-09T22:37:50.499Z",
+      "checkedAt": "2026-10-10T05:51:56.898Z",
       "url": "https://portal.productboard.com/gingerlabs/1-notability/c/144-auto-switch-to-last-used-tool-after-erasing"
     },
     {
@@ -1324,7 +1324,7 @@
       "roadmapStatus": "Launched",
       "source": "productboard",
       "updatedAt": "2026-07-24T19:59:08.679815+00:00",
-      "checkedAt": "2026-10-09T22:37:50.499Z",
+      "checkedAt": "2026-10-10T05:51:56.898Z",
       "url": "https://portal.productboard.com/gingerlabs/1-notability/c/167-version-history"
     },
     {
@@ -1334,7 +1334,7 @@
       "roadmapStatus": "Launched",
       "source": "productboard",
       "updatedAt": "2026-09-15T00:38:47.750715+00:00",
-      "checkedAt": "2026-10-09T22:37:50.499Z",
+      "checkedAt": "2026-10-10T05:51:56.898Z",
       "url": "https://portal.productboard.com/gingerlabs/1-notability/c/177-notability-for-mac-and-windows"
     },
     {
@@ -1344,7 +1344,7 @@
       "roadmapStatus": "Launched",
       "source": "productboard",
       "updatedAt": "2026-04-14T00:02:11.005501+00:00",
-      "checkedAt": "2026-10-09T22:37:50.499Z",
+      "checkedAt": "2026-10-10T05:51:56.898Z",
       "url": "https://portal.productboard.com/gingerlabs/1-notability/c/48-line-spacing-options"
     },
     {
@@ -1354,7 +1354,7 @@
       "roadmapStatus": "Launched",
       "source": "productboard",
       "updatedAt": "2025-09-04T12:58:56.414359+00:00",
-      "checkedAt": "2026-10-09T22:37:50.499Z",
+      "checkedAt": "2026-10-10T05:51:56.898Z",
       "url": "https://portal.productboard.com/gingerlabs/1-notability/c/107-different-speeds-for-audio-playback"
     },
     {
@@ -1364,7 +1364,7 @@
       "roadmapStatus": "Prototyping / Experimenting",
       "source": "productboard",
       "updatedAt": "2026-09-26T03:15:55.099313+00:00",
-      "checkedAt": "2026-10-09T22:37:50.499Z",
+      "checkedAt": "2026-10-10T05:51:56.898Z",
       "url": "https://portal.productboard.com/gingerlabs/1-notability/c/179-smart-notes-customization"
     },
     {
@@ -1374,7 +1374,7 @@
       "roadmapStatus": "Launched",
       "source": "productboard",
       "updatedAt": "2026-09-06T11:42:38.132175+00:00",
-      "checkedAt": "2026-10-09T22:37:50.499Z",
+      "checkedAt": "2026-10-10T05:51:56.898Z",
       "url": "https://portal.productboard.com/gingerlabs/1-notability/c/154-single-sign-on-sso-"
     },
     {
@@ -1384,7 +1384,7 @@
       "roadmapStatus": "Launched",
       "source": "productboard",
       "updatedAt": "2026-02-13T16:54:04.16896+00:00",
-      "checkedAt": "2026-10-09T22:37:50.499Z",
+      "checkedAt": "2026-10-10T05:51:56.898Z",
       "url": "https://portal.productboard.com/gingerlabs/1-notability/c/157-mix-and-match-game"
     },
     {
@@ -1394,7 +1394,7 @@
       "roadmapStatus": "Actively Considering",
       "source": "productboard",
       "updatedAt": "2026-10-06T21:17:31.034185+00:00",
-      "checkedAt": "2026-10-09T22:37:50.499Z",
+      "checkedAt": "2026-10-10T05:51:56.898Z",
       "url": "https://portal.productboard.com/gingerlabs/1-notability/c/184-custom-or-multiple-app-icons"
     },
     {
@@ -1404,7 +1404,7 @@
       "roadmapStatus": "Launched",
       "source": "productboard",
       "updatedAt": "2025-03-04T17:53:31.346957+00:00",
-      "checkedAt": "2026-10-09T22:37:50.499Z",
+      "checkedAt": "2026-10-10T05:51:56.898Z",
       "url": "https://portal.productboard.com/gingerlabs/1-notability/c/149-fill-in-the-blanks"
     },
     {
@@ -1414,7 +1414,7 @@
       "roadmapStatus": "Launched",
       "source": "productboard",
       "updatedAt": "2025-09-04T12:58:56.363405+00:00",
-      "checkedAt": "2026-10-09T22:37:50.499Z",
+      "checkedAt": "2026-10-10T05:51:56.898Z",
       "url": "https://portal.productboard.com/gingerlabs/1-notability/c/101-word-count"
     },
     {
@@ -1424,7 +1424,7 @@
       "roadmapStatus": "Actively Considering",
       "source": "productboard",
       "updatedAt": "2026-10-08T12:40:25.709067+00:00",
-      "checkedAt": "2026-10-09T22:37:50.499Z",
+      "checkedAt": "2026-10-10T05:51:56.898Z",
       "url": "https://portal.productboard.com/gingerlabs/1-notability/c/168-handwriting-font"
     },
     {
@@ -1434,7 +1434,7 @@
       "roadmapStatus": "Launched",
       "source": "productboard",
       "updatedAt": "2026-09-06T11:38:55.146271+00:00",
-      "checkedAt": "2026-10-09T22:37:50.499Z",
+      "checkedAt": "2026-10-10T05:51:56.898Z",
       "url": "https://portal.productboard.com/gingerlabs/1-notability/c/120-note-covers"
     },
     {
@@ -1444,7 +1444,7 @@
       "roadmapStatus": "Launched",
       "source": "productboard",
       "updatedAt": "2025-10-31T11:22:37.981832+00:00",
-      "checkedAt": "2026-10-09T22:37:50.499Z",
+      "checkedAt": "2026-10-10T05:51:56.898Z",
       "url": "https://portal.productboard.com/gingerlabs/1-notability/c/111-zoom-view-added-to-toolbox"
     },
     {
@@ -1454,7 +1454,7 @@
       "roadmapStatus": "Launched",
       "source": "productboard",
       "updatedAt": "2025-10-21T11:41:56.29429+00:00",
-      "checkedAt": "2026-10-09T22:37:50.499Z",
+      "checkedAt": "2026-10-10T05:51:56.898Z",
       "url": "https://portal.productboard.com/gingerlabs/1-notability/c/128-web-app"
     },
     {
@@ -1464,7 +1464,7 @@
       "roadmapStatus": "Actively Considering",
       "source": "productboard",
       "updatedAt": "2026-09-27T10:38:44.241842+00:00",
-      "checkedAt": "2026-10-09T22:37:50.499Z",
+      "checkedAt": "2026-10-10T05:51:56.898Z",
       "url": "https://portal.productboard.com/gingerlabs/1-notability/c/53-tags"
     },
     {
@@ -1474,7 +1474,7 @@
       "roadmapStatus": "Launched",
       "source": "productboard",
       "updatedAt": "2026-08-16T18:03:40.073956+00:00",
-      "checkedAt": "2026-10-09T22:37:50.499Z",
+      "checkedAt": "2026-10-10T05:51:56.898Z",
       "url": "https://portal.productboard.com/gingerlabs/1-notability/c/95-perfect-shapes"
     },
     {
@@ -1484,7 +1484,7 @@
       "roadmapStatus": "Launched",
       "source": "productboard",
       "updatedAt": "2026-06-25T15:37:39.352304+00:00",
-      "checkedAt": "2026-10-09T22:37:50.499Z",
+      "checkedAt": "2026-10-10T05:51:56.898Z",
       "url": "https://portal.productboard.com/gingerlabs/1-notability/c/172-nested-folders"
     },
     {
@@ -1494,7 +1494,7 @@
       "roadmapStatus": "Prototyping / Experimenting",
       "source": "productboard",
       "updatedAt": "2026-10-06T05:50:47.851733+00:00",
-      "checkedAt": "2026-10-09T22:37:50.499Z",
+      "checkedAt": "2026-10-10T05:51:56.898Z",
       "url": "https://portal.productboard.com/gingerlabs/1-notability/c/145-summarize-highlighted-text"
     },
     {
@@ -1504,7 +1504,7 @@
       "roadmapStatus": "Actively Considering",
       "source": "productboard",
       "updatedAt": "2026-08-08T14:44:36.024486+00:00",
-      "checkedAt": "2026-10-09T22:37:50.499Z",
+      "checkedAt": "2026-10-10T05:51:56.898Z",
       "url": "https://portal.productboard.com/gingerlabs/1-notability/c/82-automatically-sort-subjects-and-dividers"
     },
     {
@@ -1514,7 +1514,7 @@
       "roadmapStatus": "Launched",
       "source": "productboard",
       "updatedAt": "2025-06-17T13:10:11.334241+00:00",
-      "checkedAt": "2026-10-09T22:37:50.499Z",
+      "checkedAt": "2026-10-10T05:51:56.898Z",
       "url": "https://portal.productboard.com/gingerlabs/1-notability/c/85-same-note-viewing"
     },
     {
@@ -1524,7 +1524,7 @@
       "roadmapStatus": "Launched",
       "source": "productboard",
       "updatedAt": "2026-03-24T17:56:50.884645+00:00",
-      "checkedAt": "2026-10-09T22:37:50.499Z",
+      "checkedAt": "2026-10-10T05:51:56.898Z",
       "url": "https://portal.productboard.com/gingerlabs/1-notability/c/127-live-collaboration"
     },
     {
@@ -1534,7 +1534,7 @@
       "roadmapStatus": "Launched",
       "source": "productboard",
       "updatedAt": "2026-08-28T22:37:28.591314+00:00",
-      "checkedAt": "2026-10-09T22:37:50.499Z",
+      "checkedAt": "2026-10-10T05:51:56.898Z",
       "url": "https://portal.productboard.com/gingerlabs/1-notability/c/176-spaced-repetition-system"
     },
     {
@@ -1544,7 +1544,7 @@
       "roadmapStatus": "Launched",
       "source": "productboard",
       "updatedAt": "2024-07-08T21:23:44.457285+00:00",
-      "checkedAt": "2026-10-09T22:37:50.499Z",
+      "checkedAt": "2026-10-10T05:51:56.898Z",
       "url": "https://portal.productboard.com/gingerlabs/1-notability/c/129-show-hide-all-tape"
     },
     {
@@ -1554,7 +1554,7 @@
       "roadmapStatus": "Actively Considering",
       "source": "productboard",
       "updatedAt": "2026-09-12T03:47:58.002071+00:00",
-      "checkedAt": "2026-10-09T22:37:50.499Z",
+      "checkedAt": "2026-10-10T05:51:56.898Z",
       "url": "https://portal.productboard.com/gingerlabs/1-notability/c/130-custom-toolsets"
     },
     {
@@ -1564,7 +1564,7 @@
       "roadmapStatus": "Launched",
       "source": "productboard",
       "updatedAt": "2025-06-20T22:20:52.546275+00:00",
-      "checkedAt": "2026-10-09T22:37:50.499Z",
+      "checkedAt": "2026-10-10T05:51:56.898Z",
       "url": "https://portal.productboard.com/gingerlabs/1-notability/c/121-summarize-audio-transcripts"
     },
     {
@@ -1574,7 +1574,7 @@
       "roadmapStatus": "Launched",
       "source": "productboard",
       "updatedAt": "2026-04-22T13:55:59.905007+00:00",
-      "checkedAt": "2026-10-09T22:37:50.499Z",
+      "checkedAt": "2026-10-10T05:51:56.898Z",
       "url": "https://portal.productboard.com/gingerlabs/1-notability/c/160-web-and-ios-sync"
     },
     {
@@ -1584,7 +1584,7 @@
       "roadmapStatus": "Building",
       "source": "productboard",
       "updatedAt": "2026-09-12T04:06:14.206781+00:00",
-      "checkedAt": "2026-10-09T22:37:50.499Z",
+      "checkedAt": "2026-10-10T05:51:56.898Z",
       "url": "https://portal.productboard.com/gingerlabs/1-notability/c/178-achievements-and-study-goals"
     },
     {
@@ -1594,7 +1594,7 @@
       "roadmapStatus": "Launched",
       "source": "productboard",
       "updatedAt": "2024-01-30T22:51:23.041668+00:00",
-      "checkedAt": "2026-10-09T22:37:50.499Z",
+      "checkedAt": "2026-10-10T05:51:56.898Z",
       "url": "https://portal.productboard.com/gingerlabs/1-notability/c/38-iphone-content-manager"
     },
     {
@@ -1604,7 +1604,7 @@
       "roadmapStatus": "Launched",
       "source": "productboard",
       "updatedAt": "2026-09-12T16:23:31.619091+00:00",
-      "checkedAt": "2026-10-09T22:37:50.499Z",
+      "checkedAt": "2026-10-10T05:51:56.898Z",
       "url": "https://portal.productboard.com/gingerlabs/1-notability/c/60-calligraphy-pen"
     },
     {
@@ -1614,7 +1614,7 @@
       "roadmapStatus": "Actively Considering",
       "source": "productboard",
       "updatedAt": "2026-10-09T16:24:24.212812+00:00",
-      "checkedAt": "2026-10-09T22:37:50.499Z",
+      "checkedAt": "2026-10-10T05:51:56.898Z",
       "url": "https://portal.productboard.com/gingerlabs/1-notability/c/59-tables"
     },
     {
@@ -1624,7 +1624,7 @@
       "roadmapStatus": "Launched",
       "source": "productboard",
       "updatedAt": "2026-09-06T11:41:47.698997+00:00",
-      "checkedAt": "2026-10-09T22:37:50.499Z",
+      "checkedAt": "2026-10-10T05:51:56.898Z",
       "url": "https://portal.productboard.com/gingerlabs/1-notability/c/151-ai-chat"
     },
     {
@@ -1634,7 +1634,7 @@
       "roadmapStatus": "Actively Considering",
       "source": "productboard",
       "updatedAt": "2026-10-09T03:01:32.392454+00:00",
-      "checkedAt": "2026-10-09T22:37:50.499Z",
+      "checkedAt": "2026-10-10T05:51:56.898Z",
       "url": "https://portal.productboard.com/gingerlabs/1-notability/c/153-study-photos-images"
     },
     {
@@ -1644,7 +1644,7 @@
       "roadmapStatus": "Launched",
       "source": "productboard",
       "updatedAt": "2026-01-09T23:08:26.658378+00:00",
-      "checkedAt": "2026-10-09T22:37:50.499Z",
+      "checkedAt": "2026-10-10T05:51:56.898Z",
       "url": "https://portal.productboard.com/gingerlabs/1-notability/c/166-web-app-youtube-links"
     },
     {
@@ -1654,7 +1654,7 @@
       "roadmapStatus": "Launched",
       "source": "productboard",
       "updatedAt": "2026-07-24T20:18:21.2008+00:00",
-      "checkedAt": "2026-10-09T22:37:50.499Z",
+      "checkedAt": "2026-10-10T05:51:56.898Z",
       "url": "https://portal.productboard.com/gingerlabs/1-notability/c/175-focus-mode"
     },
     {
@@ -1664,7 +1664,7 @@
       "roadmapStatus": "Launched",
       "source": "productboard",
       "updatedAt": "2026-02-13T16:44:43.622951+00:00",
-      "checkedAt": "2026-10-09T22:37:50.499Z",
+      "checkedAt": "2026-10-10T05:51:56.898Z",
       "url": "https://portal.productboard.com/gingerlabs/1-notability/c/90-presentation-mode"
     },
     {
@@ -1674,7 +1674,7 @@
       "roadmapStatus": "Launched",
       "source": "productboard",
       "updatedAt": "2026-09-26T03:09:49.055497+00:00",
-      "checkedAt": "2026-10-09T22:37:50.499Z",
+      "checkedAt": "2026-10-10T05:51:56.898Z",
       "url": "https://portal.productboard.com/gingerlabs/1-notability/c/165-flashcard-import-support"
     },
     {
@@ -1684,7 +1684,7 @@
       "roadmapStatus": "Launched",
       "source": "productboard",
       "updatedAt": "2026-03-24T17:55:47.30081+00:00",
-      "checkedAt": "2026-10-09T22:37:50.499Z",
+      "checkedAt": "2026-10-10T05:51:56.898Z",
       "url": "https://portal.productboard.com/gingerlabs/1-notability/c/169-lock-contents-to-prevent-editing"
     },
     {
@@ -1694,7 +1694,7 @@
       "roadmapStatus": "Launched",
       "source": "productboard",
       "updatedAt": "2026-08-26T23:35:55.341273+00:00",
-      "checkedAt": "2026-10-09T22:37:50.499Z",
+      "checkedAt": "2026-10-10T05:51:56.898Z",
       "url": "https://portal.productboard.com/gingerlabs/1-notability/c/108-multi-level-library-organization"
     },
     {
@@ -1704,7 +1704,7 @@
       "roadmapStatus": "Building",
       "source": "productboard",
       "updatedAt": "2026-09-26T03:13:20.678571+00:00",
-      "checkedAt": "2026-10-09T22:37:50.499Z",
+      "checkedAt": "2026-10-10T05:51:56.898Z",
       "url": "https://portal.productboard.com/gingerlabs/1-notability/c/182-chat-across-your-notes"
     },
     {
@@ -1714,7 +1714,7 @@
       "roadmapStatus": "Launched",
       "source": "productboard",
       "updatedAt": "2026-09-27T04:17:55.333106+00:00",
-      "checkedAt": "2026-10-09T22:37:50.499Z",
+      "checkedAt": "2026-10-10T05:51:56.898Z",
       "url": "https://portal.productboard.com/gingerlabs/1-notability/c/158-android-app"
     },
     {
@@ -1724,7 +1724,7 @@
       "roadmapStatus": "Building",
       "source": "productboard",
       "updatedAt": "2026-09-15T00:37:05.309314+00:00",
-      "checkedAt": "2026-10-09T22:37:50.499Z",
+      "checkedAt": "2026-10-10T05:51:56.898Z",
       "url": "https://portal.productboard.com/gingerlabs/1-notability/c/113-integrate-planners-with-calendar-apps"
     },
     {
@@ -1734,7 +1734,7 @@
       "roadmapStatus": "Prototyping / Experimenting",
       "source": "productboard",
       "updatedAt": "2026-09-03T16:26:48.458472+00:00",
-      "checkedAt": "2026-10-09T22:37:50.499Z",
+      "checkedAt": "2026-10-10T05:51:56.898Z",
       "url": "https://portal.productboard.com/gingerlabs/1-notability/c/164-live-transcripts-diarization"
     },
     {
@@ -1744,7 +1744,7 @@
       "roadmapStatus": "Launched",
       "source": "productboard",
       "updatedAt": "2026-02-06T19:41:03.222134+00:00",
-      "checkedAt": "2026-10-09T22:37:50.499Z",
+      "checkedAt": "2026-10-10T05:51:56.898Z",
       "url": "https://portal.productboard.com/gingerlabs/1-notability/c/73-non-unique-note-names"
     },
     {
@@ -1754,7 +1754,7 @@
       "roadmapStatus": "Building",
       "source": "productboard",
       "updatedAt": "2026-09-03T16:27:38.576586+00:00",
-      "checkedAt": "2026-10-09T22:37:50.499Z",
+      "checkedAt": "2026-10-10T05:51:56.898Z",
       "url": "https://portal.productboard.com/gingerlabs/1-notability/c/181-scale-of-measurement"
     }
   ],
@@ -3446,7 +3446,7 @@
       "url": "https://portal.productboard.com/gingerlabs/1-notability/c/119-copy-all-transcripts",
       "published_at": "2024-06-28T21:43:55.430013+00:00",
       "updated_at": "2024-06-28T21:43:59.175171+00:00",
-      "fetched_at": "2026-10-09T22:37:50.499Z",
+      "fetched_at": "2026-10-10T05:51:56.898Z",
       "category": "Development update"
     },
     {
@@ -3457,7 +3457,7 @@
       "url": "https://portal.productboard.com/gingerlabs/1-notability/c/110-mirroring-ink",
       "published_at": "2026-02-18T23:54:42.662963+00:00",
       "updated_at": "2026-02-18T23:54:52.327623+00:00",
-      "fetched_at": "2026-10-09T22:37:50.499Z",
+      "fetched_at": "2026-10-10T05:51:56.898Z",
       "category": "Development update"
     },
     {
@@ -3468,7 +3468,7 @@
       "url": "https://portal.productboard.com/gingerlabs/1-notability/c/43-rtl-right-to-left-typing",
       "published_at": "2026-07-09T20:30:47.897146+00:00",
       "updated_at": "2026-07-09T20:31:32.299511+00:00",
-      "fetched_at": "2026-10-09T22:37:50.499Z",
+      "fetched_at": "2026-10-10T05:51:56.898Z",
       "category": "Development update"
     },
     {
@@ -3479,7 +3479,7 @@
       "url": "https://portal.productboard.com/gingerlabs/1-notability/c/167-version-history",
       "published_at": "2026-07-09T20:33:01.302168+00:00",
       "updated_at": "2026-07-09T20:33:04.751336+00:00",
-      "fetched_at": "2026-10-09T22:37:50.499Z",
+      "fetched_at": "2026-10-10T05:51:56.898Z",
       "category": "Development update"
     },
     {
@@ -3490,7 +3490,7 @@
       "url": "https://portal.productboard.com/gingerlabs/1-notability/c/129-show-hide-all-tape",
       "published_at": "2024-07-08T21:23:42.502936+00:00",
       "updated_at": "2024-07-08T21:23:44.453873+00:00",
-      "fetched_at": "2026-10-09T22:37:50.499Z",
+      "fetched_at": "2026-10-10T05:51:56.898Z",
       "category": "Development update"
     },
     {
@@ -3501,7 +3501,7 @@
       "url": "https://portal.productboard.com/gingerlabs/1-notability/c/175-focus-mode",
       "published_at": "2026-07-09T20:24:46.288749+00:00",
       "updated_at": "2026-07-09T20:24:47.269403+00:00",
-      "fetched_at": "2026-10-09T22:37:50.499Z",
+      "fetched_at": "2026-10-10T05:51:56.898Z",
       "category": "Development update"
     },
     {
@@ -3512,7 +3512,7 @@
       "url": "https://portal.productboard.com/gingerlabs/1-notability/c/169-lock-contents-to-prevent-editing",
       "published_at": "2026-02-19T17:14:37.784751+00:00",
       "updated_at": "2026-02-19T17:14:39.168941+00:00",
-      "fetched_at": "2026-10-09T22:37:50.499Z",
+      "fetched_at": "2026-10-10T05:51:56.898Z",
       "category": "Development update"
     },
     {
@@ -3523,7 +3523,7 @@
       "url": "https://portal.productboard.com/gingerlabs/1-notability/c/73-non-unique-note-names",
       "published_at": "2026-02-06T19:40:41.971403+00:00",
       "updated_at": "2026-02-06T19:41:03.193696+00:00",
-      "fetched_at": "2026-10-09T22:37:50.499Z",
+      "fetched_at": "2026-10-10T05:51:56.898Z",
       "category": "Development update"
     },
     {
@@ -3534,7 +3534,7 @@
       "url": "https://github.com/Ginger-Labs/GraphicsPathNearest",
       "published_at": "2021-03-05T22:06:19Z",
       "updated_at": "2021-03-05T22:13:04Z",
-      "fetched_at": "2026-10-09T22:37:50.499Z",
+      "fetched_at": "2026-10-10T05:51:56.898Z",
       "category": "Public repository"
     }
   ],
